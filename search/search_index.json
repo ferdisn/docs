@@ -19,6 +19,176 @@
             "location": "/#project-layout", 
             "text": "mkdocs.yml    # The configuration file.\ndocs/\n    index.md  # The documentation homepage.\n    ...       # Other markdown pages, images and other files.", 
             "title": "Project layout"
+        }, 
+        {
+            "location": "/database/", 
+            "text": "Database Model\n\n\nON CASCADE DELETE \n\nSecara umum tidak ada proses penghapusan untuk tiap baris, apabila ada kebutuhan, boleh dipertimbangkan untuk ada asal ada kemampuan untuk mempertahankan backup berkala.\n\n\nON CASCADE UPDATE \n\nSecara umum tidak perlu ada update atas nilai PK, karena PK memakai surrogate key.", 
+            "title": "Database Model"
+        }, 
+        {
+            "location": "/database/#database-model", 
+            "text": "ON CASCADE DELETE  \nSecara umum tidak ada proses penghapusan untuk tiap baris, apabila ada kebutuhan, boleh dipertimbangkan untuk ada asal ada kemampuan untuk mempertahankan backup berkala.  ON CASCADE UPDATE  \nSecara umum tidak perlu ada update atas nilai PK, karena PK memakai surrogate key.", 
+            "title": "Database Model"
+        }, 
+        {
+            "location": "/database/index2/", 
+            "text": "Postfix Mail Database", 
+            "title": "Postfix Mail Database"
+        }, 
+        {
+            "location": "/database/index2/#postfix-mail-database", 
+            "text": "", 
+            "title": "Postfix Mail Database"
+        }, 
+        {
+            "location": "/database/mail/alias/", 
+            "text": "[Table] Alias\n\n\nGeneral\n\n\n\n\n\n\n\n\nAttribute\n\n\nValue\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nTable Name\n\n\naliases\n\n\nStore aliases\n\n\n\n\n\n\n\n\nProperties (Columns)\n\n\n\n\n\n\n\n\nProperty\n\n\nType\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nid\n\n\nint\n\n\nObject identifier\n\n\n\n\n\n\ndomain_id\n\n\nint\n\n\nReference domain identifier\n\n\n\n\n\n\nuser\n\n\nvarchar\n\n\nLocal portion of the alias, e.g. \nuser@domain.TLD\n\n\n\n\n\n\n\n\nRelationship\n\n\n\n\n\n\n\n\nObject\n\n\nProperty Connector\n\n\nType\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nDomain\n\n\ndomain_id\n\n\nMany to One\n\n\nRefer to \ndomain.TLD\n part of any accepted domains in Postfix\n\n\n\n\n\n\n\n\nSQL Enforcing Feature\n\n\n\n\n\n\n\n\nFeature\n\n\nProperty\n\n\nSQL\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nPresence of Surrogate Key\n\n\nid\n\n\nPrimary Key, Not Null\n\n\n-\n\n\n\n\n\n\nPresence of Object\n\n\nuser\n\n\nNot Null\n\n\n-\n\n\n\n\n\n\nUniqueness of Object\n\n\nuser\n,\ndomain_id\n\n\nUnique\n\n\n-\n\n\n\n\n\n\nPresence of Parent Object\n\n\ndomain_id\n\n\nForeign Key, Not Null\n\n\n-", 
+            "title": "[Table] Alias"
+        }, 
+        {
+            "location": "/database/mail/alias/#table-alias", 
+            "text": "", 
+            "title": "[Table] Alias"
+        }, 
+        {
+            "location": "/database/mail/alias/#general", 
+            "text": "Attribute  Value  Description      Table Name  aliases  Store aliases", 
+            "title": "General"
+        }, 
+        {
+            "location": "/database/mail/alias/#properties-columns", 
+            "text": "Property  Type  Description      id  int  Object identifier    domain_id  int  Reference domain identifier    user  varchar  Local portion of the alias, e.g.  user@domain.TLD", 
+            "title": "Properties (Columns)"
+        }, 
+        {
+            "location": "/database/mail/alias/#relationship", 
+            "text": "Object  Property Connector  Type  Description      Domain  domain_id  Many to One  Refer to  domain.TLD  part of any accepted domains in Postfix", 
+            "title": "Relationship"
+        }, 
+        {
+            "location": "/database/mail/alias/#sql-enforcing-feature", 
+            "text": "Feature  Property  SQL  Description      Presence of Surrogate Key  id  Primary Key, Not Null  -    Presence of Object  user  Not Null  -    Uniqueness of Object  user , domain_id  Unique  -    Presence of Parent Object  domain_id  Foreign Key, Not Null  -", 
+            "title": "SQL Enforcing Feature"
+        }, 
+        {
+            "location": "/database/mail/domain/", 
+            "text": "[Table] Domain\n\n\nGeneral\n\n\n\n\n\n\n\n\nAttribute\n\n\nValue\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nTable Name\n\n\ndomains\n\n\nStore domains\n\n\n\n\n\n\n\n\nProperties (Columns)\n\n\n\n\n\n\n\n\nProperty\n\n\nType\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nid\n\n\nint\n\n\nObject identifier\n\n\n\n\n\n\ndomain\n\n\nvarchar\n\n\nDomain name after the \n@\n sign, e.g. \nuser@domain.TLD\n\n\n\n\n\n\ncatch_all_mailbox_id\n\n\nvarchar\n\n\nReference mailbox identifier\n\n\n\n\n\n\nalias_for\n\n\nint\n\n\nReference domain identifier\n\n\n\n\n\n\n\n\nRelationship\n\n\n\n\n\n\n\n\nModel\n\n\nProperty Connector\n\n\nType\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nMailbox\n\n\ncatch_all_mailbox_id\n\n\nMany to Zero\n\n\nRefer to existing mailbox which can accept mail in Postfix that acts as a catch all Mailbox, if not null it means this domain has catch all address\n\n\n\n\n\n\nDomain (self)\n\n\nalias_for\n\n\nMany to Zero\n\n\nRefer to existing domain for which this domain is an alias\n\n\n\n\n\n\n\n\nSQL Enforcing Feature\n\n\n\n\n\n\n\n\nFeature\n\n\nProperty\n\n\nSQL\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nPresence of Surrogate Key\n\n\nid\n\n\nPrimary Key, Not Null\n\n\n-\n\n\n\n\n\n\nPresence of Object\n\n\ndomain\n\n\nNot Null\n\n\n-\n\n\n\n\n\n\nUniqueness of Object\n\n\ndomain\n\n\nUnique\n\n\n-\n\n\n\n\n\n\nPresence of Parent Object\n\n\ncatch_all_mailbox_id\n\n\nForeign Key\n\n\n-\n\n\n\n\n\n\nObligation to have Parent Object\n\n\ncatch_all_mailbox_id\n\n\nAllow Null\n\n\n-\n\n\n\n\n\n\nPresence of Parent Object\n\n\nalias_for\n\n\nForeign Key, Allow Null\n\n\n-\n\n\n\n\n\n\nObligation to have Parent Object\n\n\nalias_for\n\n\nAllow Null\n\n\n-", 
+            "title": "[Table] Domain"
+        }, 
+        {
+            "location": "/database/mail/domain/#table-domain", 
+            "text": "", 
+            "title": "[Table] Domain"
+        }, 
+        {
+            "location": "/database/mail/domain/#general", 
+            "text": "Attribute  Value  Description      Table Name  domains  Store domains", 
+            "title": "General"
+        }, 
+        {
+            "location": "/database/mail/domain/#properties-columns", 
+            "text": "Property  Type  Description      id  int  Object identifier    domain  varchar  Domain name after the  @  sign, e.g.  user@domain.TLD    catch_all_mailbox_id  varchar  Reference mailbox identifier    alias_for  int  Reference domain identifier", 
+            "title": "Properties (Columns)"
+        }, 
+        {
+            "location": "/database/mail/domain/#relationship", 
+            "text": "Model  Property Connector  Type  Description      Mailbox  catch_all_mailbox_id  Many to Zero  Refer to existing mailbox which can accept mail in Postfix that acts as a catch all Mailbox, if not null it means this domain has catch all address    Domain (self)  alias_for  Many to Zero  Refer to existing domain for which this domain is an alias", 
+            "title": "Relationship"
+        }, 
+        {
+            "location": "/database/mail/domain/#sql-enforcing-feature", 
+            "text": "Feature  Property  SQL  Description      Presence of Surrogate Key  id  Primary Key, Not Null  -    Presence of Object  domain  Not Null  -    Uniqueness of Object  domain  Unique  -    Presence of Parent Object  catch_all_mailbox_id  Foreign Key  -    Obligation to have Parent Object  catch_all_mailbox_id  Allow Null  -    Presence of Parent Object  alias_for  Foreign Key, Allow Null  -    Obligation to have Parent Object  alias_for  Allow Null  -", 
+            "title": "SQL Enforcing Feature"
+        }, 
+        {
+            "location": "/database/mail/external_destination/", 
+            "text": "[Table] External Destionation\n\n\nGeneral\n\n\n\n\n\n\n\n\nAttribute\n\n\nValue\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nTable Name\n\n\nexternal_destionations\n\n\nStore email addresses not hosted on Postfix\n\n\n\n\n\n\n\n\nProperties (Columns)\n\n\n\n\n\n\n\n\nProperty\n\n\nType\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nid\n\n\nint\n\n\nObject identifier\n\n\n\n\n\n\nalias_id\n\n\nint\n\n\nReference alias identifier\n\n\n\n\n\n\nexternal_email_address\n\n\nvarchar\n\n\nFull address of destination alias in form of  \nuser@domain.TLD\n\n\n\n\n\n\n\n\nRelationship\n\n\n\n\n\n\n\n\nModel\n\n\nProperty Connector\n\n\nType\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nAlias\n\n\nalias_id\n\n\nMany to One\n\n\nRefer to full alias configured in Postfix\n\n\n\n\n\n\n\n\nSQL Enforcing Feature\n\n\n\n\n\n\n\n\nFeature\n\n\nProperty\n\n\nSQL\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nPresence of Surrogate Key\n\n\nid\n\n\nPrimary Key, Not Null\n\n\n-\n\n\n\n\n\n\nPresence of Object\n\n\nalias_id\n,\nexternal_email_address\n\n\nNot Null\n\n\n-\n\n\n\n\n\n\nUniqueness of Object\n\n\nalias_id\n,\nexternal_email_address\n\n\nUnique\n\n\n-\n\n\n\n\n\n\nPresence of Parent Object\n\n\nalias_id\n\n\nForeign Key\n\n\n-\n\n\n\n\n\n\nObligation to have Parent Object\n\n\nalias_id\n\n\nNot Null\n\n\n-", 
+            "title": "[Table] External Destionation"
+        }, 
+        {
+            "location": "/database/mail/external_destination/#table-external-destionation", 
+            "text": "", 
+            "title": "[Table] External Destionation"
+        }, 
+        {
+            "location": "/database/mail/external_destination/#general", 
+            "text": "Attribute  Value  Description      Table Name  external_destionations  Store email addresses not hosted on Postfix", 
+            "title": "General"
+        }, 
+        {
+            "location": "/database/mail/external_destination/#properties-columns", 
+            "text": "Property  Type  Description      id  int  Object identifier    alias_id  int  Reference alias identifier    external_email_address  varchar  Full address of destination alias in form of   user@domain.TLD", 
+            "title": "Properties (Columns)"
+        }, 
+        {
+            "location": "/database/mail/external_destination/#relationship", 
+            "text": "Model  Property Connector  Type  Description      Alias  alias_id  Many to One  Refer to full alias configured in Postfix", 
+            "title": "Relationship"
+        }, 
+        {
+            "location": "/database/mail/external_destination/#sql-enforcing-feature", 
+            "text": "Feature  Property  SQL  Description      Presence of Surrogate Key  id  Primary Key, Not Null  -    Presence of Object  alias_id , external_email_address  Not Null  -    Uniqueness of Object  alias_id , external_email_address  Unique  -    Presence of Parent Object  alias_id  Foreign Key  -    Obligation to have Parent Object  alias_id  Not Null  -", 
+            "title": "SQL Enforcing Feature"
+        }, 
+        {
+            "location": "/database/mail/internal_destination/", 
+            "text": "[Table] Internal Destionation\n\n\nGeneral\n\n\n\n\n\n\n\n\nAttribute\n\n\nValue\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nTable Name\n\n\ninternal_destionations\n\n\nStore email addresses hosted on Postfix\n\n\n\n\n\n\n\n\nProperties (Columns)\n\n\n\n\n\n\n\n\nProperty\n\n\nType\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nid\n\n\nint\n\n\nObject identifier\n\n\n\n\n\n\nalias_id\n\n\nint\n\n\nReference alias identifier\n\n\n\n\n\n\ninternal_mailbox_id\n\n\nint\n\n\nReference mailbox identifier\n\n\n\n\n\n\n\n\nRelationship\n\n\n\n\n\n\n\n\nModel\n\n\nProperty Connector\n\n\nType\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nAlias\n\n\nalias_id\n\n\nMany to One\n\n\nRefer to full alias configured in Postfix\n\n\n\n\n\n\nMailbox\n\n\ninternal_mailbox_id\n\n\nMany to One\n\n\nRefer to mailbox in Postfix\n\n\n\n\n\n\n\n\nSQL Enforcing Feature\n\n\n\n\n\n\n\n\nFeature\n\n\nProperty\n\n\nSQL\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nPresence of Surrogate Key\n\n\nid\n\n\nPrimary Key, Not Null\n\n\n-\n\n\n\n\n\n\nPresence of Object\n\n\nalias_id\n,\ninternal_mailbox_id\n\n\nNot Null\n\n\n-\n\n\n\n\n\n\nUniqueness of Object\n\n\nalias_id\n,\ninternal_mailbox_id\n\n\nUnique\n\n\n-\n\n\n\n\n\n\nPresence of Parent Object\n\n\nalias_id\n,\ninternal_mailbox_id\n\n\nForeign Key\n\n\n-\n\n\n\n\n\n\nObligation to have Parent Object\n\n\nalias_id\n,\ninternal_mailbox_id\n\n\nNot Null\n\n\n-", 
+            "title": "[Table] Internal Destionation"
+        }, 
+        {
+            "location": "/database/mail/internal_destination/#table-internal-destionation", 
+            "text": "", 
+            "title": "[Table] Internal Destionation"
+        }, 
+        {
+            "location": "/database/mail/internal_destination/#general", 
+            "text": "Attribute  Value  Description      Table Name  internal_destionations  Store email addresses hosted on Postfix", 
+            "title": "General"
+        }, 
+        {
+            "location": "/database/mail/internal_destination/#properties-columns", 
+            "text": "Property  Type  Description      id  int  Object identifier    alias_id  int  Reference alias identifier    internal_mailbox_id  int  Reference mailbox identifier", 
+            "title": "Properties (Columns)"
+        }, 
+        {
+            "location": "/database/mail/internal_destination/#relationship", 
+            "text": "Model  Property Connector  Type  Description      Alias  alias_id  Many to One  Refer to full alias configured in Postfix    Mailbox  internal_mailbox_id  Many to One  Refer to mailbox in Postfix", 
+            "title": "Relationship"
+        }, 
+        {
+            "location": "/database/mail/internal_destination/#sql-enforcing-feature", 
+            "text": "Feature  Property  SQL  Description      Presence of Surrogate Key  id  Primary Key, Not Null  -    Presence of Object  alias_id , internal_mailbox_id  Not Null  -    Uniqueness of Object  alias_id , internal_mailbox_id  Unique  -    Presence of Parent Object  alias_id , internal_mailbox_id  Foreign Key  -    Obligation to have Parent Object  alias_id , internal_mailbox_id  Not Null  -", 
+            "title": "SQL Enforcing Feature"
+        }, 
+        {
+            "location": "/database/mail/mailbox/", 
+            "text": "[Table] Mailbox\n\n\nGeneral\n\n\n\n\n\n\n\n\nAttribute\n\n\nValue\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nTable Name\n\n\nmailboxes\n\n\nStore mailboxes\n\n\n\n\n\n\n\n\nProperties (Columns)\n\n\n\n\n\n\n\n\nProperty\n\n\nType\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nid\n\n\nint\n\n\nModel identifier\n\n\n\n\n\n\ndomain_id\n\n\nint\n\n\nReference domain identifier\n\n\n\n\n\n\nuser\n\n\nvarchar\n\n\nLocal portion of the alias, e.g. \nuser@domain.TLD\n\n\n\n\n\n\npassword\n\n\nvarchar\n\n\nSHA512 of user password\n\n\n\n\n\n\n\n\nRelationship\n\n\n\n\n\n\n\n\nModel\n\n\nProperty Connector\n\n\nType\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nDomain\n\n\ndomain_id\n\n\nMany to One\n\n\nRefer to \ndomain.TLD\n part of any accepted domains in Postfix\n\n\n\n\n\n\n\n\nSQL Enforcing Feature\n\n\n\n\n\n\n\n\nFeature\n\n\nProperty\n\n\nSQL\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nPresence of Surrogate Key\n\n\nid\n\n\nPrimary Key, Not Null\n\n\n-\n\n\n\n\n\n\nPresence of Object\n\n\ndomain_id\n,\nuser\n\n\nNot Null\n\n\n-\n\n\n\n\n\n\nUniqueness of Object\n\n\ndomain_id\n,\nuser\n\n\nUnique\n\n\n-\n\n\n\n\n\n\nPresence of Parent Object\n\n\ndomain_id\n\n\nForeign Key\n\n\n-\n\n\n\n\n\n\nObligation to have Parent Object\n\n\ndomain_id\n\n\nNot Null\n\n\n-", 
+            "title": "[Table] Mailbox"
+        }, 
+        {
+            "location": "/database/mail/mailbox/#table-mailbox", 
+            "text": "", 
+            "title": "[Table] Mailbox"
+        }, 
+        {
+            "location": "/database/mail/mailbox/#general", 
+            "text": "Attribute  Value  Description      Table Name  mailboxes  Store mailboxes", 
+            "title": "General"
+        }, 
+        {
+            "location": "/database/mail/mailbox/#properties-columns", 
+            "text": "Property  Type  Description      id  int  Model identifier    domain_id  int  Reference domain identifier    user  varchar  Local portion of the alias, e.g.  user@domain.TLD    password  varchar  SHA512 of user password", 
+            "title": "Properties (Columns)"
+        }, 
+        {
+            "location": "/database/mail/mailbox/#relationship", 
+            "text": "Model  Property Connector  Type  Description      Domain  domain_id  Many to One  Refer to  domain.TLD  part of any accepted domains in Postfix", 
+            "title": "Relationship"
+        }, 
+        {
+            "location": "/database/mail/mailbox/#sql-enforcing-feature", 
+            "text": "Feature  Property  SQL  Description      Presence of Surrogate Key  id  Primary Key, Not Null  -    Presence of Object  domain_id , user  Not Null  -    Uniqueness of Object  domain_id , user  Unique  -    Presence of Parent Object  domain_id  Foreign Key  -    Obligation to have Parent Object  domain_id  Not Null  -", 
+            "title": "SQL Enforcing Feature"
         }
     ]
 }

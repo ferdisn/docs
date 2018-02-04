@@ -9,4 +9,26 @@
     </url>
     
 
+    
+        
+    <url>
+     <loc>/database/</loc>
+     <lastmod>2018-02-04</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc>/database/index2/</loc>
+     <lastmod>2018-02-04</lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    <url>
+     <loc></loc>
+     <lastmod></lastmod>
+     <changefreq>daily</changefreq>
+    </url>
+        
+    
+
 </urlset>
