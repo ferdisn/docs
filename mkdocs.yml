@@ -1,0 +1,8 @@
+site_name: Knowledge Base
+theme: material
+repo_url: https://github.com/ferdisn
+edit_uri: documentation-mkdocs/edit/mkdocs-edit/docs
+site_description: Storing knowledge base for all operations within my control.
+site_author: Ferdi Saptanera
+
+remote_name: remote
