@@ -17,7 +17,7 @@
 
 | Model | Property Connector | Type | Description |
 | - | - | - | - |
-| [Alias](alias.md) | `alias_id` | Many to One | Refer to full alias configured in Postfix |
+| [Alias]([Table]_Alias.md) | `alias_id` | Many to One | Refer to full alias configured in Postfix |
 
 ## SQL Enforcing Feature
 

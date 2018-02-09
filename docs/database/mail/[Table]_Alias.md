@@ -17,7 +17,7 @@
 
 | Object | Property Connector | Type | Description |
 | - | - | - | - |
-| [Domain](domain.md) | `domain_id` | Many to One | Refer to `domain.TLD` part of any accepted domains in Postfix |
+| [Domain]([Table]_Domain.md) | `domain_id` | Many to One | Refer to `domain.TLD` part of any accepted domains in Postfix |
 
 ## SQL Enforcing Feature
 

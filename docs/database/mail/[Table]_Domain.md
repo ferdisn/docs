@@ -18,7 +18,7 @@
 
 | Model | Property Connector | Type | Description |
 | - | - | - | - |
-| [Mailbox](mailbox.md) | `catch_all_mailbox_id` | Many to Zero | Refer to existing mailbox which can accept mail in Postfix that acts as a catch all Mailbox, if not null it means this domain has catch all address |
+| [Mailbox]([Table]_Mailbox.md) | `catch_all_mailbox_id` | Many to Zero | Refer to existing mailbox which can accept mail in Postfix that acts as a catch all Mailbox, if not null it means this domain has catch all address |
 | Domain (self) | `alias_for` | Many to Zero | Refer to existing domain for which this domain is an alias |
 
 ## SQL Enforcing Feature

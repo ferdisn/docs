@@ -17,8 +17,8 @@
 
 | Model | Property Connector | Type | Description |
 | - | - | - | - |
-| [Alias](alias.md) | `alias_id` | Many to One | Refer to full alias configured in Postfix |
-| [Mailbox](mailbox.md) | `internal_mailbox_id` | Many to One | Refer to mailbox in Postfix |
+| [Alias]([Table]_Alias.md) | `alias_id` | Many to One | Refer to full alias configured in Postfix |
+| [Mailbox]([Table]_Mailbox.md) | `internal_mailbox_id` | Many to One | Refer to mailbox in Postfix |
 
 ## SQL Enforcing Feature
 

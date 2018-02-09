@@ -9,7 +9,7 @@
 
 | Property | Type | Description |
 | - | - | - |
-| `id` | int | Model identifier |
+| `id` | int | Object identifier |
 | `domain_id` | int | Reference domain identifier |
 | `user` | varchar | Local portion of the alias, e.g. `user@domain.TLD` |
 | `password` | varchar | SHA512 of user password |
@@ -18,7 +18,7 @@
 
 | Model | Property Connector | Type | Description |
 | - | - | - | - |
-| [Domain](domain.md) | `domain_id` | Many to One | Refer to `domain.TLD` part of any accepted domains in Postfix |
+| [Domain]([Table]_Domain.md) | `domain_id` | Many to One | Refer to `domain.TLD` part of any accepted domains in Postfix |
 
 ## SQL Enforcing Feature
 
