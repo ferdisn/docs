@@ -12,12 +12,12 @@
         }, 
         {
             "location": "/database/", 
-            "text": "Overview\n\n\nON CASCADE DELETE \n\nSecara umum tidak ada proses penghapusan untuk tiap baris, apabila ada kebutuhan, boleh dipertimbangkan untuk ada asal ada kemampuan untuk mempertahankan backup berkala.\n\n\nON CASCADE UPDATE \n\nSecara umum tidak perlu ada update atas nilai PK, karena PK memakai surrogate key.", 
+            "text": "Overview\n\n\nON CASCADE DELETE \n\nSecara umum tidak ada proses penghapusan untuk tiap baris, apabila ada kebutuhan, boleh dipertimbangkan untuk ada asal ada kemampuan untuk mempertahankan backup berkala.\n\n\nON CASCADE UPDATE \n\nSecara umum tidak perlu ada update atas nilai PK, karena PK memakai surrogate key.\n\n\nwhere like PostgreSQL case sensitive. -\n apakah semua naming dilowercase kan saja? lalu transform waktu ditarik ke Web?", 
             "title": "Overview"
         }, 
         {
             "location": "/database/#overview", 
-            "text": "ON CASCADE DELETE  \nSecara umum tidak ada proses penghapusan untuk tiap baris, apabila ada kebutuhan, boleh dipertimbangkan untuk ada asal ada kemampuan untuk mempertahankan backup berkala.  ON CASCADE UPDATE  \nSecara umum tidak perlu ada update atas nilai PK, karena PK memakai surrogate key.", 
+            "text": "ON CASCADE DELETE  \nSecara umum tidak ada proses penghapusan untuk tiap baris, apabila ada kebutuhan, boleh dipertimbangkan untuk ada asal ada kemampuan untuk mempertahankan backup berkala.  ON CASCADE UPDATE  \nSecara umum tidak perlu ada update atas nilai PK, karena PK memakai surrogate key.  where like PostgreSQL case sensitive. -  apakah semua naming dilowercase kan saja? lalu transform waktu ditarik ke Web?", 
             "title": "Overview"
         }, 
         {
