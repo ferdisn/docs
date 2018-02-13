@@ -5,3 +5,5 @@ Secara umum tidak ada proses penghapusan untuk tiap baris, apabila ada kebutuhan
 
 ON CASCADE UPDATE   
 Secara umum tidak perlu ada update atas nilai PK, karena PK memakai surrogate key.
+
+where like PostgreSQL case sensitive. -> apakah semua naming dilowercase kan saja? lalu transform waktu ditarik ke Web?
