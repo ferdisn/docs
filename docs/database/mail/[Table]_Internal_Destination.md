@@ -1,4 +1,4 @@
-# [Table] Internal Destionation
+# [Table] Internal Destination
 ## General
 
 | Attribute | Value | Description |

@@ -1,4 +1,4 @@
-# [Table] External Destionation
+# [Table] External Destination
 ## General
 
 | Attribute | Value | Description |
