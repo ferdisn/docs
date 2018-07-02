@@ -5,4 +5,4 @@ edit_uri: docs/edit/mkdocs-edit/docs
 site_description: Storing knowledge base for all operations within my control.
 site_author: Ferdi Saptanera
 
-remote_name: remote
+remote_name: origin
