@@ -6,3 +6,4 @@ site_description: Storing knowledge base for all operations within my control.
 site_author: Ferdi Saptanera
 
 remote_name: origin
+dev_addr: 127.0.0.1:8001
