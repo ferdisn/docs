@@ -40,7 +40,7 @@
     
     
       
-        <title>Postfix Mail Database - Knowledge Base</title>
+        <title>Convention - Knowledge Base</title>
       
     
     
@@ -94,7 +94,7 @@
     <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
     <label class="md-overlay" data-md-component="overlay" for="__drawer"></label>
     
-      <a href="#postfix-mail-database" tabindex="1" class="md-skip">
+      <a href="#convention" tabindex="1" class="md-skip">
         Skip to content
       </a>
     
@@ -120,7 +120,7 @@
                 Knowledge Base
               </span>
               <span class="md-header-nav__topic">
-                Postfix Mail Database
+                Convention
               </span>
             
           
@@ -280,18 +280,6 @@
           
           
 
-
-  <li class="md-nav__item">
-    <a href="../" title="Overview" class="md-nav__link">
-      Overview
-    </a>
-  </li>
-
-        
-          
-          
-          
-
   
 
 
@@ -302,10 +290,85 @@
       
     
     
-    <a href="./" title="Postfix Mail Database" class="md-nav__link md-nav__link--active">
-      Postfix Mail Database
+      <label class="md-nav__link md-nav__link--active" for="__toc">
+        Convention
+      </label>
+    
+    <a href="./" title="Convention" class="md-nav__link md-nav__link--active">
+      Convention
     </a>
     
+      
+<nav class="md-nav md-nav--secondary">
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#kaidah-penamaan-yang-dipakai-dalam-database" title="Kaidah penamaan yang dipakai dalam database" class="md-nav__link">
+    Kaidah penamaan yang dipakai dalam database
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nama-database" title="Nama database" class="md-nav__link">
+    Nama database
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nama-schema" title="Nama schema" class="md-nav__link">
+    Nama schema
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nama-tabel" title="Nama tabel" class="md-nav__link">
+    Nama tabel
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nama-kolomfield-tbd" title="Nama kolom/field TBD" class="md-nav__link">
+    Nama kolom/field TBD
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
+</nav>
+    
+  </li>
+
+        
+          
+          
+          
+
+
+  <li class="md-nav__item">
+    <a href="../overview/" title="Overview" class="md-nav__link">
+      Overview
+    </a>
   </li>
 
         
@@ -823,6 +886,56 @@
     
   
   
+    <label class="md-nav__title" for="__toc">Table of contents</label>
+    <ul class="md-nav__list" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#kaidah-penamaan-yang-dipakai-dalam-database" title="Kaidah penamaan yang dipakai dalam database" class="md-nav__link">
+    Kaidah penamaan yang dipakai dalam database
+  </a>
+  
+    <nav class="md-nav">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#nama-database" title="Nama database" class="md-nav__link">
+    Nama database
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nama-schema" title="Nama schema" class="md-nav__link">
+    Nama schema
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nama-tabel" title="Nama tabel" class="md-nav__link">
+    Nama tabel
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#nama-kolomfield-tbd" title="Nama kolom/field TBD" class="md-nav__link">
+    Nama kolom/field TBD
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+      
+      
+      
+      
+    </ul>
+  
 </nav>
                   </div>
                 </div>
@@ -833,10 +946,137 @@
             <article class="md-content__inner md-typeset">
               
                 
-                  <a href="https://github.com/ferdisn/docs/edit/mkdocs-edit/docs/database/index2.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
+                  <a href="https://github.com/ferdisn/docs/edit/mkdocs-edit/docs/database/convention.md" title="Edit this page" class="md-icon md-content__icon">&#xE3C9;</a>
                 
                 
-                <h1 id="postfix-mail-database">Postfix Mail Database</h1>
+                <h1 id="convention">Convention</h1>
+<p>atau Kaidah penamaan</p>
+<h2 id="kaidah-penamaan-yang-dipakai-dalam-database">Kaidah penamaan yang dipakai dalam <em>database</em></h2>
+<h3 id="nama-database">Nama <em>database</em></h3>
+<p>Harus memiliki karakteristik berikut:</p>
+<ul>
+<li>dalam bahasa Inggris, dengan penerjemahan Indonesia yang masuk akal,</li>
+<li>merujuk ke pemilik data,</li>
+<li>merujuk ke fungsi aplikasi yang memakai <em>database</em>,</li>
+<li>kalau terdiri dari dua kata atau lebih, pakai <em>underscore</em> (_) sebagai pemisah kata.</li>
+</ul>
+<p>Contoh:</p>
+<table>
+<thead>
+<tr>
+<th>Nama <em>database</em></th>
+<th>Dipakai untuk...</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>mail_management</td>
+<td>mengelola data peladen surel (Postfix dan Dovecot)</td>
+</tr>
+<tr>
+<td>paragita</td>
+<td>mengelola data Paragita</td>
+</tr>
+</tbody>
+</table>
+<h3 id="nama-schema">Nama <em>schema</em></h3>
+<p>Apabila DBMS mendukung sistem <em>schema</em>, nama <em>schema</em> harus memiliki karakteristik berikut:</p>
+<ul>
+<li>dalam bahasa Inggris,</li>
+<li>merujuk ke sifat data yang disimpan,</li>
+<li>referensi sebagai berikut: <code>production</code>, <code>simulation</code>, <code>development</code>.</li>
+</ul>
+<p>Contoh:</p>
+<table>
+<thead>
+<tr>
+<th>Nama <em>schema</em></th>
+<th>Dipakai untuk...</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>mail_management.production</td>
+<td>menyimpan data utama</td>
+</tr>
+<tr>
+<td>mail_management.development</td>
+<td>menyimpan data untuk pengembangan</td>
+</tr>
+<tr>
+<td>paragita.production</td>
+<td>menyimpan data utama</td>
+</tr>
+</tbody>
+</table>
+<p>Catatan: abaikan <em>schema</em> standar dari DBMS, misalnya <code>public</code>.</p>
+<h3 id="nama-tabel">Nama tabel</h3>
+<p>Nama tabel harus memiliki karakteristik berikut:</p>
+<ul>
+<li>dalam bahasa Inggris,</li>
+<li>kata benda berbentuk jamak.</li>
+</ul>
+<p>Contoh:</p>
+<table>
+<thead>
+<tr>
+<th>Nama tabel</th>
+<th>Dipakai untuk...</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>domains</td>
+<td>menyimpan data domain</td>
+</tr>
+<tr>
+<td>mailboxes</td>
+<td>menyimpan data kotak surat</td>
+</tr>
+<tr>
+<td>users</td>
+<td>menyimpan data pengguna</td>
+</tr>
+<tr>
+<td>addresses</td>
+<td>menyimpan data alamat</td>
+</tr>
+</tbody>
+</table>
+<h3 id="nama-kolomfield-tbd">Nama kolom/<em>field</em> TBD</h3>
+<p>Nama kolom harus memiliki karakteristik berikut:</p>
+<ul>
+<li>dalam bahasa Inggris,</li>
+<li>kata benda,</li>
+<li>kata sifat,</li>
+</ul>
+<p>Contoh:</p>
+<table>
+<thead>
+<tr>
+<th>Nama tabel</th>
+<th>Dipakai untuk...</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>domains</td>
+<td>menyimpan data domain</td>
+</tr>
+<tr>
+<td>mailboxes</td>
+<td>menyimpan data kotak surat</td>
+</tr>
+<tr>
+<td>users</td>
+<td>menyimpan data pengguna</td>
+</tr>
+<tr>
+<td>addresses</td>
+<td>menyimpan data alamat</td>
+</tr>
+</tbody>
+</table>
                 
                   
                 
@@ -857,7 +1097,7 @@
     <div class="md-footer-nav">
       <nav class="md-footer-nav__inner md-grid">
         
-          <a href="../" title="Overview" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
+          <a href="../../meta/" title="Meta" class="md-flex md-footer-nav__link md-footer-nav__link--prev" rel="prev">
             <div class="md-flex__cell md-flex__cell--shrink">
               <i class="md-icon md-icon--arrow-back md-footer-nav__button"></i>
             </div>
@@ -866,19 +1106,19 @@
                 <span class="md-footer-nav__direction">
                   Previous
                 </span>
-                Overview
+                Meta
               </span>
             </div>
           </a>
         
         
-          <a href="../mail/%5BTable%5D_Alias/" title="[Table] Alias" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
+          <a href="../overview/" title="Overview" class="md-flex md-footer-nav__link md-footer-nav__link--next" rel="next">
             <div class="md-flex__cell md-flex__cell--stretch md-footer-nav__title">
               <span class="md-flex__ellipsis">
                 <span class="md-footer-nav__direction">
                   Next
                 </span>
-                [Table] Alias
+                Overview
               </span>
             </div>
             <div class="md-flex__cell md-flex__cell--shrink">

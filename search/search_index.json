@@ -41,24 +41,64 @@
             "title": "Unggah ke GitHub Pages"
         },
         {
-            "location": "/database/",
-            "text": "Overview\n\n\nON CASCADE DELETE \n\nSecara umum tidak ada proses penghapusan untuk tiap baris, apabila ada kebutuhan, boleh dipertimbangkan untuk ada asal ada kemampuan untuk mempertahankan backup berkala.\n\n\nON CASCADE UPDATE \n\nSecara umum tidak perlu ada update atas nilai PK, karena PK memakai surrogate key.\n\n\nwhere like PostgreSQL case sensitive. -> apakah semua naming dilowercase kan saja? lalu transform waktu ditarik ke Web?",
-            "title": "Overview"
+            "location": "/database/convention/",
+            "text": "Convention\n\n\natau Kaidah penamaan\n\n\nKaidah penamaan yang dipakai dalam \ndatabase\n\n\nNama \ndatabase\n\n\nHarus memiliki karakteristik berikut:\n\n\n\n\ndalam bahasa Inggris, dengan penerjemahan Indonesia yang masuk akal,\n\n\nmerujuk ke pemilik data,\n\n\nmerujuk ke fungsi aplikasi yang memakai \ndatabase\n,\n\n\nkalau terdiri dari dua kata atau lebih, pakai \nunderscore\n (_) sebagai pemisah kata.\n\n\n\n\nContoh:\n\n\n\n\n\n\n\n\nNama \ndatabase\n\n\nDipakai untuk...\n\n\n\n\n\n\n\n\n\n\nmail_management\n\n\nmengelola data peladen surel (Postfix dan Dovecot)\n\n\n\n\n\n\nparagita\n\n\nmengelola data Paragita\n\n\n\n\n\n\n\n\nNama \nschema\n\n\nApabila DBMS mendukung sistem \nschema\n, nama \nschema\n harus memiliki karakteristik berikut:\n\n\n\n\ndalam bahasa Inggris,\n\n\nmerujuk ke sifat data yang disimpan,\n\n\nreferensi sebagai berikut: \nproduction\n, \nsimulation\n, \ndevelopment\n.\n\n\n\n\nContoh:\n\n\n\n\n\n\n\n\nNama \nschema\n\n\nDipakai untuk...\n\n\n\n\n\n\n\n\n\n\nmail_management.production\n\n\nmenyimpan data utama\n\n\n\n\n\n\nmail_management.development\n\n\nmenyimpan data untuk pengembangan\n\n\n\n\n\n\nparagita.production\n\n\nmenyimpan data utama\n\n\n\n\n\n\n\n\nCatatan: abaikan \nschema\n standar dari DBMS, misalnya \npublic\n.\n\n\nNama tabel\n\n\nNama tabel harus memiliki karakteristik berikut:\n\n\n\n\ndalam bahasa Inggris,\n\n\nkata benda berbentuk jamak.\n\n\n\n\nContoh:\n\n\n\n\n\n\n\n\nNama tabel\n\n\nDipakai untuk...\n\n\n\n\n\n\n\n\n\n\ndomains\n\n\nmenyimpan data domain\n\n\n\n\n\n\nmailboxes\n\n\nmenyimpan data kotak surat\n\n\n\n\n\n\nusers\n\n\nmenyimpan data pengguna\n\n\n\n\n\n\naddresses\n\n\nmenyimpan data alamat\n\n\n\n\n\n\n\n\nNama kolom/\nfield\n TBD\n\n\nNama kolom harus memiliki karakteristik berikut:\n\n\n\n\ndalam bahasa Inggris,\n\n\nkata benda,\n\n\nkata sifat,\n\n\n\n\nContoh:\n\n\n\n\n\n\n\n\nNama tabel\n\n\nDipakai untuk...\n\n\n\n\n\n\n\n\n\n\ndomains\n\n\nmenyimpan data domain\n\n\n\n\n\n\nmailboxes\n\n\nmenyimpan data kotak surat\n\n\n\n\n\n\nusers\n\n\nmenyimpan data pengguna\n\n\n\n\n\n\naddresses\n\n\nmenyimpan data alamat",
+            "title": "Convention"
         },
         {
-            "location": "/database/#overview",
-            "text": "ON CASCADE DELETE  \nSecara umum tidak ada proses penghapusan untuk tiap baris, apabila ada kebutuhan, boleh dipertimbangkan untuk ada asal ada kemampuan untuk mempertahankan backup berkala.  ON CASCADE UPDATE  \nSecara umum tidak perlu ada update atas nilai PK, karena PK memakai surrogate key.  where like PostgreSQL case sensitive. -> apakah semua naming dilowercase kan saja? lalu transform waktu ditarik ke Web?",
-            "title": "Overview"
+            "location": "/database/convention/#convention",
+            "text": "atau Kaidah penamaan",
+            "title": "Convention"
         },
         {
-            "location": "/database/index2/",
-            "text": "Postfix Mail Database",
-            "title": "Postfix Mail Database"
-        },
-        {
-            "location": "/database/index2/#postfix-mail-database",
+            "location": "/database/convention/#kaidah-penamaan-yang-dipakai-dalam-database",
             "text": "",
-            "title": "Postfix Mail Database"
+            "title": "Kaidah penamaan yang dipakai dalam database"
+        },
+        {
+            "location": "/database/convention/#nama-database",
+            "text": "Harus memiliki karakteristik berikut:   dalam bahasa Inggris, dengan penerjemahan Indonesia yang masuk akal,  merujuk ke pemilik data,  merujuk ke fungsi aplikasi yang memakai  database ,  kalau terdiri dari dua kata atau lebih, pakai  underscore  (_) sebagai pemisah kata.   Contoh:     Nama  database  Dipakai untuk...      mail_management  mengelola data peladen surel (Postfix dan Dovecot)    paragita  mengelola data Paragita",
+            "title": "Nama database"
+        },
+        {
+            "location": "/database/convention/#nama-schema",
+            "text": "Apabila DBMS mendukung sistem  schema , nama  schema  harus memiliki karakteristik berikut:   dalam bahasa Inggris,  merujuk ke sifat data yang disimpan,  referensi sebagai berikut:  production ,  simulation ,  development .   Contoh:     Nama  schema  Dipakai untuk...      mail_management.production  menyimpan data utama    mail_management.development  menyimpan data untuk pengembangan    paragita.production  menyimpan data utama     Catatan: abaikan  schema  standar dari DBMS, misalnya  public .",
+            "title": "Nama schema"
+        },
+        {
+            "location": "/database/convention/#nama-tabel",
+            "text": "Nama tabel harus memiliki karakteristik berikut:   dalam bahasa Inggris,  kata benda berbentuk jamak.   Contoh:     Nama tabel  Dipakai untuk...      domains  menyimpan data domain    mailboxes  menyimpan data kotak surat    users  menyimpan data pengguna    addresses  menyimpan data alamat",
+            "title": "Nama tabel"
+        },
+        {
+            "location": "/database/convention/#nama-kolomfield-tbd",
+            "text": "Nama kolom harus memiliki karakteristik berikut:   dalam bahasa Inggris,  kata benda,  kata sifat,   Contoh:     Nama tabel  Dipakai untuk...      domains  menyimpan data domain    mailboxes  menyimpan data kotak surat    users  menyimpan data pengguna    addresses  menyimpan data alamat",
+            "title": "Nama kolom/field TBD"
+        },
+        {
+            "location": "/database/overview/",
+            "text": "Overview\n\n\nON CASCADE DELETE\n\n\nSecara umum tidak ada proses penghapusan untuk tiap baris, apabila ada kebutuhan, boleh dipertimbangkan untuk ada asal ada kemampuan untuk mempertahankan backup berkala.\n\n\nON CASCADE UPDATE\n\n\nSecara umum tidak perlu ada update atas nilai PK, karena PK memakai surrogate key.\n\n\nCase sensitivity through LIKE\n\n\nwhere like PostgreSQL case sensitive. -> apakah semua naming dilowercase kan saja? lalu transform waktu ditarik ke Web?",
+            "title": "Overview"
+        },
+        {
+            "location": "/database/overview/#overview",
+            "text": "",
+            "title": "Overview"
+        },
+        {
+            "location": "/database/overview/#on-cascade-delete",
+            "text": "Secara umum tidak ada proses penghapusan untuk tiap baris, apabila ada kebutuhan, boleh dipertimbangkan untuk ada asal ada kemampuan untuk mempertahankan backup berkala.",
+            "title": "ON CASCADE DELETE"
+        },
+        {
+            "location": "/database/overview/#on-cascade-update",
+            "text": "Secara umum tidak perlu ada update atas nilai PK, karena PK memakai surrogate key.",
+            "title": "ON CASCADE UPDATE"
+        },
+        {
+            "location": "/database/overview/#case-sensitivity-through-like",
+            "text": "where like PostgreSQL case sensitive. -> apakah semua naming dilowercase kan saja? lalu transform waktu ditarik ke Web?",
+            "title": "Case sensitivity through LIKE"
         },
         {
             "location": "/database/mail/[Table]_Alias/",
@@ -122,13 +162,13 @@
         },
         {
             "location": "/database/mail/[Table]_External_Destination/",
-            "text": "[Table] External Destionation\n\n\nGeneral\n\n\n\n\n\n\n\n\nAttribute\n\n\nValue\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nTable Name\n\n\nexternal_destionations\n\n\nStore email addresses not hosted on Postfix\n\n\n\n\n\n\n\n\nProperties (Columns)\n\n\n\n\n\n\n\n\nProperty\n\n\nType\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nid\n\n\nint\n\n\nObject identifier\n\n\n\n\n\n\nalias_id\n\n\nint\n\n\nReference alias identifier\n\n\n\n\n\n\nexternal_email_address\n\n\nvarchar\n\n\nFull address of destination alias in form of  \nuser@domain.TLD\n\n\n\n\n\n\n\n\nRelationship\n\n\n\n\n\n\n\n\nModel\n\n\nProperty Connector\n\n\nType\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nAlias\n\n\nalias_id\n\n\nMany to One\n\n\nRefer to full alias configured in Postfix\n\n\n\n\n\n\n\n\nSQL Enforcing Feature\n\n\n\n\n\n\n\n\nFeature\n\n\nProperty\n\n\nSQL\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nPresence of Surrogate Key\n\n\nid\n\n\nPrimary Key, Not Null\n\n\n-\n\n\n\n\n\n\nPresence of Object\n\n\nalias_id\n,\nexternal_email_address\n\n\nNot Null\n\n\n-\n\n\n\n\n\n\nUniqueness of Object\n\n\nalias_id\n,\nexternal_email_address\n\n\nUnique\n\n\n-\n\n\n\n\n\n\nPresence of Parent Object\n\n\nalias_id\n\n\nForeign Key\n\n\n-\n\n\n\n\n\n\nObligation to have Parent Object\n\n\nalias_id\n\n\nNot Null\n\n\n-",
-            "title": "[Table] External Destionation"
+            "text": "[Table] External Destination\n\n\nGeneral\n\n\n\n\n\n\n\n\nAttribute\n\n\nValue\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nTable Name\n\n\nexternal_destionations\n\n\nStore email addresses not hosted on Postfix\n\n\n\n\n\n\n\n\nProperties (Columns)\n\n\n\n\n\n\n\n\nProperty\n\n\nType\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nid\n\n\nint\n\n\nObject identifier\n\n\n\n\n\n\nalias_id\n\n\nint\n\n\nReference alias identifier\n\n\n\n\n\n\nexternal_email_address\n\n\nvarchar\n\n\nFull address of destination alias in form of  \nuser@domain.TLD\n\n\n\n\n\n\n\n\nRelationship\n\n\n\n\n\n\n\n\nModel\n\n\nProperty Connector\n\n\nType\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nAlias\n\n\nalias_id\n\n\nMany to One\n\n\nRefer to full alias configured in Postfix\n\n\n\n\n\n\n\n\nSQL Enforcing Feature\n\n\n\n\n\n\n\n\nFeature\n\n\nProperty\n\n\nSQL\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nPresence of Surrogate Key\n\n\nid\n\n\nPrimary Key, Not Null\n\n\n-\n\n\n\n\n\n\nPresence of Object\n\n\nalias_id\n,\nexternal_email_address\n\n\nNot Null\n\n\n-\n\n\n\n\n\n\nUniqueness of Object\n\n\nalias_id\n,\nexternal_email_address\n\n\nUnique\n\n\n-\n\n\n\n\n\n\nPresence of Parent Object\n\n\nalias_id\n\n\nForeign Key\n\n\n-\n\n\n\n\n\n\nObligation to have Parent Object\n\n\nalias_id\n\n\nNot Null\n\n\n-",
+            "title": "[Table] External Destination"
         },
         {
-            "location": "/database/mail/[Table]_External_Destination/#table-external-destionation",
+            "location": "/database/mail/[Table]_External_Destination/#table-external-destination",
             "text": "",
-            "title": "[Table] External Destionation"
+            "title": "[Table] External Destination"
         },
         {
             "location": "/database/mail/[Table]_External_Destination/#general",
@@ -152,13 +192,13 @@
         },
         {
             "location": "/database/mail/[Table]_Internal_Destination/",
-            "text": "[Table] Internal Destionation\n\n\nGeneral\n\n\n\n\n\n\n\n\nAttribute\n\n\nValue\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nTable Name\n\n\ninternal_destionations\n\n\nStore email addresses hosted on Postfix\n\n\n\n\n\n\n\n\nProperties (Columns)\n\n\n\n\n\n\n\n\nProperty\n\n\nType\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nid\n\n\nint\n\n\nObject identifier\n\n\n\n\n\n\nalias_id\n\n\nint\n\n\nReference alias identifier\n\n\n\n\n\n\ninternal_mailbox_id\n\n\nint\n\n\nReference mailbox identifier\n\n\n\n\n\n\n\n\nRelationship\n\n\n\n\n\n\n\n\nModel\n\n\nProperty Connector\n\n\nType\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nAlias\n\n\nalias_id\n\n\nMany to One\n\n\nRefer to full alias configured in Postfix\n\n\n\n\n\n\nMailbox\n\n\ninternal_mailbox_id\n\n\nMany to One\n\n\nRefer to mailbox in Postfix\n\n\n\n\n\n\n\n\nSQL Enforcing Feature\n\n\n\n\n\n\n\n\nFeature\n\n\nProperty\n\n\nSQL\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nPresence of Surrogate Key\n\n\nid\n\n\nPrimary Key, Not Null\n\n\n-\n\n\n\n\n\n\nPresence of Object\n\n\nalias_id\n,\ninternal_mailbox_id\n\n\nNot Null\n\n\n-\n\n\n\n\n\n\nUniqueness of Object\n\n\nalias_id\n,\ninternal_mailbox_id\n\n\nUnique\n\n\n-\n\n\n\n\n\n\nPresence of Parent Object\n\n\nalias_id\n,\ninternal_mailbox_id\n\n\nForeign Key\n\n\n-\n\n\n\n\n\n\nObligation to have Parent Object\n\n\nalias_id\n,\ninternal_mailbox_id\n\n\nNot Null\n\n\n-",
-            "title": "[Table] Internal Destionation"
+            "text": "[Table] Internal Destination\n\n\nGeneral\n\n\n\n\n\n\n\n\nAttribute\n\n\nValue\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nTable Name\n\n\ninternal_destionations\n\n\nStore email addresses hosted on Postfix\n\n\n\n\n\n\n\n\nProperties (Columns)\n\n\n\n\n\n\n\n\nProperty\n\n\nType\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nid\n\n\nint\n\n\nObject identifier\n\n\n\n\n\n\nalias_id\n\n\nint\n\n\nReference alias identifier\n\n\n\n\n\n\ninternal_mailbox_id\n\n\nint\n\n\nReference mailbox identifier\n\n\n\n\n\n\n\n\nRelationship\n\n\n\n\n\n\n\n\nModel\n\n\nProperty Connector\n\n\nType\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nAlias\n\n\nalias_id\n\n\nMany to One\n\n\nRefer to full alias configured in Postfix\n\n\n\n\n\n\nMailbox\n\n\ninternal_mailbox_id\n\n\nMany to One\n\n\nRefer to mailbox in Postfix\n\n\n\n\n\n\n\n\nSQL Enforcing Feature\n\n\n\n\n\n\n\n\nFeature\n\n\nProperty\n\n\nSQL\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nPresence of Surrogate Key\n\n\nid\n\n\nPrimary Key, Not Null\n\n\n-\n\n\n\n\n\n\nPresence of Object\n\n\nalias_id\n,\ninternal_mailbox_id\n\n\nNot Null\n\n\n-\n\n\n\n\n\n\nUniqueness of Object\n\n\nalias_id\n,\ninternal_mailbox_id\n\n\nUnique\n\n\n-\n\n\n\n\n\n\nPresence of Parent Object\n\n\nalias_id\n,\ninternal_mailbox_id\n\n\nForeign Key\n\n\n-\n\n\n\n\n\n\nObligation to have Parent Object\n\n\nalias_id\n,\ninternal_mailbox_id\n\n\nNot Null\n\n\n-",
+            "title": "[Table] Internal Destination"
         },
         {
-            "location": "/database/mail/[Table]_Internal_Destination/#table-internal-destionation",
+            "location": "/database/mail/[Table]_Internal_Destination/#table-internal-destination",
             "text": "",
-            "title": "[Table] Internal Destionation"
+            "title": "[Table] Internal Destination"
         },
         {
             "location": "/database/mail/[Table]_Internal_Destination/#general",

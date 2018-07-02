@@ -20,13 +20,13 @@
     
         
     <url>
-     <loc>/database/</loc>
+     <loc>/database/convention/</loc>
      <lastmod>2018-07-02</lastmod>
      <changefreq>daily</changefreq>
     </url>
         
     <url>
-     <loc>/database/index2/</loc>
+     <loc>/database/overview/</loc>
      <lastmod>2018-07-02</lastmod>
      <changefreq>daily</changefreq>
     </url>
