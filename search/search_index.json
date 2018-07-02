@@ -1,398 +1,448 @@
 {
     "docs": [
         {
-            "location": "/", 
-            "text": "Documentation Overview\n\n\nDokumentasi ini terbagi menjadi 2 bagian:\n\n\n\n\nStruktur Database\n\n\nAlgoritma Aplikasi", 
+            "location": "/",
+            "text": "Documentation Overview\n\n\nDokumentasi ini terbagi menjadi 2 bagian:\n\n\n\n\nStruktur Database\n\n\nAlgoritma Aplikasi",
             "title": "Documentation Overview"
-        }, 
+        },
         {
-            "location": "/#documentation-overview", 
-            "text": "Dokumentasi ini terbagi menjadi 2 bagian:   Struktur Database  Algoritma Aplikasi", 
+            "location": "/#documentation-overview",
+            "text": "Dokumentasi ini terbagi menjadi 2 bagian:   Struktur Database  Algoritma Aplikasi",
             "title": "Documentation Overview"
-        }, 
+        },
         {
-            "location": "/database/", 
-            "text": "Overview\n\n\nON CASCADE DELETE \n\nSecara umum tidak ada proses penghapusan untuk tiap baris, apabila ada kebutuhan, boleh dipertimbangkan untuk ada asal ada kemampuan untuk mempertahankan backup berkala.\n\n\nON CASCADE UPDATE \n\nSecara umum tidak perlu ada update atas nilai PK, karena PK memakai surrogate key.\n\n\nwhere like PostgreSQL case sensitive. -\n apakah semua naming dilowercase kan saja? lalu transform waktu ditarik ke Web?", 
+            "location": "/meta/",
+            "text": "Meta\n\n\nMendirikan kembali lingkungan kerja MkDocs\n\n\nBerikut langkah mendirikan ulang lingkungan kerja MkDocs dalam rangka mengelola dokumentasi.\n\n\nKebutuhannya adalah Python, pip, mkdocs, dan mkdocs-material. Yang terakhir adalah theme yang dipakai saat ini.\n\n\n\n\nInstall \npython\n\n\nInstall \npip\n\n\nInstall \nmkdocs\n\n\nInstall \nmkdocs-material\n\n\n\n\nTBD\nscript dnf/yum untuk install python\n\n\n\n\nPengoperasian MkDocs\n\n\nPratinjau Langsung\n\n\nJalankan \n$ mkdocs serve\n di folder pangkal proyek.\n\n\nUnggah ke GitHub Pages\n\n\nJalankan \n$ mkdocs gh-deploy\n di folder pangkal proyek.",
+            "title": "Meta"
+        },
+        {
+            "location": "/meta/#meta",
+            "text": "",
+            "title": "Meta"
+        },
+        {
+            "location": "/meta/#mendirikan-kembali-lingkungan-kerja-mkdocs",
+            "text": "Berikut langkah mendirikan ulang lingkungan kerja MkDocs dalam rangka mengelola dokumentasi.  Kebutuhannya adalah Python, pip, mkdocs, dan mkdocs-material. Yang terakhir adalah theme yang dipakai saat ini.   Install  python  Install  pip  Install  mkdocs  Install  mkdocs-material   TBD\nscript dnf/yum untuk install python",
+            "title": "Mendirikan kembali lingkungan kerja MkDocs"
+        },
+        {
+            "location": "/meta/#pengoperasian-mkdocs",
+            "text": "",
+            "title": "Pengoperasian MkDocs"
+        },
+        {
+            "location": "/meta/#pratinjau-langsung",
+            "text": "Jalankan  $ mkdocs serve  di folder pangkal proyek.",
+            "title": "Pratinjau Langsung"
+        },
+        {
+            "location": "/meta/#unggah-ke-github-pages",
+            "text": "Jalankan  $ mkdocs gh-deploy  di folder pangkal proyek.",
+            "title": "Unggah ke GitHub Pages"
+        },
+        {
+            "location": "/database/",
+            "text": "Overview\n\n\nON CASCADE DELETE \n\nSecara umum tidak ada proses penghapusan untuk tiap baris, apabila ada kebutuhan, boleh dipertimbangkan untuk ada asal ada kemampuan untuk mempertahankan backup berkala.\n\n\nON CASCADE UPDATE \n\nSecara umum tidak perlu ada update atas nilai PK, karena PK memakai surrogate key.\n\n\nwhere like PostgreSQL case sensitive. -> apakah semua naming dilowercase kan saja? lalu transform waktu ditarik ke Web?",
             "title": "Overview"
-        }, 
+        },
         {
-            "location": "/database/#overview", 
-            "text": "ON CASCADE DELETE  \nSecara umum tidak ada proses penghapusan untuk tiap baris, apabila ada kebutuhan, boleh dipertimbangkan untuk ada asal ada kemampuan untuk mempertahankan backup berkala.  ON CASCADE UPDATE  \nSecara umum tidak perlu ada update atas nilai PK, karena PK memakai surrogate key.  where like PostgreSQL case sensitive. -  apakah semua naming dilowercase kan saja? lalu transform waktu ditarik ke Web?", 
+            "location": "/database/#overview",
+            "text": "ON CASCADE DELETE  \nSecara umum tidak ada proses penghapusan untuk tiap baris, apabila ada kebutuhan, boleh dipertimbangkan untuk ada asal ada kemampuan untuk mempertahankan backup berkala.  ON CASCADE UPDATE  \nSecara umum tidak perlu ada update atas nilai PK, karena PK memakai surrogate key.  where like PostgreSQL case sensitive. -> apakah semua naming dilowercase kan saja? lalu transform waktu ditarik ke Web?",
             "title": "Overview"
-        }, 
+        },
         {
-            "location": "/database/index2/", 
-            "text": "Postfix Mail Database", 
+            "location": "/database/index2/",
+            "text": "Postfix Mail Database",
             "title": "Postfix Mail Database"
-        }, 
+        },
         {
-            "location": "/database/index2/#postfix-mail-database", 
-            "text": "", 
+            "location": "/database/index2/#postfix-mail-database",
+            "text": "",
             "title": "Postfix Mail Database"
-        }, 
+        },
         {
-            "location": "/database/mail/[Table]_Alias/", 
-            "text": "[Table] Alias\n\n\nGeneral\n\n\n\n\n\n\n\n\nAttribute\n\n\nValue\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nTable Name\n\n\naliases\n\n\nStore aliases\n\n\n\n\n\n\n\n\nProperties (Columns)\n\n\n\n\n\n\n\n\nProperty\n\n\nType\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nid\n\n\nint\n\n\nObject identifier\n\n\n\n\n\n\ndomain_id\n\n\nint\n\n\nReference domain identifier\n\n\n\n\n\n\nuser\n\n\nvarchar\n\n\nLocal portion of the alias, e.g. \nuser@domain.TLD\n\n\n\n\n\n\n\n\nRelationship\n\n\n\n\n\n\n\n\nObject\n\n\nProperty Connector\n\n\nType\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nDomain\n\n\ndomain_id\n\n\nMany to One\n\n\nRefer to \ndomain.TLD\n part of any accepted domains in Postfix\n\n\n\n\n\n\n\n\nSQL Enforcing Feature\n\n\n\n\n\n\n\n\nFeature\n\n\nProperty\n\n\nSQL\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nPresence of Surrogate Key\n\n\nid\n\n\nPrimary Key, Not Null\n\n\n-\n\n\n\n\n\n\nPresence of Object\n\n\nuser\n\n\nNot Null\n\n\n-\n\n\n\n\n\n\nUniqueness of Object\n\n\nuser\n,\ndomain_id\n\n\nUnique\n\n\n-\n\n\n\n\n\n\nPresence of Parent Object\n\n\ndomain_id\n\n\nForeign Key, Not Null\n\n\n-", 
+            "location": "/database/mail/[Table]_Alias/",
+            "text": "[Table] Alias\n\n\nGeneral\n\n\n\n\n\n\n\n\nAttribute\n\n\nValue\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nTable Name\n\n\naliases\n\n\nStore aliases\n\n\n\n\n\n\n\n\nProperties (Columns)\n\n\n\n\n\n\n\n\nProperty\n\n\nType\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nid\n\n\nint\n\n\nObject identifier\n\n\n\n\n\n\ndomain_id\n\n\nint\n\n\nReference domain identifier\n\n\n\n\n\n\nuser\n\n\nvarchar\n\n\nLocal portion of the alias, e.g. \nuser@domain.TLD\n\n\n\n\n\n\n\n\nRelationship\n\n\n\n\n\n\n\n\nObject\n\n\nProperty Connector\n\n\nType\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nDomain\n\n\ndomain_id\n\n\nMany to One\n\n\nRefer to \ndomain.TLD\n part of any accepted domains in Postfix\n\n\n\n\n\n\n\n\nSQL Enforcing Feature\n\n\n\n\n\n\n\n\nFeature\n\n\nProperty\n\n\nSQL\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nPresence of Surrogate Key\n\n\nid\n\n\nPrimary Key, Not Null\n\n\n-\n\n\n\n\n\n\nPresence of Object\n\n\nuser\n\n\nNot Null\n\n\n-\n\n\n\n\n\n\nUniqueness of Object\n\n\nuser\n,\ndomain_id\n\n\nUnique\n\n\n-\n\n\n\n\n\n\nPresence of Parent Object\n\n\ndomain_id\n\n\nForeign Key, Not Null\n\n\n-",
             "title": "[Table] Alias"
-        }, 
+        },
         {
-            "location": "/database/mail/[Table]_Alias/#table-alias", 
-            "text": "", 
+            "location": "/database/mail/[Table]_Alias/#table-alias",
+            "text": "",
             "title": "[Table] Alias"
-        }, 
+        },
         {
-            "location": "/database/mail/[Table]_Alias/#general", 
-            "text": "Attribute  Value  Description      Table Name  aliases  Store aliases", 
+            "location": "/database/mail/[Table]_Alias/#general",
+            "text": "Attribute  Value  Description      Table Name  aliases  Store aliases",
             "title": "General"
-        }, 
+        },
         {
-            "location": "/database/mail/[Table]_Alias/#properties-columns", 
-            "text": "Property  Type  Description      id  int  Object identifier    domain_id  int  Reference domain identifier    user  varchar  Local portion of the alias, e.g.  user@domain.TLD", 
+            "location": "/database/mail/[Table]_Alias/#properties-columns",
+            "text": "Property  Type  Description      id  int  Object identifier    domain_id  int  Reference domain identifier    user  varchar  Local portion of the alias, e.g.  user@domain.TLD",
             "title": "Properties (Columns)"
-        }, 
+        },
         {
-            "location": "/database/mail/[Table]_Alias/#relationship", 
-            "text": "Object  Property Connector  Type  Description      Domain  domain_id  Many to One  Refer to  domain.TLD  part of any accepted domains in Postfix", 
+            "location": "/database/mail/[Table]_Alias/#relationship",
+            "text": "Object  Property Connector  Type  Description      Domain  domain_id  Many to One  Refer to  domain.TLD  part of any accepted domains in Postfix",
             "title": "Relationship"
-        }, 
+        },
         {
-            "location": "/database/mail/[Table]_Alias/#sql-enforcing-feature", 
-            "text": "Feature  Property  SQL  Description      Presence of Surrogate Key  id  Primary Key, Not Null  -    Presence of Object  user  Not Null  -    Uniqueness of Object  user , domain_id  Unique  -    Presence of Parent Object  domain_id  Foreign Key, Not Null  -", 
+            "location": "/database/mail/[Table]_Alias/#sql-enforcing-feature",
+            "text": "Feature  Property  SQL  Description      Presence of Surrogate Key  id  Primary Key, Not Null  -    Presence of Object  user  Not Null  -    Uniqueness of Object  user , domain_id  Unique  -    Presence of Parent Object  domain_id  Foreign Key, Not Null  -",
             "title": "SQL Enforcing Feature"
-        }, 
+        },
         {
-            "location": "/database/mail/[Table]_Domain/", 
-            "text": "[Table] Domain\n\n\nGeneral\n\n\n\n\n\n\n\n\nAttribute\n\n\nValue\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nTable Name\n\n\ndomains\n\n\nStore domains\n\n\n\n\n\n\n\n\nProperties (Columns)\n\n\n\n\n\n\n\n\nProperty\n\n\nType\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nid\n\n\nint\n\n\nObject identifier\n\n\n\n\n\n\ndomain\n\n\nvarchar\n\n\nDomain name after the \n@\n sign, e.g. \nuser@domain.TLD\n\n\n\n\n\n\ncatch_all_mailbox_id\n\n\nvarchar\n\n\nReference mailbox identifier\n\n\n\n\n\n\nalias_for\n\n\nint\n\n\nReference domain identifier\n\n\n\n\n\n\n\n\nRelationship\n\n\n\n\n\n\n\n\nModel\n\n\nProperty Connector\n\n\nType\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nMailbox\n\n\ncatch_all_mailbox_id\n\n\nMany to Zero\n\n\nRefer to existing mailbox which can accept mail in Postfix that acts as a catch all Mailbox, if not null it means this domain has catch all address\n\n\n\n\n\n\nDomain (self)\n\n\nalias_for\n\n\nMany to Zero\n\n\nRefer to existing domain for which this domain is an alias\n\n\n\n\n\n\n\n\nSQL Enforcing Feature\n\n\n\n\n\n\n\n\nFeature\n\n\nProperty\n\n\nSQL\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nPresence of Surrogate Key\n\n\nid\n\n\nPrimary Key, Not Null\n\n\n-\n\n\n\n\n\n\nPresence of Object\n\n\ndomain\n\n\nNot Null\n\n\n-\n\n\n\n\n\n\nUniqueness of Object\n\n\ndomain\n\n\nUnique\n\n\n-\n\n\n\n\n\n\nPresence of Parent Object\n\n\ncatch_all_mailbox_id\n\n\nForeign Key\n\n\n-\n\n\n\n\n\n\nObligation to have Parent Object\n\n\ncatch_all_mailbox_id\n\n\nAllow Null\n\n\n-\n\n\n\n\n\n\nPresence of Parent Object\n\n\nalias_for\n\n\nForeign Key, Allow Null\n\n\n-\n\n\n\n\n\n\nObligation to have Parent Object\n\n\nalias_for\n\n\nAllow Null\n\n\n-", 
+            "location": "/database/mail/[Table]_Domain/",
+            "text": "[Table] Domain\n\n\nGeneral\n\n\n\n\n\n\n\n\nAttribute\n\n\nValue\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nTable Name\n\n\ndomains\n\n\nStore domains\n\n\n\n\n\n\n\n\nProperties (Columns)\n\n\n\n\n\n\n\n\nProperty\n\n\nType\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nid\n\n\nint\n\n\nObject identifier\n\n\n\n\n\n\ndomain\n\n\nvarchar\n\n\nDomain name after the \n@\n sign, e.g. \nuser@domain.TLD\n\n\n\n\n\n\ncatch_all_mailbox_id\n\n\nvarchar\n\n\nReference mailbox identifier\n\n\n\n\n\n\nalias_for\n\n\nint\n\n\nReference domain identifier\n\n\n\n\n\n\n\n\nRelationship\n\n\n\n\n\n\n\n\nModel\n\n\nProperty Connector\n\n\nType\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nMailbox\n\n\ncatch_all_mailbox_id\n\n\nMany to Zero\n\n\nRefer to existing mailbox which can accept mail in Postfix that acts as a catch all Mailbox, if not null it means this domain has catch all address\n\n\n\n\n\n\nDomain (self)\n\n\nalias_for\n\n\nMany to Zero\n\n\nRefer to existing domain for which this domain is an alias\n\n\n\n\n\n\n\n\nSQL Enforcing Feature\n\n\n\n\n\n\n\n\nFeature\n\n\nProperty\n\n\nSQL\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nPresence of Surrogate Key\n\n\nid\n\n\nPrimary Key, Not Null\n\n\n-\n\n\n\n\n\n\nPresence of Object\n\n\ndomain\n\n\nNot Null\n\n\n-\n\n\n\n\n\n\nUniqueness of Object\n\n\ndomain\n\n\nUnique\n\n\n-\n\n\n\n\n\n\nPresence of Parent Object\n\n\ncatch_all_mailbox_id\n\n\nForeign Key\n\n\n-\n\n\n\n\n\n\nObligation to have Parent Object\n\n\ncatch_all_mailbox_id\n\n\nAllow Null\n\n\n-\n\n\n\n\n\n\nPresence of Parent Object\n\n\nalias_for\n\n\nForeign Key, Allow Null\n\n\n-\n\n\n\n\n\n\nObligation to have Parent Object\n\n\nalias_for\n\n\nAllow Null\n\n\n-",
             "title": "[Table] Domain"
-        }, 
+        },
         {
-            "location": "/database/mail/[Table]_Domain/#table-domain", 
-            "text": "", 
+            "location": "/database/mail/[Table]_Domain/#table-domain",
+            "text": "",
             "title": "[Table] Domain"
-        }, 
+        },
         {
-            "location": "/database/mail/[Table]_Domain/#general", 
-            "text": "Attribute  Value  Description      Table Name  domains  Store domains", 
+            "location": "/database/mail/[Table]_Domain/#general",
+            "text": "Attribute  Value  Description      Table Name  domains  Store domains",
             "title": "General"
-        }, 
+        },
         {
-            "location": "/database/mail/[Table]_Domain/#properties-columns", 
-            "text": "Property  Type  Description      id  int  Object identifier    domain  varchar  Domain name after the  @  sign, e.g.  user@domain.TLD    catch_all_mailbox_id  varchar  Reference mailbox identifier    alias_for  int  Reference domain identifier", 
+            "location": "/database/mail/[Table]_Domain/#properties-columns",
+            "text": "Property  Type  Description      id  int  Object identifier    domain  varchar  Domain name after the  @  sign, e.g.  user@domain.TLD    catch_all_mailbox_id  varchar  Reference mailbox identifier    alias_for  int  Reference domain identifier",
             "title": "Properties (Columns)"
-        }, 
+        },
         {
-            "location": "/database/mail/[Table]_Domain/#relationship", 
-            "text": "Model  Property Connector  Type  Description      Mailbox  catch_all_mailbox_id  Many to Zero  Refer to existing mailbox which can accept mail in Postfix that acts as a catch all Mailbox, if not null it means this domain has catch all address    Domain (self)  alias_for  Many to Zero  Refer to existing domain for which this domain is an alias", 
+            "location": "/database/mail/[Table]_Domain/#relationship",
+            "text": "Model  Property Connector  Type  Description      Mailbox  catch_all_mailbox_id  Many to Zero  Refer to existing mailbox which can accept mail in Postfix that acts as a catch all Mailbox, if not null it means this domain has catch all address    Domain (self)  alias_for  Many to Zero  Refer to existing domain for which this domain is an alias",
             "title": "Relationship"
-        }, 
+        },
         {
-            "location": "/database/mail/[Table]_Domain/#sql-enforcing-feature", 
-            "text": "Feature  Property  SQL  Description      Presence of Surrogate Key  id  Primary Key, Not Null  -    Presence of Object  domain  Not Null  -    Uniqueness of Object  domain  Unique  -    Presence of Parent Object  catch_all_mailbox_id  Foreign Key  -    Obligation to have Parent Object  catch_all_mailbox_id  Allow Null  -    Presence of Parent Object  alias_for  Foreign Key, Allow Null  -    Obligation to have Parent Object  alias_for  Allow Null  -", 
+            "location": "/database/mail/[Table]_Domain/#sql-enforcing-feature",
+            "text": "Feature  Property  SQL  Description      Presence of Surrogate Key  id  Primary Key, Not Null  -    Presence of Object  domain  Not Null  -    Uniqueness of Object  domain  Unique  -    Presence of Parent Object  catch_all_mailbox_id  Foreign Key  -    Obligation to have Parent Object  catch_all_mailbox_id  Allow Null  -    Presence of Parent Object  alias_for  Foreign Key, Allow Null  -    Obligation to have Parent Object  alias_for  Allow Null  -",
             "title": "SQL Enforcing Feature"
-        }, 
+        },
         {
-            "location": "/database/mail/[Table]_External_Destination/", 
-            "text": "[Table] External Destionation\n\n\nGeneral\n\n\n\n\n\n\n\n\nAttribute\n\n\nValue\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nTable Name\n\n\nexternal_destionations\n\n\nStore email addresses not hosted on Postfix\n\n\n\n\n\n\n\n\nProperties (Columns)\n\n\n\n\n\n\n\n\nProperty\n\n\nType\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nid\n\n\nint\n\n\nObject identifier\n\n\n\n\n\n\nalias_id\n\n\nint\n\n\nReference alias identifier\n\n\n\n\n\n\nexternal_email_address\n\n\nvarchar\n\n\nFull address of destination alias in form of  \nuser@domain.TLD\n\n\n\n\n\n\n\n\nRelationship\n\n\n\n\n\n\n\n\nModel\n\n\nProperty Connector\n\n\nType\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nAlias\n\n\nalias_id\n\n\nMany to One\n\n\nRefer to full alias configured in Postfix\n\n\n\n\n\n\n\n\nSQL Enforcing Feature\n\n\n\n\n\n\n\n\nFeature\n\n\nProperty\n\n\nSQL\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nPresence of Surrogate Key\n\n\nid\n\n\nPrimary Key, Not Null\n\n\n-\n\n\n\n\n\n\nPresence of Object\n\n\nalias_id\n,\nexternal_email_address\n\n\nNot Null\n\n\n-\n\n\n\n\n\n\nUniqueness of Object\n\n\nalias_id\n,\nexternal_email_address\n\n\nUnique\n\n\n-\n\n\n\n\n\n\nPresence of Parent Object\n\n\nalias_id\n\n\nForeign Key\n\n\n-\n\n\n\n\n\n\nObligation to have Parent Object\n\n\nalias_id\n\n\nNot Null\n\n\n-", 
+            "location": "/database/mail/[Table]_External_Destination/",
+            "text": "[Table] External Destionation\n\n\nGeneral\n\n\n\n\n\n\n\n\nAttribute\n\n\nValue\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nTable Name\n\n\nexternal_destionations\n\n\nStore email addresses not hosted on Postfix\n\n\n\n\n\n\n\n\nProperties (Columns)\n\n\n\n\n\n\n\n\nProperty\n\n\nType\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nid\n\n\nint\n\n\nObject identifier\n\n\n\n\n\n\nalias_id\n\n\nint\n\n\nReference alias identifier\n\n\n\n\n\n\nexternal_email_address\n\n\nvarchar\n\n\nFull address of destination alias in form of  \nuser@domain.TLD\n\n\n\n\n\n\n\n\nRelationship\n\n\n\n\n\n\n\n\nModel\n\n\nProperty Connector\n\n\nType\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nAlias\n\n\nalias_id\n\n\nMany to One\n\n\nRefer to full alias configured in Postfix\n\n\n\n\n\n\n\n\nSQL Enforcing Feature\n\n\n\n\n\n\n\n\nFeature\n\n\nProperty\n\n\nSQL\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nPresence of Surrogate Key\n\n\nid\n\n\nPrimary Key, Not Null\n\n\n-\n\n\n\n\n\n\nPresence of Object\n\n\nalias_id\n,\nexternal_email_address\n\n\nNot Null\n\n\n-\n\n\n\n\n\n\nUniqueness of Object\n\n\nalias_id\n,\nexternal_email_address\n\n\nUnique\n\n\n-\n\n\n\n\n\n\nPresence of Parent Object\n\n\nalias_id\n\n\nForeign Key\n\n\n-\n\n\n\n\n\n\nObligation to have Parent Object\n\n\nalias_id\n\n\nNot Null\n\n\n-",
             "title": "[Table] External Destionation"
-        }, 
+        },
         {
-            "location": "/database/mail/[Table]_External_Destination/#table-external-destionation", 
-            "text": "", 
+            "location": "/database/mail/[Table]_External_Destination/#table-external-destionation",
+            "text": "",
             "title": "[Table] External Destionation"
-        }, 
+        },
         {
-            "location": "/database/mail/[Table]_External_Destination/#general", 
-            "text": "Attribute  Value  Description      Table Name  external_destionations  Store email addresses not hosted on Postfix", 
+            "location": "/database/mail/[Table]_External_Destination/#general",
+            "text": "Attribute  Value  Description      Table Name  external_destionations  Store email addresses not hosted on Postfix",
             "title": "General"
-        }, 
+        },
         {
-            "location": "/database/mail/[Table]_External_Destination/#properties-columns", 
-            "text": "Property  Type  Description      id  int  Object identifier    alias_id  int  Reference alias identifier    external_email_address  varchar  Full address of destination alias in form of   user@domain.TLD", 
+            "location": "/database/mail/[Table]_External_Destination/#properties-columns",
+            "text": "Property  Type  Description      id  int  Object identifier    alias_id  int  Reference alias identifier    external_email_address  varchar  Full address of destination alias in form of   user@domain.TLD",
             "title": "Properties (Columns)"
-        }, 
+        },
         {
-            "location": "/database/mail/[Table]_External_Destination/#relationship", 
-            "text": "Model  Property Connector  Type  Description      Alias  alias_id  Many to One  Refer to full alias configured in Postfix", 
+            "location": "/database/mail/[Table]_External_Destination/#relationship",
+            "text": "Model  Property Connector  Type  Description      Alias  alias_id  Many to One  Refer to full alias configured in Postfix",
             "title": "Relationship"
-        }, 
+        },
         {
-            "location": "/database/mail/[Table]_External_Destination/#sql-enforcing-feature", 
-            "text": "Feature  Property  SQL  Description      Presence of Surrogate Key  id  Primary Key, Not Null  -    Presence of Object  alias_id , external_email_address  Not Null  -    Uniqueness of Object  alias_id , external_email_address  Unique  -    Presence of Parent Object  alias_id  Foreign Key  -    Obligation to have Parent Object  alias_id  Not Null  -", 
+            "location": "/database/mail/[Table]_External_Destination/#sql-enforcing-feature",
+            "text": "Feature  Property  SQL  Description      Presence of Surrogate Key  id  Primary Key, Not Null  -    Presence of Object  alias_id , external_email_address  Not Null  -    Uniqueness of Object  alias_id , external_email_address  Unique  -    Presence of Parent Object  alias_id  Foreign Key  -    Obligation to have Parent Object  alias_id  Not Null  -",
             "title": "SQL Enforcing Feature"
-        }, 
+        },
         {
-            "location": "/database/mail/[Table]_Internal_Destination/", 
-            "text": "[Table] Internal Destionation\n\n\nGeneral\n\n\n\n\n\n\n\n\nAttribute\n\n\nValue\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nTable Name\n\n\ninternal_destionations\n\n\nStore email addresses hosted on Postfix\n\n\n\n\n\n\n\n\nProperties (Columns)\n\n\n\n\n\n\n\n\nProperty\n\n\nType\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nid\n\n\nint\n\n\nObject identifier\n\n\n\n\n\n\nalias_id\n\n\nint\n\n\nReference alias identifier\n\n\n\n\n\n\ninternal_mailbox_id\n\n\nint\n\n\nReference mailbox identifier\n\n\n\n\n\n\n\n\nRelationship\n\n\n\n\n\n\n\n\nModel\n\n\nProperty Connector\n\n\nType\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nAlias\n\n\nalias_id\n\n\nMany to One\n\n\nRefer to full alias configured in Postfix\n\n\n\n\n\n\nMailbox\n\n\ninternal_mailbox_id\n\n\nMany to One\n\n\nRefer to mailbox in Postfix\n\n\n\n\n\n\n\n\nSQL Enforcing Feature\n\n\n\n\n\n\n\n\nFeature\n\n\nProperty\n\n\nSQL\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nPresence of Surrogate Key\n\n\nid\n\n\nPrimary Key, Not Null\n\n\n-\n\n\n\n\n\n\nPresence of Object\n\n\nalias_id\n,\ninternal_mailbox_id\n\n\nNot Null\n\n\n-\n\n\n\n\n\n\nUniqueness of Object\n\n\nalias_id\n,\ninternal_mailbox_id\n\n\nUnique\n\n\n-\n\n\n\n\n\n\nPresence of Parent Object\n\n\nalias_id\n,\ninternal_mailbox_id\n\n\nForeign Key\n\n\n-\n\n\n\n\n\n\nObligation to have Parent Object\n\n\nalias_id\n,\ninternal_mailbox_id\n\n\nNot Null\n\n\n-", 
+            "location": "/database/mail/[Table]_Internal_Destination/",
+            "text": "[Table] Internal Destionation\n\n\nGeneral\n\n\n\n\n\n\n\n\nAttribute\n\n\nValue\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nTable Name\n\n\ninternal_destionations\n\n\nStore email addresses hosted on Postfix\n\n\n\n\n\n\n\n\nProperties (Columns)\n\n\n\n\n\n\n\n\nProperty\n\n\nType\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nid\n\n\nint\n\n\nObject identifier\n\n\n\n\n\n\nalias_id\n\n\nint\n\n\nReference alias identifier\n\n\n\n\n\n\ninternal_mailbox_id\n\n\nint\n\n\nReference mailbox identifier\n\n\n\n\n\n\n\n\nRelationship\n\n\n\n\n\n\n\n\nModel\n\n\nProperty Connector\n\n\nType\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nAlias\n\n\nalias_id\n\n\nMany to One\n\n\nRefer to full alias configured in Postfix\n\n\n\n\n\n\nMailbox\n\n\ninternal_mailbox_id\n\n\nMany to One\n\n\nRefer to mailbox in Postfix\n\n\n\n\n\n\n\n\nSQL Enforcing Feature\n\n\n\n\n\n\n\n\nFeature\n\n\nProperty\n\n\nSQL\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nPresence of Surrogate Key\n\n\nid\n\n\nPrimary Key, Not Null\n\n\n-\n\n\n\n\n\n\nPresence of Object\n\n\nalias_id\n,\ninternal_mailbox_id\n\n\nNot Null\n\n\n-\n\n\n\n\n\n\nUniqueness of Object\n\n\nalias_id\n,\ninternal_mailbox_id\n\n\nUnique\n\n\n-\n\n\n\n\n\n\nPresence of Parent Object\n\n\nalias_id\n,\ninternal_mailbox_id\n\n\nForeign Key\n\n\n-\n\n\n\n\n\n\nObligation to have Parent Object\n\n\nalias_id\n,\ninternal_mailbox_id\n\n\nNot Null\n\n\n-",
             "title": "[Table] Internal Destionation"
-        }, 
+        },
         {
-            "location": "/database/mail/[Table]_Internal_Destination/#table-internal-destionation", 
-            "text": "", 
+            "location": "/database/mail/[Table]_Internal_Destination/#table-internal-destionation",
+            "text": "",
             "title": "[Table] Internal Destionation"
-        }, 
+        },
         {
-            "location": "/database/mail/[Table]_Internal_Destination/#general", 
-            "text": "Attribute  Value  Description      Table Name  internal_destionations  Store email addresses hosted on Postfix", 
+            "location": "/database/mail/[Table]_Internal_Destination/#general",
+            "text": "Attribute  Value  Description      Table Name  internal_destionations  Store email addresses hosted on Postfix",
             "title": "General"
-        }, 
+        },
         {
-            "location": "/database/mail/[Table]_Internal_Destination/#properties-columns", 
-            "text": "Property  Type  Description      id  int  Object identifier    alias_id  int  Reference alias identifier    internal_mailbox_id  int  Reference mailbox identifier", 
+            "location": "/database/mail/[Table]_Internal_Destination/#properties-columns",
+            "text": "Property  Type  Description      id  int  Object identifier    alias_id  int  Reference alias identifier    internal_mailbox_id  int  Reference mailbox identifier",
             "title": "Properties (Columns)"
-        }, 
+        },
         {
-            "location": "/database/mail/[Table]_Internal_Destination/#relationship", 
-            "text": "Model  Property Connector  Type  Description      Alias  alias_id  Many to One  Refer to full alias configured in Postfix    Mailbox  internal_mailbox_id  Many to One  Refer to mailbox in Postfix", 
+            "location": "/database/mail/[Table]_Internal_Destination/#relationship",
+            "text": "Model  Property Connector  Type  Description      Alias  alias_id  Many to One  Refer to full alias configured in Postfix    Mailbox  internal_mailbox_id  Many to One  Refer to mailbox in Postfix",
             "title": "Relationship"
-        }, 
+        },
         {
-            "location": "/database/mail/[Table]_Internal_Destination/#sql-enforcing-feature", 
-            "text": "Feature  Property  SQL  Description      Presence of Surrogate Key  id  Primary Key, Not Null  -    Presence of Object  alias_id , internal_mailbox_id  Not Null  -    Uniqueness of Object  alias_id , internal_mailbox_id  Unique  -    Presence of Parent Object  alias_id , internal_mailbox_id  Foreign Key  -    Obligation to have Parent Object  alias_id , internal_mailbox_id  Not Null  -", 
+            "location": "/database/mail/[Table]_Internal_Destination/#sql-enforcing-feature",
+            "text": "Feature  Property  SQL  Description      Presence of Surrogate Key  id  Primary Key, Not Null  -    Presence of Object  alias_id , internal_mailbox_id  Not Null  -    Uniqueness of Object  alias_id , internal_mailbox_id  Unique  -    Presence of Parent Object  alias_id , internal_mailbox_id  Foreign Key  -    Obligation to have Parent Object  alias_id , internal_mailbox_id  Not Null  -",
             "title": "SQL Enforcing Feature"
-        }, 
+        },
         {
-            "location": "/database/mail/[Table]_Mailbox/", 
-            "text": "[Table] Mailbox\n\n\nGeneral\n\n\n\n\n\n\n\n\nAttribute\n\n\nValue\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nTable Name\n\n\nmailboxes\n\n\nStore mailboxes\n\n\n\n\n\n\n\n\nProperties (Columns)\n\n\n\n\n\n\n\n\nProperty\n\n\nType\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nid\n\n\nint\n\n\nObject identifier\n\n\n\n\n\n\ndomain_id\n\n\nint\n\n\nReference domain identifier\n\n\n\n\n\n\nuser\n\n\nvarchar\n\n\nLocal portion of the alias, e.g. \nuser@domain.TLD\n\n\n\n\n\n\npassword\n\n\nvarchar\n\n\nSHA512 of user password\n\n\n\n\n\n\n\n\nRelationship\n\n\n\n\n\n\n\n\nModel\n\n\nProperty Connector\n\n\nType\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nDomain\n\n\ndomain_id\n\n\nMany to One\n\n\nRefer to \ndomain.TLD\n part of any accepted domains in Postfix\n\n\n\n\n\n\n\n\nSQL Enforcing Feature\n\n\n\n\n\n\n\n\nFeature\n\n\nProperty\n\n\nSQL\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nPresence of Surrogate Key\n\n\nid\n\n\nPrimary Key, Not Null\n\n\n-\n\n\n\n\n\n\nPresence of Object\n\n\ndomain_id\n,\nuser\n\n\nNot Null\n\n\n-\n\n\n\n\n\n\nUniqueness of Object\n\n\ndomain_id\n,\nuser\n\n\nUnique\n\n\n-\n\n\n\n\n\n\nPresence of Parent Object\n\n\ndomain_id\n\n\nForeign Key\n\n\n-\n\n\n\n\n\n\nObligation to have Parent Object\n\n\ndomain_id\n\n\nNot Null\n\n\n-", 
+            "location": "/database/mail/[Table]_Mailbox/",
+            "text": "[Table] Mailbox\n\n\nGeneral\n\n\n\n\n\n\n\n\nAttribute\n\n\nValue\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nTable Name\n\n\nmailboxes\n\n\nStore mailboxes\n\n\n\n\n\n\n\n\nProperties (Columns)\n\n\n\n\n\n\n\n\nProperty\n\n\nType\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nid\n\n\nint\n\n\nObject identifier\n\n\n\n\n\n\ndomain_id\n\n\nint\n\n\nReference domain identifier\n\n\n\n\n\n\nuser\n\n\nvarchar\n\n\nLocal portion of the alias, e.g. \nuser@domain.TLD\n\n\n\n\n\n\npassword\n\n\nvarchar\n\n\nSHA512 of user password\n\n\n\n\n\n\n\n\nRelationship\n\n\n\n\n\n\n\n\nModel\n\n\nProperty Connector\n\n\nType\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nDomain\n\n\ndomain_id\n\n\nMany to One\n\n\nRefer to \ndomain.TLD\n part of any accepted domains in Postfix\n\n\n\n\n\n\n\n\nSQL Enforcing Feature\n\n\n\n\n\n\n\n\nFeature\n\n\nProperty\n\n\nSQL\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nPresence of Surrogate Key\n\n\nid\n\n\nPrimary Key, Not Null\n\n\n-\n\n\n\n\n\n\nPresence of Object\n\n\ndomain_id\n,\nuser\n\n\nNot Null\n\n\n-\n\n\n\n\n\n\nUniqueness of Object\n\n\ndomain_id\n,\nuser\n\n\nUnique\n\n\n-\n\n\n\n\n\n\nPresence of Parent Object\n\n\ndomain_id\n\n\nForeign Key\n\n\n-\n\n\n\n\n\n\nObligation to have Parent Object\n\n\ndomain_id\n\n\nNot Null\n\n\n-",
             "title": "[Table] Mailbox"
-        }, 
+        },
         {
-            "location": "/database/mail/[Table]_Mailbox/#table-mailbox", 
-            "text": "", 
+            "location": "/database/mail/[Table]_Mailbox/#table-mailbox",
+            "text": "",
             "title": "[Table] Mailbox"
-        }, 
+        },
         {
-            "location": "/database/mail/[Table]_Mailbox/#general", 
-            "text": "Attribute  Value  Description      Table Name  mailboxes  Store mailboxes", 
+            "location": "/database/mail/[Table]_Mailbox/#general",
+            "text": "Attribute  Value  Description      Table Name  mailboxes  Store mailboxes",
             "title": "General"
-        }, 
+        },
         {
-            "location": "/database/mail/[Table]_Mailbox/#properties-columns", 
-            "text": "Property  Type  Description      id  int  Object identifier    domain_id  int  Reference domain identifier    user  varchar  Local portion of the alias, e.g.  user@domain.TLD    password  varchar  SHA512 of user password", 
+            "location": "/database/mail/[Table]_Mailbox/#properties-columns",
+            "text": "Property  Type  Description      id  int  Object identifier    domain_id  int  Reference domain identifier    user  varchar  Local portion of the alias, e.g.  user@domain.TLD    password  varchar  SHA512 of user password",
             "title": "Properties (Columns)"
-        }, 
+        },
         {
-            "location": "/database/mail/[Table]_Mailbox/#relationship", 
-            "text": "Model  Property Connector  Type  Description      Domain  domain_id  Many to One  Refer to  domain.TLD  part of any accepted domains in Postfix", 
+            "location": "/database/mail/[Table]_Mailbox/#relationship",
+            "text": "Model  Property Connector  Type  Description      Domain  domain_id  Many to One  Refer to  domain.TLD  part of any accepted domains in Postfix",
             "title": "Relationship"
-        }, 
+        },
         {
-            "location": "/database/mail/[Table]_Mailbox/#sql-enforcing-feature", 
-            "text": "Feature  Property  SQL  Description      Presence of Surrogate Key  id  Primary Key, Not Null  -    Presence of Object  domain_id , user  Not Null  -    Uniqueness of Object  domain_id , user  Unique  -    Presence of Parent Object  domain_id  Foreign Key  -    Obligation to have Parent Object  domain_id  Not Null  -", 
+            "location": "/database/mail/[Table]_Mailbox/#sql-enforcing-feature",
+            "text": "Feature  Property  SQL  Description      Presence of Surrogate Key  id  Primary Key, Not Null  -    Presence of Object  domain_id , user  Not Null  -    Uniqueness of Object  domain_id , user  Unique  -    Presence of Parent Object  domain_id  Foreign Key  -    Obligation to have Parent Object  domain_id  Not Null  -",
             "title": "SQL Enforcing Feature"
-        }, 
+        },
         {
-            "location": "/database/paragitapp/[Table]_User/", 
-            "text": "[Table] User\n\n\nGeneral\n\n\n\n\n\n\n\n\nAttribute\n\n\nValue\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nTable Name\n\n\nusers\n\n\nStore users\n\n\n\n\n\n\n\n\nProperties (Columns)\n\n\n\n\n\n\n\n\nProperty\n\n\nType\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nid\n\n\nint\n\n\nObject identifier\n\n\n\n\n\n\nfirst_name\n\n\nvarchar\n\n\nFirst portion of user\n\n\n\n\n\n\nmiddle_name\n\n\nvarchar\n\n\nMiddle portion of user\n\n\n\n\n\n\nlast_name\n\n\nvarchar\n\n\nLast portion of user\n\n\n\n\n\n\nbatch_year\n\n\nint\n\n\nYear of first membership\n\n\n\n\n\n\nbirth_date\n\n\ndate\n\n\nDate of birth\n\n\n\n\n\n\nvoice_type\n\n\nvarchar\n\n\nType of voice\n\n\n\n\n\n\nemail\n\n\nvarchar\n\n\nMember email address as username\n\n\n\n\n\n\npassword\n\n\nvarchar\n\n\nBFH of user password\n\n\n\n\n\n\npassword_dovecot\n\n\nvarchar\n\n\nSHA512 of user password\n\n\n\n\n\n\nremember_token\n\n\nvarchar(100)\n\n\nLaravel column for 'Remember Me' Feature\n\n\n\n\n\n\ncreated_at\n\n\ntimestamp\n\n\nLaravel column for Object manipulation\n\n\n\n\n\n\nupdated_at\n\n\ntimestamp\n\n\nLaravel column for Object manipulation\n\n\n\n\n\n\n\n\nRelationship\n\n\n\n\n\n\n\n\nModel\n\n\nProperty Connector\n\n\nType\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nCode\n\n\nvoice_type\n\n\nMany to One\n\n\nRefer to \ncode_name\n column by \ncode_group = 'VOICE_TYPE'\n as allowable voice type definition\n\n\n\n\n\n\n\n\nSQL Enforcing Feature\n\n\n\n\n\n\n\n\nFeature\n\n\nProperty\n\n\nSQL\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nPresence of Surrogate Key\n\n\nid\n\n\nPrimary Key, Not Null\n\n\n-\n\n\n\n\n\n\nPresence of Object\n\n\nemail\n\n\nNot Null\n\n\n-\n\n\n\n\n\n\nUniqueness of Object\n\n\nemail\n\n\nUnique\n\n\n-\n\n\n\n\n\n\nPresence of Parent Object\n\n\nvoice_type\n\n\nForeign Key\n\n\n-\n\n\n\n\n\n\nObligation to have Parent Object\n\n\nvoice_type\n\n\nNot Null\n\n\n-", 
+            "location": "/database/paragitapp/[Table]_User/",
+            "text": "[Table] User\n\n\nGeneral\n\n\n\n\n\n\n\n\nAttribute\n\n\nValue\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nTable Name\n\n\nusers\n\n\nStore users\n\n\n\n\n\n\n\n\nProperties (Columns)\n\n\n\n\n\n\n\n\nProperty\n\n\nType\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nid\n\n\nint\n\n\nObject identifier\n\n\n\n\n\n\nfirst_name\n\n\nvarchar\n\n\nFirst portion of user\n\n\n\n\n\n\nmiddle_name\n\n\nvarchar\n\n\nMiddle portion of user\n\n\n\n\n\n\nlast_name\n\n\nvarchar\n\n\nLast portion of user\n\n\n\n\n\n\nbatch_year\n\n\nint\n\n\nYear of first membership\n\n\n\n\n\n\nbirth_date\n\n\ndate\n\n\nDate of birth\n\n\n\n\n\n\nvoice_type\n\n\nvarchar\n\n\nType of voice\n\n\n\n\n\n\nemail\n\n\nvarchar\n\n\nMember email address as username\n\n\n\n\n\n\npassword\n\n\nvarchar\n\n\nBFH of user password\n\n\n\n\n\n\npassword_dovecot\n\n\nvarchar\n\n\nSHA512 of user password\n\n\n\n\n\n\nremember_token\n\n\nvarchar(100)\n\n\nLaravel column for 'Remember Me' Feature\n\n\n\n\n\n\ncreated_at\n\n\ntimestamp\n\n\nLaravel column for Object manipulation\n\n\n\n\n\n\nupdated_at\n\n\ntimestamp\n\n\nLaravel column for Object manipulation\n\n\n\n\n\n\n\n\nRelationship\n\n\n\n\n\n\n\n\nModel\n\n\nProperty Connector\n\n\nType\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nCode\n\n\nvoice_type\n\n\nMany to One\n\n\nRefer to \ncode_name\n column by \ncode_group = 'VOICE_TYPE'\n as allowable voice type definition\n\n\n\n\n\n\n\n\nSQL Enforcing Feature\n\n\n\n\n\n\n\n\nFeature\n\n\nProperty\n\n\nSQL\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nPresence of Surrogate Key\n\n\nid\n\n\nPrimary Key, Not Null\n\n\n-\n\n\n\n\n\n\nPresence of Object\n\n\nemail\n\n\nNot Null\n\n\n-\n\n\n\n\n\n\nUniqueness of Object\n\n\nemail\n\n\nUnique\n\n\n-\n\n\n\n\n\n\nPresence of Parent Object\n\n\nvoice_type\n\n\nForeign Key\n\n\n-\n\n\n\n\n\n\nObligation to have Parent Object\n\n\nvoice_type\n\n\nNot Null\n\n\n-",
             "title": "[Table] User"
-        }, 
+        },
         {
-            "location": "/database/paragitapp/[Table]_User/#table-user", 
-            "text": "", 
+            "location": "/database/paragitapp/[Table]_User/#table-user",
+            "text": "",
             "title": "[Table] User"
-        }, 
+        },
         {
-            "location": "/database/paragitapp/[Table]_User/#general", 
-            "text": "Attribute  Value  Description      Table Name  users  Store users", 
+            "location": "/database/paragitapp/[Table]_User/#general",
+            "text": "Attribute  Value  Description      Table Name  users  Store users",
             "title": "General"
-        }, 
+        },
         {
-            "location": "/database/paragitapp/[Table]_User/#properties-columns", 
-            "text": "Property  Type  Description      id  int  Object identifier    first_name  varchar  First portion of user    middle_name  varchar  Middle portion of user    last_name  varchar  Last portion of user    batch_year  int  Year of first membership    birth_date  date  Date of birth    voice_type  varchar  Type of voice    email  varchar  Member email address as username    password  varchar  BFH of user password    password_dovecot  varchar  SHA512 of user password    remember_token  varchar(100)  Laravel column for 'Remember Me' Feature    created_at  timestamp  Laravel column for Object manipulation    updated_at  timestamp  Laravel column for Object manipulation", 
+            "location": "/database/paragitapp/[Table]_User/#properties-columns",
+            "text": "Property  Type  Description      id  int  Object identifier    first_name  varchar  First portion of user    middle_name  varchar  Middle portion of user    last_name  varchar  Last portion of user    batch_year  int  Year of first membership    birth_date  date  Date of birth    voice_type  varchar  Type of voice    email  varchar  Member email address as username    password  varchar  BFH of user password    password_dovecot  varchar  SHA512 of user password    remember_token  varchar(100)  Laravel column for 'Remember Me' Feature    created_at  timestamp  Laravel column for Object manipulation    updated_at  timestamp  Laravel column for Object manipulation",
             "title": "Properties (Columns)"
-        }, 
+        },
         {
-            "location": "/database/paragitapp/[Table]_User/#relationship", 
-            "text": "Model  Property Connector  Type  Description      Code  voice_type  Many to One  Refer to  code_name  column by  code_group = 'VOICE_TYPE'  as allowable voice type definition", 
+            "location": "/database/paragitapp/[Table]_User/#relationship",
+            "text": "Model  Property Connector  Type  Description      Code  voice_type  Many to One  Refer to  code_name  column by  code_group = 'VOICE_TYPE'  as allowable voice type definition",
             "title": "Relationship"
-        }, 
+        },
         {
-            "location": "/database/paragitapp/[Table]_User/#sql-enforcing-feature", 
-            "text": "Feature  Property  SQL  Description      Presence of Surrogate Key  id  Primary Key, Not Null  -    Presence of Object  email  Not Null  -    Uniqueness of Object  email  Unique  -    Presence of Parent Object  voice_type  Foreign Key  -    Obligation to have Parent Object  voice_type  Not Null  -", 
+            "location": "/database/paragitapp/[Table]_User/#sql-enforcing-feature",
+            "text": "Feature  Property  SQL  Description      Presence of Surrogate Key  id  Primary Key, Not Null  -    Presence of Object  email  Not Null  -    Uniqueness of Object  email  Unique  -    Presence of Parent Object  voice_type  Foreign Key  -    Obligation to have Parent Object  voice_type  Not Null  -",
             "title": "SQL Enforcing Feature"
-        }, 
+        },
         {
-            "location": "/infrastructure/Email/", 
-            "text": "At this point, very basic Postfix and Dovecot. Username controlled purely from a text file configuration.\n\n\nPlan:\n\n\nKapasitas $15 dari DO lumayan menarik. Setidaknya 200rb bisa buat pakai 100 account yang juga belum tentu semuanya aktif.\n\n\nSo, tantangannya dengan layanan eksisting:\n\n\n\n\nAkses webmail: Roundcube: \nlink\n tapi murni cuma buat imel-imelan.\n\n\nPenerangan soal cara konfigurasi IMAP/SMTP ke klien email: Thunderbird, Outlook (should we? probably no), emClient (personally pake), Gmail on Android, Apple Mail, iOS Mail, Android Mail (beda ama Gmail on Android).\n\n\n\n\nOkay, usually email goes hand in hand with calendaring dan contact.\nSo what? Baikal already exists but no way to ask user to install CardDAV-Sync and CalDAV-Sync to their phone, mind you, they're paid apps. iOS users are in luck, DAV thingy is built-in. Apalagi minta mereka semua seragam pakai thunderbird.\n\n\nBaikal dan upstreamnya sabre/* akan EOL. Probably better find another way to store Card and Cal things.\n\n\nOTOH, mungkin anak-anak ini blm mengutilisasi fitur kalender, jadi masih bisa cari alternatif yang bisa bertahan long term.\n\n\nlink\n\nPake ini untuk split email, pertama ke capella, kedua ke server baru untuk pengujian. Jalanin paralel 3 bulan. Ingat kalau direktif Mailcow terlalu agresif, invoice gojek aja ga tembus karena ga dikirim dari domain yang existing.", 
+            "location": "/guide/SSH/",
+            "text": "Membuat SSH Key\n\n\nArtikel referensi: \nklik di sini\n\n\nDikerjakan di Fedora\n\n\n\n\nBuat Key \n$ ssh-keygen -t rsa\n\n\nNikmati.",
+            "title": "SSH"
+        },
+        {
+            "location": "/guide/SSH/#membuat-ssh-key",
+            "text": "Artikel referensi:  klik di sini  Dikerjakan di Fedora   Buat Key  $ ssh-keygen -t rsa  Nikmati.",
+            "title": "Membuat SSH Key"
+        },
+        {
+            "location": "/guide/thunderbird/",
+            "text": "Konfigurasi Thunderbird dengan email server IMAP dan SMTP standar",
+            "title": "Thunderbird"
+        },
+        {
+            "location": "/guide/thunderbird/#konfigurasi-thunderbird-dengan-email-server-imap-dan-smtp-standar",
+            "text": "",
+            "title": "Konfigurasi Thunderbird dengan email server IMAP dan SMTP standar"
+        },
+        {
+            "location": "/infrastructure/Email/",
+            "text": "At this point, very basic Postfix and Dovecot. Username controlled purely from a text file configuration.\n\n\nPlan:\n\n\nKapasitas $15 dari DO lumayan menarik. Setidaknya 200rb bisa buat pakai 100 account yang juga belum tentu semuanya aktif.\n\n\nSo, tantangannya dengan layanan eksisting:\n\n\n\n\nAkses webmail: Roundcube: \nlink\n tapi murni cuma buat imel-imelan.\n\n\nPenerangan soal cara konfigurasi IMAP/SMTP ke klien email: Thunderbird, Outlook (should we? probably no), emClient (personally pake), Gmail on Android, Apple Mail, iOS Mail, Android Mail (beda ama Gmail on Android).\n\n\n\n\nOkay, usually email goes hand in hand with calendaring dan contact.\nSo what? Baikal already exists but no way to ask user to install CardDAV-Sync and CalDAV-Sync to their phone, mind you, they're paid apps. iOS users are in luck, DAV thingy is built-in. Apalagi minta mereka semua seragam pakai thunderbird.\n\n\nBaikal dan upstreamnya sabre/* akan EOL. Probably better find another way to store Card and Cal things.\n\n\nOTOH, mungkin anak-anak ini blm mengutilisasi fitur kalender, jadi masih bisa cari alternatif yang bisa bertahan long term.\n\n\nlink\n\nPake ini untuk split email, pertama ke capella, kedua ke server baru untuk pengujian. Jalanin paralel 3 bulan. Ingat kalau direktif Mailcow terlalu agresif, invoice gojek aja ga tembus karena ga dikirim dari domain yang existing.",
             "title": "Email"
-        }, 
+        },
         {
-            "location": "/infrastructure/Team_Based_Messaging_App/", 
-            "text": "Slack, ada fitur user group yang hanya untuk paid user\n\n\nFlock\n\n\nMattermost\n\n\nRocket.Chat\n\n\ngitter.im", 
+            "location": "/infrastructure/Team_Based_Messaging_App/",
+            "text": "Slack, ada fitur user group yang hanya untuk paid user\n\n\nFlock\n\n\nMattermost\n\n\nRocket.Chat\n\n\ngitter.im",
             "title": "Team Based Messaging App"
-        }, 
+        },
         {
-            "location": "/others/Cost_To_Maintain/", 
-            "text": "Cost To Maintain\n\n\nFor Paragita\n\n\n\n\n\n\n\n\nItem\n\n\nCost\n\n\nRef\n\n\n\n\n\n\n\n\n\n\nDomains :\nparagita.com\nparagita.net\nparagita.org\n\n\nall around IDR 500rb\n\n\nyearly\n, ref \nhere\n soon move to \nhere\n\n\n\n\n\n\nG Suite :\nmpr@paragita.com\n\n\nUSD 2,5\n\n\nmonthly\n\n\n\n\n\n\n\n\nFor Personal\n\n\n\n\n\n\n\n\nItem\n\n\nCost\n\n\nRef\n\n\n\n\n\n\n\n\n\n\nDomains :\nferdi.id\nferdi.co.de \ndeprecated\npojoksantai.com\nbayupradika.com\n\n\nPrice :\n250rb\n130rb\n130rb\n130rb\n\n\nyearly\n, ref \nhere\n soon move to \nhere\n\n\n\n\n\n\nG Suite :\nferdi@gsuite.pojoksantai.com\n\n\nUSD 2,5\n\n\nmonthly\n ga kepake, sekadar admin account\n\n\n\n\n\n\n\n\nShared Resource\n\n\n\n\n\n\n\n\nItem\n\n\nCost\n\n\nRef\n\n\n\n\n\n\n\n\n\n\nDroplet :\nbellatrix.pojoksantai.com (Website)\ncapella.pojoksantai.com (Email)\n\n\nPrice :\nUSD 10\nUSD 5\n\n\nmonthly\n, ref \nhere", 
+            "location": "/others/Cost_To_Maintain/",
+            "text": "Cost To Maintain\n\n\nFor Paragita\n\n\n\n\n\n\n\n\nItem\n\n\nCost\n\n\nRef\n\n\n\n\n\n\n\n\n\n\nDomains :\nparagita.com\nparagita.net\nparagita.org\n\n\nall around IDR 500rb\n\n\nyearly\n, ref \nhere\n soon move to \nhere\n\n\n\n\n\n\nG Suite :\nmpr@paragita.com\n\n\nUSD 2,5\n\n\nmonthly\n\n\n\n\n\n\n\n\nFor Personal\n\n\n\n\n\n\n\n\nItem\n\n\nCost\n\n\nRef\n\n\n\n\n\n\n\n\n\n\nDomains :\nferdi.id\nferdi.co.de \ndeprecated\npojoksantai.com\nbayupradika.com\n\n\nPrice :\n250rb\n130rb\n130rb\n130rb\n\n\nyearly\n, ref \nhere\n soon move to \nhere\n\n\n\n\n\n\nG Suite :\nferdi@gsuite.pojoksantai.com\n\n\nUSD 2,5\n\n\nmonthly\n ga kepake, sekadar admin account\n\n\n\n\n\n\n\n\nShared Resource\n\n\n\n\n\n\n\n\nItem\n\n\nCost\n\n\nRef\n\n\n\n\n\n\n\n\n\n\nDroplet :\nbellatrix.pojoksantai.com (Website)\ncapella.pojoksantai.com (Email)\n\n\nPrice :\nUSD 10\nUSD 5\n\n\nmonthly\n, ref \nhere",
             "title": "Cost To Maintain"
-        }, 
+        },
         {
-            "location": "/others/Cost_To_Maintain/#cost-to-maintain", 
-            "text": "", 
+            "location": "/others/Cost_To_Maintain/#cost-to-maintain",
+            "text": "",
             "title": "Cost To Maintain"
-        }, 
+        },
         {
-            "location": "/others/Cost_To_Maintain/#for-paragita", 
-            "text": "Item  Cost  Ref      Domains : paragita.com paragita.net paragita.org  all around IDR 500rb  yearly , ref  here  soon move to  here    G Suite : mpr@paragita.com  USD 2,5  monthly", 
+            "location": "/others/Cost_To_Maintain/#for-paragita",
+            "text": "Item  Cost  Ref      Domains : paragita.com paragita.net paragita.org  all around IDR 500rb  yearly , ref  here  soon move to  here    G Suite : mpr@paragita.com  USD 2,5  monthly",
             "title": "For Paragita"
-        }, 
+        },
         {
-            "location": "/others/Cost_To_Maintain/#for-personal", 
-            "text": "Item  Cost  Ref      Domains : ferdi.id ferdi.co.de  deprecated pojoksantai.com bayupradika.com  Price : 250rb 130rb 130rb 130rb  yearly , ref  here  soon move to  here    G Suite : ferdi@gsuite.pojoksantai.com  USD 2,5  monthly  ga kepake, sekadar admin account", 
+            "location": "/others/Cost_To_Maintain/#for-personal",
+            "text": "Item  Cost  Ref      Domains : ferdi.id ferdi.co.de  deprecated pojoksantai.com bayupradika.com  Price : 250rb 130rb 130rb 130rb  yearly , ref  here  soon move to  here    G Suite : ferdi@gsuite.pojoksantai.com  USD 2,5  monthly  ga kepake, sekadar admin account",
             "title": "For Personal"
-        }, 
+        },
         {
-            "location": "/others/Cost_To_Maintain/#shared-resource", 
-            "text": "Item  Cost  Ref      Droplet : bellatrix.pojoksantai.com (Website) capella.pojoksantai.com (Email)  Price : USD 10 USD 5  monthly , ref  here", 
+            "location": "/others/Cost_To_Maintain/#shared-resource",
+            "text": "Item  Cost  Ref      Droplet : bellatrix.pojoksantai.com (Website) capella.pojoksantai.com (Email)  Price : USD 10 USD 5  monthly , ref  here",
             "title": "Shared Resource"
-        }, 
+        },
         {
-            "location": "/others/Email_Infrastructure/", 
-            "text": "Email Infrastructure\n\n\nOriginal note from Google Keep:\n\n\n\n\nDovecot replication\n\nhttp://blog.le-vert.net/?p=160\n \n\n\nTutorial basic mail\n\nhttps://www.rosehosting.com/blog/mailserver-with-virtual-users-and-domains-using-postfix-and-dovecot-on-a-centos-6-vps/\n\n\nRelayhost postfix utk smtp2go\n\nhttps://www.smtp2go.com/setupguide/postfix/\n\n\nIMAPS\n\nhttps://www.rosehosting.com/blog/set-up-ssl-encrypted-connection-in-postfix-dovecot-and-apache/\n\n\nIMAPS\nSTARTTLS di port 587\nno auth di port 25\nopportunistic di port 25\n\n\ngedein ukuran mail\n\n\n\n\nconnect SSH Tunnel untuk PgAdmin \nssh -L 5433:localhost:5432 root_bellatrix\n\n\nhttps://wiki.gentoo.org/wiki/Complete_Virtual_Mail_Server/Postfix_to_Database\n\n\nhttp://shirkerphp.blogspot.co.id/2013/10/howto-rebuild-postfix-with.html\n\n\nreject_unknown_client akan menolak semua mail dari IP yang tidak punya PTR record. Simsalabim berkurang drastis.\n\n\nvariable untuk setting query postfix \nhttp://www.postfix.org/pgsql_table.5.html\n\n\nREASSIGN OWNED \nhttps://www.postgresql.org/docs/8.2/static/sql-reassign-owned.html\n buat mindahin right ke user yang bener\n\n\nDovecot Password Integration (dengan ini email yang disetup di Laravel beserta passwordnya akan berlaku utk otentikasi email dan alamatnya\n\n\nSilakan disuling, banyak banget infonya.\n\n\nhttps://wiki2.dovecot.org/HowTo/DovecotPostgresql\n basicnya\n\nhttps://wiki.dovecot.org/AuthDatabase/SQL\n\n\nhttps://wiki.dovecot.org/Authentication/PasswordSchemes\n password encryption\n\n\nhttps://www.christianroessler.net/tech/2014/auth-log-fix-pam-unix-dovecot-auth-error.html\n pam_db interfering\n\n\ndebugging dovecot \nhttps://wiki.dovecot.org/Debugging/Authentication\n\n\nvariables in sql query \nhttps://wiki.dovecot.org/Variables\n\n\nBlowfish not in glibc of RHEL, jadi, Laravel via PHP generate versi SHA512 khusus untuk dovecot. Laravel tetap di Blowfish.\n\n\nthis is the most direct answer \nhttps://mad9scientist.com/dovecot-password-creation-php/\n\n\nbcrypt support in Red Hat \nhttps://access.redhat.com/articles/1519843", 
+            "location": "/others/Email_Infrastructure/",
+            "text": "Email Infrastructure\n\n\nOriginal note from Google Keep:\n\n\n\n\nDovecot replication\n\nhttp://blog.le-vert.net/?p=160\n \n\n\nTutorial basic mail\n\nhttps://www.rosehosting.com/blog/mailserver-with-virtual-users-and-domains-using-postfix-and-dovecot-on-a-centos-6-vps/\n\n\nRelayhost postfix utk smtp2go\n\nhttps://www.smtp2go.com/setupguide/postfix/\n\n\nIMAPS\n\nhttps://www.rosehosting.com/blog/set-up-ssl-encrypted-connection-in-postfix-dovecot-and-apache/\n\n\nIMAPS\nSTARTTLS di port 587\nno auth di port 25\nopportunistic di port 25\n\n\ngedein ukuran mail\n\n\n\n\nconnect SSH Tunnel untuk PgAdmin \nssh -L 5433:localhost:5432 root_bellatrix\n\n\nhttps://wiki.gentoo.org/wiki/Complete_Virtual_Mail_Server/Postfix_to_Database\n\n\nhttp://shirkerphp.blogspot.co.id/2013/10/howto-rebuild-postfix-with.html\n\n\nreject_unknown_client akan menolak semua mail dari IP yang tidak punya PTR record. Simsalabim berkurang drastis.\n\n\nvariable untuk setting query postfix \nhttp://www.postfix.org/pgsql_table.5.html\n\n\nREASSIGN OWNED \nhttps://www.postgresql.org/docs/8.2/static/sql-reassign-owned.html\n buat mindahin right ke user yang bener\n\n\nDovecot Password Integration (dengan ini email yang disetup di Laravel beserta passwordnya akan berlaku utk otentikasi email dan alamatnya\n\n\nSilakan disuling, banyak banget infonya.\n\n\nhttps://wiki2.dovecot.org/HowTo/DovecotPostgresql\n basicnya\n\nhttps://wiki.dovecot.org/AuthDatabase/SQL\n\n\nhttps://wiki.dovecot.org/Authentication/PasswordSchemes\n password encryption\n\n\nhttps://www.christianroessler.net/tech/2014/auth-log-fix-pam-unix-dovecot-auth-error.html\n pam_db interfering\n\n\ndebugging dovecot \nhttps://wiki.dovecot.org/Debugging/Authentication\n\n\nvariables in sql query \nhttps://wiki.dovecot.org/Variables\n\n\nBlowfish not in glibc of RHEL, jadi, Laravel via PHP generate versi SHA512 khusus untuk dovecot. Laravel tetap di Blowfish.\n\n\nthis is the most direct answer \nhttps://mad9scientist.com/dovecot-password-creation-php/\n\n\nbcrypt support in Red Hat \nhttps://access.redhat.com/articles/1519843",
             "title": "Email Infrastructure"
-        }, 
+        },
         {
-            "location": "/others/Email_Infrastructure/#email-infrastructure", 
-            "text": "Original note from Google Keep:   Dovecot replication http://blog.le-vert.net/?p=160    Tutorial basic mail https://www.rosehosting.com/blog/mailserver-with-virtual-users-and-domains-using-postfix-and-dovecot-on-a-centos-6-vps/  Relayhost postfix utk smtp2go https://www.smtp2go.com/setupguide/postfix/  IMAPS https://www.rosehosting.com/blog/set-up-ssl-encrypted-connection-in-postfix-dovecot-and-apache/  IMAPS\nSTARTTLS di port 587\nno auth di port 25\nopportunistic di port 25  gedein ukuran mail   connect SSH Tunnel untuk PgAdmin  ssh -L 5433:localhost:5432 root_bellatrix  https://wiki.gentoo.org/wiki/Complete_Virtual_Mail_Server/Postfix_to_Database  http://shirkerphp.blogspot.co.id/2013/10/howto-rebuild-postfix-with.html  reject_unknown_client akan menolak semua mail dari IP yang tidak punya PTR record. Simsalabim berkurang drastis.  variable untuk setting query postfix  http://www.postfix.org/pgsql_table.5.html  REASSIGN OWNED  https://www.postgresql.org/docs/8.2/static/sql-reassign-owned.html  buat mindahin right ke user yang bener", 
+            "location": "/others/Email_Infrastructure/#email-infrastructure",
+            "text": "Original note from Google Keep:   Dovecot replication http://blog.le-vert.net/?p=160    Tutorial basic mail https://www.rosehosting.com/blog/mailserver-with-virtual-users-and-domains-using-postfix-and-dovecot-on-a-centos-6-vps/  Relayhost postfix utk smtp2go https://www.smtp2go.com/setupguide/postfix/  IMAPS https://www.rosehosting.com/blog/set-up-ssl-encrypted-connection-in-postfix-dovecot-and-apache/  IMAPS\nSTARTTLS di port 587\nno auth di port 25\nopportunistic di port 25  gedein ukuran mail   connect SSH Tunnel untuk PgAdmin  ssh -L 5433:localhost:5432 root_bellatrix  https://wiki.gentoo.org/wiki/Complete_Virtual_Mail_Server/Postfix_to_Database  http://shirkerphp.blogspot.co.id/2013/10/howto-rebuild-postfix-with.html  reject_unknown_client akan menolak semua mail dari IP yang tidak punya PTR record. Simsalabim berkurang drastis.  variable untuk setting query postfix  http://www.postfix.org/pgsql_table.5.html  REASSIGN OWNED  https://www.postgresql.org/docs/8.2/static/sql-reassign-owned.html  buat mindahin right ke user yang bener",
             "title": "Email Infrastructure"
-        }, 
+        },
         {
-            "location": "/others/Email_Infrastructure/#dovecot-password-integration-dengan-ini-email-yang-disetup-di-laravel-beserta-passwordnya-akan-berlaku-utk-otentikasi-email-dan-alamatnya", 
-            "text": "Silakan disuling, banyak banget infonya.  https://wiki2.dovecot.org/HowTo/DovecotPostgresql  basicnya https://wiki.dovecot.org/AuthDatabase/SQL  https://wiki.dovecot.org/Authentication/PasswordSchemes  password encryption  https://www.christianroessler.net/tech/2014/auth-log-fix-pam-unix-dovecot-auth-error.html  pam_db interfering  debugging dovecot  https://wiki.dovecot.org/Debugging/Authentication  variables in sql query  https://wiki.dovecot.org/Variables  Blowfish not in glibc of RHEL, jadi, Laravel via PHP generate versi SHA512 khusus untuk dovecot. Laravel tetap di Blowfish.  this is the most direct answer  https://mad9scientist.com/dovecot-password-creation-php/  bcrypt support in Red Hat  https://access.redhat.com/articles/1519843", 
+            "location": "/others/Email_Infrastructure/#dovecot-password-integration-dengan-ini-email-yang-disetup-di-laravel-beserta-passwordnya-akan-berlaku-utk-otentikasi-email-dan-alamatnya",
+            "text": "Silakan disuling, banyak banget infonya.  https://wiki2.dovecot.org/HowTo/DovecotPostgresql  basicnya https://wiki.dovecot.org/AuthDatabase/SQL  https://wiki.dovecot.org/Authentication/PasswordSchemes  password encryption  https://www.christianroessler.net/tech/2014/auth-log-fix-pam-unix-dovecot-auth-error.html  pam_db interfering  debugging dovecot  https://wiki.dovecot.org/Debugging/Authentication  variables in sql query  https://wiki.dovecot.org/Variables  Blowfish not in glibc of RHEL, jadi, Laravel via PHP generate versi SHA512 khusus untuk dovecot. Laravel tetap di Blowfish.  this is the most direct answer  https://mad9scientist.com/dovecot-password-creation-php/  bcrypt support in Red Hat  https://access.redhat.com/articles/1519843",
             "title": "Dovecot Password Integration (dengan ini email yang disetup di Laravel beserta passwordnya akan berlaku utk otentikasi email dan alamatnya"
-        }, 
+        },
         {
-            "location": "/others/Links_To_Read/", 
-            "text": "Link\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nLink\n\n\nVSCode Markdown\n\n\n\n\n\n\nLink\n\n\nFree Bootstrap Templates\n\n\n\n\n\n\nLink\n\n\nUber Engineering", 
+            "location": "/others/Links_To_Read/",
+            "text": "Link\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nLink\n\n\nVSCode Markdown\n\n\n\n\n\n\nLink\n\n\nFree Bootstrap Templates\n\n\n\n\n\n\nLink\n\n\nUber Engineering",
             "title": "Links To Read"
-        }, 
+        },
         {
-            "location": "/paragita/home/", 
-            "text": "https://www.smashingmagazine.com/2009/04/from-table-hell-to-div-hell/\n\n\nhttps://github.com/gurayyarar/AdminBSBMaterialDesign\n\n\nDaftar objek:\n\n\n\n\nMember basic, milik HCD\n\n\nKonser, milik aiapa?\n\n\nKompetisi\n\n\nJob, milik Marketing, HCD, officer lapangan ini sendiri ato milij hcd? PR perlu consume data kah utk publikasi?\n\n\nAset, milik OPS, tapi job kompetisi konser xonsumennya\n\n\n\n\nApakah partitur sebaiknya jadi modul sendiri? Atau muadev punya proses bisnis sendori?\n\n\nBtw kalo capella jadi mailserver utama, apakah sebaiknya dicari cara ngebuat semacam global directory di CardDAV biar webmail bisa kirim ke mail internal? Ada ga paket mail server cheap to free yang support email calendar contact dgn spek droplet $15 DO? Syaratnya musah backuo restore tingkat aplikasi.\n\n\nSatu, apakah project managenet paragita yang disupport lewat aplikasi internal lebih efisien dari eksisting? Perlukah pertimbangan layanan project management luar? List pro cons.", 
+            "location": "/paragita/home/",
+            "text": "https://www.smashingmagazine.com/2009/04/from-table-hell-to-div-hell/\n\n\nhttps://github.com/gurayyarar/AdminBSBMaterialDesign\n\n\nDaftar objek:\n\n\n\n\nMember basic, milik HCD\n\n\nKonser, milik aiapa?\n\n\nKompetisi\n\n\nJob, milik Marketing, HCD, officer lapangan ini sendiri ato milij hcd? PR perlu consume data kah utk publikasi?\n\n\nAset, milik OPS, tapi job kompetisi konser xonsumennya\n\n\n\n\nApakah partitur sebaiknya jadi modul sendiri? Atau muadev punya proses bisnis sendori?\n\n\nBtw kalo capella jadi mailserver utama, apakah sebaiknya dicari cara ngebuat semacam global directory di CardDAV biar webmail bisa kirim ke mail internal? Ada ga paket mail server cheap to free yang support email calendar contact dgn spek droplet $15 DO? Syaratnya musah backuo restore tingkat aplikasi.\n\n\nSatu, apakah project managenet paragita yang disupport lewat aplikasi internal lebih efisien dari eksisting? Perlukah pertimbangan layanan project management luar? List pro cons.",
             "title": "Home"
-        }, 
+        },
         {
-            "location": "/paragita/backoffice/API_Design/", 
-            "text": "API Design\n\n\nParagita\n\n\nEndpoint should form:\n\n$WEBSITE/api/$API_VER/$ENDPOINT\n\n\nCurrently:\n\n\n\n\n\n\n\n\nVariable\n\n\nValue\n\n\n\n\n\n\n\n\n\n\n$WEBSITE\n\n\nhttp://devel.paragita.com\n\n\n\n\n\n\n$API_VER\n\n\nv1.0\n\n\n\n\n\n\n\n\nModules available:\n\n\n\n\n\n\n\n\nModule\n\n\n$ENDPOINT\n\n\nDesc\n\n\n\n\n\n\n\n\n\n\nMember Management\n\n\nmember\n\n\nMember management\n\n\n\n\n\n\nEvent Management\n\n\nevent\n\n\nRehearsal, concert, job", 
+            "location": "/paragita/backoffice/API_Design/",
+            "text": "API Design\n\n\nParagita\n\n\nEndpoint should form:\n\n$WEBSITE/api/$API_VER/$ENDPOINT\n\n\nCurrently:\n\n\n\n\n\n\n\n\nVariable\n\n\nValue\n\n\n\n\n\n\n\n\n\n\n$WEBSITE\n\n\nhttp://devel.paragita.com\n\n\n\n\n\n\n$API_VER\n\n\nv1.0\n\n\n\n\n\n\n\n\nModules available:\n\n\n\n\n\n\n\n\nModule\n\n\n$ENDPOINT\n\n\nDesc\n\n\n\n\n\n\n\n\n\n\nMember Management\n\n\nmember\n\n\nMember management\n\n\n\n\n\n\nEvent Management\n\n\nevent\n\n\nRehearsal, concert, job",
             "title": "API Design"
-        }, 
+        },
         {
-            "location": "/paragita/backoffice/API_Design/#api-design", 
-            "text": "", 
+            "location": "/paragita/backoffice/API_Design/#api-design",
+            "text": "",
             "title": "API Design"
-        }, 
+        },
         {
-            "location": "/paragita/backoffice/API_Design/#paragita", 
-            "text": "Endpoint should form: $WEBSITE/api/$API_VER/$ENDPOINT  Currently:     Variable  Value      $WEBSITE  http://devel.paragita.com    $API_VER  v1.0     Modules available:     Module  $ENDPOINT  Desc      Member Management  member  Member management    Event Management  event  Rehearsal, concert, job", 
+            "location": "/paragita/backoffice/API_Design/#paragita",
+            "text": "Endpoint should form: $WEBSITE/api/$API_VER/$ENDPOINT  Currently:     Variable  Value      $WEBSITE  http://devel.paragita.com    $API_VER  v1.0     Modules available:     Module  $ENDPOINT  Desc      Member Management  member  Member management    Event Management  event  Rehearsal, concert, job",
             "title": "Paragita"
-        }, 
+        },
         {
-            "location": "/paragita/backoffice/Environments/", 
-            "text": "Environments\n\n\nProduction\n\n\n\n\n\n\n\n\nProperty\n\n\nValue\n\n\n\n\n\n\n\n\n\n\nSite\n\n\n[[https://kami.paragita.com]]\n\n\n\n\n\n\nPhysical\n\n\nbellatrix.pojoksantai.com\n\n\n\n\n\n\nDatabase\n\n\nparagita\n\n\n\n\n\n\nSchema\n\n\nproduction\n\n\n\n\n\n\nUser\n\n\nparagita_prod\n\n\n\n\n\n\nBranch\n\n\nmaster\n\n\n\n\n\n\n\n\nSitenya belum jelas mau yang mana.\n\n\nSimulation\n\n\n\n\n\n\n\n\nProperty\n\n\nValue\n\n\n\n\n\n\n\n\n\n\nSite\n\n\n[[https://sim.paragita.com]]\n\n\n\n\n\n\nPhysical\n\n\nbellatrix.pojoksantai.com\n\n\n\n\n\n\nDatabase\n\n\nparagita\n\n\n\n\n\n\nSchema\n\n\nsimulation\n\n\n\n\n\n\nUser\n\n\nparagita_sim\n\n\n\n\n\n\nBranch\n\n\nsimulation\n\n\n\n\n\n\n\n\nTesting\n\n\n\n\n\n\n\n\nProperty\n\n\nValue\n\n\n\n\n\n\n\n\n\n\nSite\n\n\n[[https://test.paragita.com]]\n\n\n\n\n\n\nPhysical\n\n\nbellatrix.pojoksantai.com\n\n\n\n\n\n\nDatabase\n\n\nparagita\n\n\n\n\n\n\nSchema\n\n\ntesting\n\n\n\n\n\n\nUser\n\n\nparagita_test\n\n\n\n\n\n\nBranch\n\n\ntesting\n\n\n\n\n\n\n\n\nDevelopment\n\n\n\n\n\n\n\n\nProperty\n\n\nValue\n\n\n\n\n\n\n\n\n\n\nSite\n\n\n[[https://devel.paragita.com]]\n\n\n\n\n\n\nPhysical\n\n\naldebaran.ferdi.id\n\n\n\n\n\n\nDatabase\n\n\nparagita\n\n\n\n\n\n\nSchema\n\n\ndevelopment\n\n\n\n\n\n\nUser\n\n\nparagita_devel\n\n\n\n\n\n\nBranch\n\n\ndevelopment\n\n\n\n\n\n\n\n\nSMS Gateway\n\n\n\n\n\n\n\n\nVendor\n\n\nPrice per SMS (IDR)\n\n\nNote\n\n\n\n\n\n\n\n\n\n\nhttps://www.clickatell.com/\n\n\n270\n\n\nberdasarkan simulasi, 100 sms rentang harga 2 dolar. blm tahu fitur\n\n\n\n\n\n\nhttps://wavecell.com/\n\n\n350\n\n\n#N/A\n\n\n\n\n\n\nhttps://raja-sms.com/sms-masking/\n\n\nlihat di kiri\n\n\n#N/A\n\n\n\n\n\n\nhttps://www.gosmsgateway.com/prices.php\n\n\nmahal\n\n\nMesti paketan\n\n\n\n\n\n\nhttps://www.aksimaya.co.id/smsgateway/\n\n\nmurah ni\n\n\nbisa per 3 bulan\n\n\n\n\n\n\nhttps://www.nexmo.com/pricing\n\n\nmahal\n\n\n#N/A\n\n\n\n\n\n\n\n\nLet's Encrypt Workflow\n\n\n\n\nList all hostname from Environments\n\n\nUpdate to spreadsheet\n\n\nCheck discrepancy, if not exist, create first in CloudFlare (both hostname and _acme-challenge)\n\n\nGenerate certificate, update DNS using this helper \nhttps://github.com/ferdisn/CloudFlareAPIv4", 
+            "location": "/paragita/backoffice/Environments/",
+            "text": "Environments\n\n\nProduction\n\n\n\n\n\n\n\n\nProperty\n\n\nValue\n\n\n\n\n\n\n\n\n\n\nSite\n\n\n[[https://kami.paragita.com]]\n\n\n\n\n\n\nPhysical\n\n\nbellatrix.pojoksantai.com\n\n\n\n\n\n\nDatabase\n\n\nparagita\n\n\n\n\n\n\nSchema\n\n\nproduction\n\n\n\n\n\n\nUser\n\n\nparagita_prod\n\n\n\n\n\n\nBranch\n\n\nmaster\n\n\n\n\n\n\n\n\nSitenya belum jelas mau yang mana.\n\n\nSimulation\n\n\n\n\n\n\n\n\nProperty\n\n\nValue\n\n\n\n\n\n\n\n\n\n\nSite\n\n\n[[https://sim.paragita.com]]\n\n\n\n\n\n\nPhysical\n\n\nbellatrix.pojoksantai.com\n\n\n\n\n\n\nDatabase\n\n\nparagita\n\n\n\n\n\n\nSchema\n\n\nsimulation\n\n\n\n\n\n\nUser\n\n\nparagita_sim\n\n\n\n\n\n\nBranch\n\n\nsimulation\n\n\n\n\n\n\n\n\nTesting\n\n\n\n\n\n\n\n\nProperty\n\n\nValue\n\n\n\n\n\n\n\n\n\n\nSite\n\n\n[[https://test.paragita.com]]\n\n\n\n\n\n\nPhysical\n\n\nbellatrix.pojoksantai.com\n\n\n\n\n\n\nDatabase\n\n\nparagita\n\n\n\n\n\n\nSchema\n\n\ntesting\n\n\n\n\n\n\nUser\n\n\nparagita_test\n\n\n\n\n\n\nBranch\n\n\ntesting\n\n\n\n\n\n\n\n\nDevelopment\n\n\n\n\n\n\n\n\nProperty\n\n\nValue\n\n\n\n\n\n\n\n\n\n\nSite\n\n\n[[https://devel.paragita.com]]\n\n\n\n\n\n\nPhysical\n\n\naldebaran.ferdi.id\n\n\n\n\n\n\nDatabase\n\n\nparagita\n\n\n\n\n\n\nSchema\n\n\ndevelopment\n\n\n\n\n\n\nUser\n\n\nparagita_devel\n\n\n\n\n\n\nBranch\n\n\ndevelopment\n\n\n\n\n\n\n\n\nSMS Gateway\n\n\n\n\n\n\n\n\nVendor\n\n\nPrice per SMS (IDR)\n\n\nNote\n\n\n\n\n\n\n\n\n\n\nhttps://www.clickatell.com/\n\n\n270\n\n\nberdasarkan simulasi, 100 sms rentang harga 2 dolar. blm tahu fitur\n\n\n\n\n\n\nhttps://wavecell.com/\n\n\n350\n\n\n#N/A\n\n\n\n\n\n\nhttps://raja-sms.com/sms-masking/\n\n\nlihat di kiri\n\n\n#N/A\n\n\n\n\n\n\nhttps://www.gosmsgateway.com/prices.php\n\n\nmahal\n\n\nMesti paketan\n\n\n\n\n\n\nhttps://www.aksimaya.co.id/smsgateway/\n\n\nmurah ni\n\n\nbisa per 3 bulan\n\n\n\n\n\n\nhttps://www.nexmo.com/pricing\n\n\nmahal\n\n\n#N/A\n\n\n\n\n\n\n\n\nLet's Encrypt Workflow\n\n\n\n\nList all hostname from Environments\n\n\nUpdate to spreadsheet\n\n\nCheck discrepancy, if not exist, create first in CloudFlare (both hostname and _acme-challenge)\n\n\nGenerate certificate, update DNS using this helper \nhttps://github.com/ferdisn/CloudFlareAPIv4",
             "title": "Environments"
-        }, 
+        },
         {
-            "location": "/paragita/backoffice/Environments/#environments", 
-            "text": "", 
+            "location": "/paragita/backoffice/Environments/#environments",
+            "text": "",
             "title": "Environments"
-        }, 
+        },
         {
-            "location": "/paragita/backoffice/Environments/#production", 
-            "text": "Property  Value      Site  [[https://kami.paragita.com]]    Physical  bellatrix.pojoksantai.com    Database  paragita    Schema  production    User  paragita_prod    Branch  master     Sitenya belum jelas mau yang mana.", 
+            "location": "/paragita/backoffice/Environments/#production",
+            "text": "Property  Value      Site  [[https://kami.paragita.com]]    Physical  bellatrix.pojoksantai.com    Database  paragita    Schema  production    User  paragita_prod    Branch  master     Sitenya belum jelas mau yang mana.",
             "title": "Production"
-        }, 
+        },
         {
-            "location": "/paragita/backoffice/Environments/#simulation", 
-            "text": "Property  Value      Site  [[https://sim.paragita.com]]    Physical  bellatrix.pojoksantai.com    Database  paragita    Schema  simulation    User  paragita_sim    Branch  simulation", 
+            "location": "/paragita/backoffice/Environments/#simulation",
+            "text": "Property  Value      Site  [[https://sim.paragita.com]]    Physical  bellatrix.pojoksantai.com    Database  paragita    Schema  simulation    User  paragita_sim    Branch  simulation",
             "title": "Simulation"
-        }, 
+        },
         {
-            "location": "/paragita/backoffice/Environments/#testing", 
-            "text": "Property  Value      Site  [[https://test.paragita.com]]    Physical  bellatrix.pojoksantai.com    Database  paragita    Schema  testing    User  paragita_test    Branch  testing", 
+            "location": "/paragita/backoffice/Environments/#testing",
+            "text": "Property  Value      Site  [[https://test.paragita.com]]    Physical  bellatrix.pojoksantai.com    Database  paragita    Schema  testing    User  paragita_test    Branch  testing",
             "title": "Testing"
-        }, 
+        },
         {
-            "location": "/paragita/backoffice/Environments/#development", 
-            "text": "Property  Value      Site  [[https://devel.paragita.com]]    Physical  aldebaran.ferdi.id    Database  paragita    Schema  development    User  paragita_devel    Branch  development", 
+            "location": "/paragita/backoffice/Environments/#development",
+            "text": "Property  Value      Site  [[https://devel.paragita.com]]    Physical  aldebaran.ferdi.id    Database  paragita    Schema  development    User  paragita_devel    Branch  development",
             "title": "Development"
-        }, 
+        },
         {
-            "location": "/paragita/backoffice/Environments/#sms-gateway", 
-            "text": "Vendor  Price per SMS (IDR)  Note      https://www.clickatell.com/  270  berdasarkan simulasi, 100 sms rentang harga 2 dolar. blm tahu fitur    https://wavecell.com/  350  #N/A    https://raja-sms.com/sms-masking/  lihat di kiri  #N/A    https://www.gosmsgateway.com/prices.php  mahal  Mesti paketan    https://www.aksimaya.co.id/smsgateway/  murah ni  bisa per 3 bulan    https://www.nexmo.com/pricing  mahal  #N/A", 
+            "location": "/paragita/backoffice/Environments/#sms-gateway",
+            "text": "Vendor  Price per SMS (IDR)  Note      https://www.clickatell.com/  270  berdasarkan simulasi, 100 sms rentang harga 2 dolar. blm tahu fitur    https://wavecell.com/  350  #N/A    https://raja-sms.com/sms-masking/  lihat di kiri  #N/A    https://www.gosmsgateway.com/prices.php  mahal  Mesti paketan    https://www.aksimaya.co.id/smsgateway/  murah ni  bisa per 3 bulan    https://www.nexmo.com/pricing  mahal  #N/A",
             "title": "SMS Gateway"
-        }, 
+        },
         {
-            "location": "/paragita/backoffice/Environments/#lets-encrypt-workflow", 
-            "text": "List all hostname from Environments  Update to spreadsheet  Check discrepancy, if not exist, create first in CloudFlare (both hostname and _acme-challenge)  Generate certificate, update DNS using this helper  https://github.com/ferdisn/CloudFlareAPIv4", 
+            "location": "/paragita/backoffice/Environments/#lets-encrypt-workflow",
+            "text": "List all hostname from Environments  Update to spreadsheet  Check discrepancy, if not exist, create first in CloudFlare (both hostname and _acme-challenge)  Generate certificate, update DNS using this helper  https://github.com/ferdisn/CloudFlareAPIv4",
             "title": "Let's Encrypt Workflow"
-        }, 
+        },
         {
-            "location": "/paragita/backoffice/Git_Branch_Definition/", 
-            "text": "Git Branch Workflow\n\n\nParagita\n\n\n\n\n\n\n\n\nBranch\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nmaster\n\n\nProduction application\n\n\n\n\n\n\nsimulation\n\n\nPreproduction application\n\n\n\n\n\n\ntesting\n\n\nTesting branch\n\n\n\n\n\n\ntheme-devel\n\n\nOnly for HTML,CSS,JS development\n\n\n\n\n\n\ndevelopment\n\n\nMain development branch", 
+            "location": "/paragita/backoffice/Git_Branch_Definition/",
+            "text": "Git Branch Workflow\n\n\nParagita\n\n\n\n\n\n\n\n\nBranch\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nmaster\n\n\nProduction application\n\n\n\n\n\n\nsimulation\n\n\nPreproduction application\n\n\n\n\n\n\ntesting\n\n\nTesting branch\n\n\n\n\n\n\ntheme-devel\n\n\nOnly for HTML,CSS,JS development\n\n\n\n\n\n\ndevelopment\n\n\nMain development branch",
             "title": "Git Branch Workflow"
-        }, 
+        },
         {
-            "location": "/paragita/backoffice/Git_Branch_Definition/#git-branch-workflow", 
-            "text": "", 
+            "location": "/paragita/backoffice/Git_Branch_Definition/#git-branch-workflow",
+            "text": "",
             "title": "Git Branch Workflow"
-        }, 
+        },
         {
-            "location": "/paragita/backoffice/Git_Branch_Definition/#paragita", 
-            "text": "Branch  Description      master  Production application    simulation  Preproduction application    testing  Testing branch    theme-devel  Only for HTML,CSS,JS development    development  Main development branch", 
+            "location": "/paragita/backoffice/Git_Branch_Definition/#paragita",
+            "text": "Branch  Description      master  Production application    simulation  Preproduction application    testing  Testing branch    theme-devel  Only for HTML,CSS,JS development    development  Main development branch",
             "title": "Paragita"
-        }, 
+        },
         {
-            "location": "/paragita/backoffice/Requirements/", 
-            "text": "Email must be verified. \nhttp://bensmith.io/email-verification-with-laravel\n\n\nPhone number may not be verified.\n\n\nAll CRUD activities must provide API equivalent.", 
+            "location": "/paragita/backoffice/Requirements/",
+            "text": "Email must be verified. \nhttp://bensmith.io/email-verification-with-laravel\n\n\nPhone number may not be verified.\n\n\nAll CRUD activities must provide API equivalent.",
             "title": "Requirements"
-        }, 
+        },
         {
-            "location": "/paragita/backoffice/module/Event_Management/", 
-            "text": "", 
+            "location": "/paragita/backoffice/module/Event_Management/",
+            "text": "",
             "title": "Event Management"
-        }, 
+        },
         {
-            "location": "/paragita/backoffice/module/Member_Management/", 
-            "text": "Member Management\n\n\nAPI Design\n\n\n\n\n\n\n\n\nHTTP Verb\n\n\nEndpoint\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nGET\n\n\n/member\n\n\nget all member\n\n\n\n\n\n\nGET\n\n\n/member/{id}\n\n\nget one member\n\n\n\n\n\n\nPOST\n\n\n/member\n\n\ncreate new member\n\n\n\n\n\n\nPUT\n\n\n/member\n\n\nupdate member\n\n\n\n\n\n\nDELETE\n\n\n/member/{id}\n\n\ndelete member\n\n\n\n\n\n\n\n\nWeb App\n\n\n\n\n\n\n\n\nHTTP Verb\n\n\nEndpoint\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nGET\n\n\n/member\n\n\nget all member\n\n\n\n\n\n\nGET\n\n\n/member/{id}\n\n\nget one member\n\n\n\n\n\n\nPOST\n\n\n/member\n\n\ncreate new member\n\n\n\n\n\n\nPUT\n\n\n/member\n\n\nupdate member\n\n\n\n\n\n\nDELETE\n\n\n/member/{id}\n\n\ndelete member\n\n\n\n\n\n\nGET\n\n\n/member/{id}/edit\n\n\nopen form for edit\n\n\n\n\n\n\n\n\nPUT ga ada dalam form.method.\nElemen data member yang sekarang diturunkan jadi one-to-many seperti Contact, Education, Address mau dimanage terpisah dari API ini atau digabung? direplace atau diappend?\n\n\n\n\nnyari sdm job\n\n\nbagian dari siklus member management, tapi bukan mayor, cuma penyedia data. Kalo dari deskripsi existing, mereka kesulitan cari data orang di luar angkatan aktif, artinya khusus keperluan job ini harus ada flag yang menandakan orang-orang yang available untuk ditanya2in soal job regardless of its angkatan. Kebijakan dari BPH sendiri gmn? apakah privilege ikut job masih lekat ke orang yang registrasi ulang atau engga?\n\n\nulang tahun (ini pd dasarnya baca birthDay member, trus kirim reminder yang prepared, via email dan SMS, ditrigger cronjob laravel. apakah reminder untuk HCD saja, atau mau untuk member langsung juga?_\n\n\npengingat ulang tahun (mungkin H-3)\n\n\npengingat hari H\n\n\nsebagai tambahan bisa pake \nSMS Gateway\n untuk notifikasi SMS, incur cost jadi minimize.\n\n\npendataan anggota\n\n\napakah dibatasi dari anggota yang udah jelas diterima, atau mau cover case rekrutmen? NB: rekrutmen bisa dipisah ke sistem sendiri yang lebih kecil, DB terpisah, atau kalau mau masih tradisional bisa tetap dengan google form, mengingat kalo handle user 500 ukuran droplet digitalocean yang dipake harganya di luar kesanggupan gw.\n\n\nkehadiran\n\n\nseperti nomor satu, masih hanya bagian kecil dari member management. Kemungkinan ini mayornya di event management, tapi apakah event harus dipersempit menjadi konser dan job? Atau dianggap sama saja namun beda skala?\n\n\nmanajemen info untuk keperluan graduation, misal menandai tanggal tertentu dan mengasumsikan perkiraan kelulusan dari masing-masing anggota mengikuti status pendidikan di UI mereka.\n\n\nimplikasinya, object Education harus diperluas, tapi ga wajib, jadi ntar orang HCD bisa dapet reminder untuk cari info lebih dahulu\n\n\n\n\nproblem yang sering terjadi: ref #1 nyari ke mana apabila angkatan yang aktif habis", 
+            "location": "/paragita/backoffice/module/Member_Management/",
+            "text": "Member Management\n\n\nAPI Design\n\n\n\n\n\n\n\n\nHTTP Verb\n\n\nEndpoint\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nGET\n\n\n/member\n\n\nget all member\n\n\n\n\n\n\nGET\n\n\n/member/{id}\n\n\nget one member\n\n\n\n\n\n\nPOST\n\n\n/member\n\n\ncreate new member\n\n\n\n\n\n\nPUT\n\n\n/member\n\n\nupdate member\n\n\n\n\n\n\nDELETE\n\n\n/member/{id}\n\n\ndelete member\n\n\n\n\n\n\n\n\nWeb App\n\n\n\n\n\n\n\n\nHTTP Verb\n\n\nEndpoint\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nGET\n\n\n/member\n\n\nget all member\n\n\n\n\n\n\nGET\n\n\n/member/{id}\n\n\nget one member\n\n\n\n\n\n\nPOST\n\n\n/member\n\n\ncreate new member\n\n\n\n\n\n\nPUT\n\n\n/member\n\n\nupdate member\n\n\n\n\n\n\nDELETE\n\n\n/member/{id}\n\n\ndelete member\n\n\n\n\n\n\nGET\n\n\n/member/{id}/edit\n\n\nopen form for edit\n\n\n\n\n\n\n\n\nPUT ga ada dalam form.method.\nElemen data member yang sekarang diturunkan jadi one-to-many seperti Contact, Education, Address mau dimanage terpisah dari API ini atau digabung? direplace atau diappend?\n\n\n\n\nnyari sdm job\n\n\nbagian dari siklus member management, tapi bukan mayor, cuma penyedia data. Kalo dari deskripsi existing, mereka kesulitan cari data orang di luar angkatan aktif, artinya khusus keperluan job ini harus ada flag yang menandakan orang-orang yang available untuk ditanya2in soal job regardless of its angkatan. Kebijakan dari BPH sendiri gmn? apakah privilege ikut job masih lekat ke orang yang registrasi ulang atau engga?\n\n\nulang tahun (ini pd dasarnya baca birthDay member, trus kirim reminder yang prepared, via email dan SMS, ditrigger cronjob laravel. apakah reminder untuk HCD saja, atau mau untuk member langsung juga?_\n\n\npengingat ulang tahun (mungkin H-3)\n\n\npengingat hari H\n\n\nsebagai tambahan bisa pake \nSMS Gateway\n untuk notifikasi SMS, incur cost jadi minimize.\n\n\npendataan anggota\n\n\napakah dibatasi dari anggota yang udah jelas diterima, atau mau cover case rekrutmen? NB: rekrutmen bisa dipisah ke sistem sendiri yang lebih kecil, DB terpisah, atau kalau mau masih tradisional bisa tetap dengan google form, mengingat kalo handle user 500 ukuran droplet digitalocean yang dipake harganya di luar kesanggupan gw.\n\n\nkehadiran\n\n\nseperti nomor satu, masih hanya bagian kecil dari member management. Kemungkinan ini mayornya di event management, tapi apakah event harus dipersempit menjadi konser dan job? Atau dianggap sama saja namun beda skala?\n\n\nmanajemen info untuk keperluan graduation, misal menandai tanggal tertentu dan mengasumsikan perkiraan kelulusan dari masing-masing anggota mengikuti status pendidikan di UI mereka.\n\n\nimplikasinya, object Education harus diperluas, tapi ga wajib, jadi ntar orang HCD bisa dapet reminder untuk cari info lebih dahulu\n\n\n\n\nproblem yang sering terjadi: ref #1 nyari ke mana apabila angkatan yang aktif habis",
             "title": "Member Management"
-        }, 
+        },
         {
-            "location": "/paragita/backoffice/module/Member_Management/#member-management", 
-            "text": "", 
+            "location": "/paragita/backoffice/module/Member_Management/#member-management",
+            "text": "",
             "title": "Member Management"
-        }, 
+        },
         {
-            "location": "/paragita/backoffice/module/Member_Management/#api-design", 
-            "text": "HTTP Verb  Endpoint  Description      GET  /member  get all member    GET  /member/{id}  get one member    POST  /member  create new member    PUT  /member  update member    DELETE  /member/{id}  delete member", 
+            "location": "/paragita/backoffice/module/Member_Management/#api-design",
+            "text": "HTTP Verb  Endpoint  Description      GET  /member  get all member    GET  /member/{id}  get one member    POST  /member  create new member    PUT  /member  update member    DELETE  /member/{id}  delete member",
             "title": "API Design"
-        }, 
+        },
         {
-            "location": "/paragita/backoffice/module/Member_Management/#web-app", 
-            "text": "HTTP Verb  Endpoint  Description      GET  /member  get all member    GET  /member/{id}  get one member    POST  /member  create new member    PUT  /member  update member    DELETE  /member/{id}  delete member    GET  /member/{id}/edit  open form for edit     PUT ga ada dalam form.method.\nElemen data member yang sekarang diturunkan jadi one-to-many seperti Contact, Education, Address mau dimanage terpisah dari API ini atau digabung? direplace atau diappend?   nyari sdm job  bagian dari siklus member management, tapi bukan mayor, cuma penyedia data. Kalo dari deskripsi existing, mereka kesulitan cari data orang di luar angkatan aktif, artinya khusus keperluan job ini harus ada flag yang menandakan orang-orang yang available untuk ditanya2in soal job regardless of its angkatan. Kebijakan dari BPH sendiri gmn? apakah privilege ikut job masih lekat ke orang yang registrasi ulang atau engga?  ulang tahun (ini pd dasarnya baca birthDay member, trus kirim reminder yang prepared, via email dan SMS, ditrigger cronjob laravel. apakah reminder untuk HCD saja, atau mau untuk member langsung juga?_  pengingat ulang tahun (mungkin H-3)  pengingat hari H  sebagai tambahan bisa pake  SMS Gateway  untuk notifikasi SMS, incur cost jadi minimize.  pendataan anggota  apakah dibatasi dari anggota yang udah jelas diterima, atau mau cover case rekrutmen? NB: rekrutmen bisa dipisah ke sistem sendiri yang lebih kecil, DB terpisah, atau kalau mau masih tradisional bisa tetap dengan google form, mengingat kalo handle user 500 ukuran droplet digitalocean yang dipake harganya di luar kesanggupan gw.  kehadiran  seperti nomor satu, masih hanya bagian kecil dari member management. Kemungkinan ini mayornya di event management, tapi apakah event harus dipersempit menjadi konser dan job? Atau dianggap sama saja namun beda skala?  manajemen info untuk keperluan graduation, misal menandai tanggal tertentu dan mengasumsikan perkiraan kelulusan dari masing-masing anggota mengikuti status pendidikan di UI mereka.  implikasinya, object Education harus diperluas, tapi ga wajib, jadi ntar orang HCD bisa dapet reminder untuk cari info lebih dahulu   problem yang sering terjadi: ref #1 nyari ke mana apabila angkatan yang aktif habis", 
+            "location": "/paragita/backoffice/module/Member_Management/#web-app",
+            "text": "HTTP Verb  Endpoint  Description      GET  /member  get all member    GET  /member/{id}  get one member    POST  /member  create new member    PUT  /member  update member    DELETE  /member/{id}  delete member    GET  /member/{id}/edit  open form for edit     PUT ga ada dalam form.method.\nElemen data member yang sekarang diturunkan jadi one-to-many seperti Contact, Education, Address mau dimanage terpisah dari API ini atau digabung? direplace atau diappend?   nyari sdm job  bagian dari siklus member management, tapi bukan mayor, cuma penyedia data. Kalo dari deskripsi existing, mereka kesulitan cari data orang di luar angkatan aktif, artinya khusus keperluan job ini harus ada flag yang menandakan orang-orang yang available untuk ditanya2in soal job regardless of its angkatan. Kebijakan dari BPH sendiri gmn? apakah privilege ikut job masih lekat ke orang yang registrasi ulang atau engga?  ulang tahun (ini pd dasarnya baca birthDay member, trus kirim reminder yang prepared, via email dan SMS, ditrigger cronjob laravel. apakah reminder untuk HCD saja, atau mau untuk member langsung juga?_  pengingat ulang tahun (mungkin H-3)  pengingat hari H  sebagai tambahan bisa pake  SMS Gateway  untuk notifikasi SMS, incur cost jadi minimize.  pendataan anggota  apakah dibatasi dari anggota yang udah jelas diterima, atau mau cover case rekrutmen? NB: rekrutmen bisa dipisah ke sistem sendiri yang lebih kecil, DB terpisah, atau kalau mau masih tradisional bisa tetap dengan google form, mengingat kalo handle user 500 ukuran droplet digitalocean yang dipake harganya di luar kesanggupan gw.  kehadiran  seperti nomor satu, masih hanya bagian kecil dari member management. Kemungkinan ini mayornya di event management, tapi apakah event harus dipersempit menjadi konser dan job? Atau dianggap sama saja namun beda skala?  manajemen info untuk keperluan graduation, misal menandai tanggal tertentu dan mengasumsikan perkiraan kelulusan dari masing-masing anggota mengikuti status pendidikan di UI mereka.  implikasinya, object Education harus diperluas, tapi ga wajib, jadi ntar orang HCD bisa dapet reminder untuk cari info lebih dahulu   problem yang sering terjadi: ref #1 nyari ke mana apabila angkatan yang aktif habis",
             "title": "Web App"
-        }, 
+        },
         {
-            "location": "/paragita/backoffice/module/Rights_Management/", 
-            "text": "List Role\n\n\n\n\n\n\n\n\nRole\n\n\nDesc\n\n\n\n\n\n\n\n\n\n\nroot\n\n\nperform everything\n\n\n\n\n\n\nhcd\n\n\nmember management", 
+            "location": "/paragita/backoffice/module/Rights_Management/",
+            "text": "List Role\n\n\n\n\n\n\n\n\nRole\n\n\nDesc\n\n\n\n\n\n\n\n\n\n\nroot\n\n\nperform everything\n\n\n\n\n\n\nhcd\n\n\nmember management",
             "title": "Rights Management"
-        }, 
+        },
         {
-            "location": "/paragita/website/reference_website/", 
-            "text": "List of Websites under UI managed by each entity:\n\n\n\n\nhttp://mahawaditra.ui.ac.id", 
+            "location": "/paragita/website/reference_website/",
+            "text": "List of Websites under UI managed by each entity:\n\n\n\n\nhttp://mahawaditra.ui.ac.id",
             "title": "Reference website"
-        }, 
+        },
         {
-            "location": "/paragita/website/website/", 
-            "text": "Alternatif Pengelolaan Situs www.paragita.com dengan Static Site Generator Jekyll\n\n\nAccess \nhttp://www2.paragita.com\n. Situs ini mengikuti serta disajikan langsung dari branch gh-pages di repo \nini\n\n\nTheme chosen by Nada: Twenty. \nhttps://html5up.net/twenty\n development \ndi sini.\n\n\nNaming issue (is it? or just me?)\n\n\nThis section is to be deleted.\n\n\nMahwaditra di situsnya menulis:\n\n\nNama \u201cMahawaditra\u201d berasal dari bahasa Sansekerta.\n\u201cMaha\u201d berarti agung dan \u201cWaditra\u201d berarti suara,\nsehingga \u201cMahawaditra\u201d memiliki arti suara yang agung.\nNama ini diusulkan oleh rektor Universitas Indonesia \npada masa OSUI Mahawaditra didirikan yaitu alm. Prof. Dr. Nugroho Nososusanto.\n\n\n\nIn our documents:\n\n\nNama Paragita diberikan oleh rektor Universitas Indonesia saat itu, \nProf. Dr. Nugroho Notosusanto, yang berarti suara yang megah atau agung.\n\n\n\nAnehnya dari website \nhttp://spokensanskrit.org/\n gw ga ketemu entri yang benar.\n\n\n\n\nWaditra\n, ga di sanskrit, ketemunya di sini \nhttps://jv.wiktionary.org/wiki/waditra\n dan juga di \nhttps://su.wikipedia.org/wiki/Waditra\n berarti \nalat musik\n\n\nMaha\n bener, sanskrit berarti \nmegah\n. \nhttp://spokensanskrit.org/index.php?mode=3\nscript=hk\ntran_input=maha\ndirect=se\n\n\nGita\n bener, sanskrit berarti \nlagu\n. Tetapi di dokumen kita menulisnya sebagai \nsuara\n \nhttp://spokensanskrit.org/index.php?mode=3\nscript=hk\ntran_input=gita\ndirect=se\n \n\n\nPara, ga ketemu.\n\n\n\n\nUntuk \nwaditra\n, mungkin wajar karena masih adopsi kata yang normal tanpa inflection.\n\n\nUntuk \npara\n, entri terdekat yang menggambarkan agung atau megah ada di \nparama\n \nhttp://spokensanskrit.org/index.php?mode=3\nscript=hk\ntran_input=parama\ndirect=se\n\n\nEntri lain \nhttps://en.wiktionary.org/wiki/para#Javanese\n berarti \nkumpulan orang-orang", 
+            "location": "/paragita/website/website/",
+            "text": "Alternatif Pengelolaan Situs www.paragita.com dengan Static Site Generator Jekyll\n\n\nAccess \nhttp://www2.paragita.com\n. Situs ini mengikuti serta disajikan langsung dari branch gh-pages di repo \nini\n\n\nTheme chosen by Nada: Twenty. \nhttps://html5up.net/twenty\n development \ndi sini.\n\n\nNaming issue (is it? or just me?)\n\n\nThis section is to be deleted.\n\n\nMahwaditra di situsnya menulis:\n\n\nNama \u201cMahawaditra\u201d berasal dari bahasa Sansekerta.\n\u201cMaha\u201d berarti agung dan \u201cWaditra\u201d berarti suara,\nsehingga \u201cMahawaditra\u201d memiliki arti suara yang agung.\nNama ini diusulkan oleh rektor Universitas Indonesia \npada masa OSUI Mahawaditra didirikan yaitu alm. Prof. Dr. Nugroho Nososusanto.\n\n\n\nIn our documents:\n\n\nNama Paragita diberikan oleh rektor Universitas Indonesia saat itu, \nProf. Dr. Nugroho Notosusanto, yang berarti suara yang megah atau agung.\n\n\n\nAnehnya dari website \nhttp://spokensanskrit.org/\n gw ga ketemu entri yang benar.\n\n\n\n\nWaditra\n, ga di sanskrit, ketemunya di sini \nhttps://jv.wiktionary.org/wiki/waditra\n dan juga di \nhttps://su.wikipedia.org/wiki/Waditra\n berarti \nalat musik\n\n\nMaha\n bener, sanskrit berarti \nmegah\n. \nhttp://spokensanskrit.org/index.php?mode=3&script=hk&tran_input=maha&direct=se\n\n\nGita\n bener, sanskrit berarti \nlagu\n. Tetapi di dokumen kita menulisnya sebagai \nsuara\n \nhttp://spokensanskrit.org/index.php?mode=3&script=hk&tran_input=gita&direct=se\n \n\n\nPara, ga ketemu.\n\n\n\n\nUntuk \nwaditra\n, mungkin wajar karena masih adopsi kata yang normal tanpa inflection.\n\n\nUntuk \npara\n, entri terdekat yang menggambarkan agung atau megah ada di \nparama\n \nhttp://spokensanskrit.org/index.php?mode=3&script=hk&tran_input=parama&direct=se\n\n\nEntri lain \nhttps://en.wiktionary.org/wiki/para#Javanese\n berarti \nkumpulan orang-orang",
             "title": "Alternatif Pengelolaan Situs www.paragita.com dengan Static Site Generator Jekyll"
-        }, 
+        },
         {
-            "location": "/paragita/website/website/#alternatif-pengelolaan-situs-wwwparagitacom-dengan-static-site-generator-jekyll", 
-            "text": "Access  http://www2.paragita.com . Situs ini mengikuti serta disajikan langsung dari branch gh-pages di repo  ini  Theme chosen by Nada: Twenty.  https://html5up.net/twenty  development  di sini.", 
+            "location": "/paragita/website/website/#alternatif-pengelolaan-situs-wwwparagitacom-dengan-static-site-generator-jekyll",
+            "text": "Access  http://www2.paragita.com . Situs ini mengikuti serta disajikan langsung dari branch gh-pages di repo  ini  Theme chosen by Nada: Twenty.  https://html5up.net/twenty  development  di sini.",
             "title": "Alternatif Pengelolaan Situs www.paragita.com dengan Static Site Generator Jekyll"
-        }, 
+        },
         {
-            "location": "/paragita/website/website/#naming-issue-is-it-or-just-me", 
-            "text": "This section is to be deleted.  Mahwaditra di situsnya menulis:  Nama \u201cMahawaditra\u201d berasal dari bahasa Sansekerta.\n\u201cMaha\u201d berarti agung dan \u201cWaditra\u201d berarti suara,\nsehingga \u201cMahawaditra\u201d memiliki arti suara yang agung.\nNama ini diusulkan oleh rektor Universitas Indonesia \npada masa OSUI Mahawaditra didirikan yaitu alm. Prof. Dr. Nugroho Nososusanto.  In our documents:  Nama Paragita diberikan oleh rektor Universitas Indonesia saat itu, \nProf. Dr. Nugroho Notosusanto, yang berarti suara yang megah atau agung.  Anehnya dari website  http://spokensanskrit.org/  gw ga ketemu entri yang benar.   Waditra , ga di sanskrit, ketemunya di sini  https://jv.wiktionary.org/wiki/waditra  dan juga di  https://su.wikipedia.org/wiki/Waditra  berarti  alat musik  Maha  bener, sanskrit berarti  megah .  http://spokensanskrit.org/index.php?mode=3 script=hk tran_input=maha direct=se  Gita  bener, sanskrit berarti  lagu . Tetapi di dokumen kita menulisnya sebagai  suara   http://spokensanskrit.org/index.php?mode=3 script=hk tran_input=gita direct=se    Para, ga ketemu.   Untuk  waditra , mungkin wajar karena masih adopsi kata yang normal tanpa inflection.  Untuk  para , entri terdekat yang menggambarkan agung atau megah ada di  parama   http://spokensanskrit.org/index.php?mode=3 script=hk tran_input=parama direct=se  Entri lain  https://en.wiktionary.org/wiki/para#Javanese  berarti  kumpulan orang-orang", 
+            "location": "/paragita/website/website/#naming-issue-is-it-or-just-me",
+            "text": "This section is to be deleted.  Mahwaditra di situsnya menulis:  Nama \u201cMahawaditra\u201d berasal dari bahasa Sansekerta.\n\u201cMaha\u201d berarti agung dan \u201cWaditra\u201d berarti suara,\nsehingga \u201cMahawaditra\u201d memiliki arti suara yang agung.\nNama ini diusulkan oleh rektor Universitas Indonesia \npada masa OSUI Mahawaditra didirikan yaitu alm. Prof. Dr. Nugroho Nososusanto.  In our documents:  Nama Paragita diberikan oleh rektor Universitas Indonesia saat itu, \nProf. Dr. Nugroho Notosusanto, yang berarti suara yang megah atau agung.  Anehnya dari website  http://spokensanskrit.org/  gw ga ketemu entri yang benar.   Waditra , ga di sanskrit, ketemunya di sini  https://jv.wiktionary.org/wiki/waditra  dan juga di  https://su.wikipedia.org/wiki/Waditra  berarti  alat musik  Maha  bener, sanskrit berarti  megah .  http://spokensanskrit.org/index.php?mode=3&script=hk&tran_input=maha&direct=se  Gita  bener, sanskrit berarti  lagu . Tetapi di dokumen kita menulisnya sebagai  suara   http://spokensanskrit.org/index.php?mode=3&script=hk&tran_input=gita&direct=se    Para, ga ketemu.   Untuk  waditra , mungkin wajar karena masih adopsi kata yang normal tanpa inflection.  Untuk  para , entri terdekat yang menggambarkan agung atau megah ada di  parama   http://spokensanskrit.org/index.php?mode=3&script=hk&tran_input=parama&direct=se  Entri lain  https://en.wiktionary.org/wiki/para#Javanese  berarti  kumpulan orang-orang",
             "title": "Naming issue (is it? or just me?)"
         }
     ]
