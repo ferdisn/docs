@@ -5,7 +5,7 @@ Windows dan OS X: Kunjungi situsnya di [https://www.thunderbird.net](https://www
 
 Linux: Ambil dari *repo* distro Anda dengan perintah:
 
-* Turunan Debian: `# apt-get install thunderbird` 
+* Turunan Debian: `# apt-get install thunderbird`
 * Turunan Red Hat Enterprise Linux: `# yum install thunderbird` | mulai versi 7 `yum` diganti dengan `dnf`
 * Turunan Fedora `# dnf install thunderbird`
 
@@ -35,7 +35,7 @@ Tambahannya, pasang *plugin* CardBook dengan cara:
 ### 2. Konfigurasi
 Jalankan perangkat lunak.
 
-* Apabila ada pertanyaan soal *System Integration*, abaikan saja dengan klik tombol **Skip Integration**. 
+* Apabila ada pertanyaan soal *System Integration*, abaikan saja dengan klik tombol **Skip Integration**.
 * Jika ada pertanyaan soal konfigurasi akun email, abaikan saja dengan klik tombol **I think I'll configure my account later.**
 * Jika ada pertanyaan terkait impor data kontak Thunderbird ke dalam CardBook, klik **Cancel**.
 
