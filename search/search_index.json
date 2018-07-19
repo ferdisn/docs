@@ -12,7 +12,7 @@
         },
         {
             "location": "/meta/",
-            "text": "Meta\n\n\nMendirikan kembali lingkungan kerja MkDocs\n\n\nBerikut langkah mendirikan ulang lingkungan kerja MkDocs dalam rangka mengelola dokumentasi.\n\n\nKebutuhannya adalah Python, pip, mkdocs, dan mkdocs-material. Yang terakhir adalah theme yang dipakai saat ini.\n\n\n\n\nInstall \npython\n\n\nInstall \npip\n\n\nInstall \nmkdocs\n\n\nInstall \nmkdocs-material\n\n\n\n\nTBD\nscript dnf/yum untuk install python\n\n\n\n\nPengoperasian MkDocs\n\n\nPratinjau Langsung\n\n\nJalankan \n$ mkdocs serve\n di folder pangkal proyek.\n\n\nUnggah ke GitHub Pages\n\n\nJalankan \n$ mkdocs gh-deploy\n di folder pangkal proyek.",
+            "text": "Meta\n\n\nMendirikan kembali lingkungan kerja MkDocs\n\n\nBerikut langkah mendirikan ulang lingkungan kerja MkDocs dalam rangka mengelola dokumentasi.\n\n\nKebutuhannya adalah Python, pip, mkdocs, dan mkdocs-material. Yang terakhir adalah theme yang dipakai saat ini.\n\n\n\n\nInstall \npython\n\n\nInstall \npip\n\n\nInstall \nmkdocs\n\n\nInstall \nmkdocs-material\n\n\n\n\nTBD\nscript dnf/yum untuk install python\n\n\n\n\nPengoperasian MkDocs\n\n\nPratinjau Langsung\n\n\nJalankan \n$ mkdocs serve\n di folder pangkal proyek.\n\n\nUnggah ke GitHub Pages\n\n\nJalankan \n$ mkdocs gh-deploy\n di folder pangkal proyek.\n\n\nseparate github repo for images and how to present locally using php built-in web server\n\n\nhttp://php.net/manual/en/features.commandline.webserver.php",
             "title": "Meta"
         },
         {
@@ -39,6 +39,11 @@
             "location": "/meta/#unggah-ke-github-pages",
             "text": "Jalankan  $ mkdocs gh-deploy  di folder pangkal proyek.",
             "title": "Unggah ke GitHub Pages"
+        },
+        {
+            "location": "/meta/#separate-github-repo-for-images-and-how-to-present-locally-using-php-built-in-web-server",
+            "text": "http://php.net/manual/en/features.commandline.webserver.php",
+            "title": "separate github repo for images and how to present locally using php built-in web server"
         },
         {
             "location": "/database/convention/",
@@ -292,7 +297,7 @@
         },
         {
             "location": "/guide/thunderbird/",
-            "text": "Konfigurasi Thunderbird dengan email server IMAP dan SMTP standar",
+            "text": "Konfigurasi Thunderbird dengan email server IMAP dan SMTP standar\n\n\n1. Unduh dan pasang perangkat lunak\n\n\nWindows dan OS X: Kunjungi situsnya di \nhttps://www.thunderbird.net\n lalu unduh versi terkini. Pasang executablenya.\n\n\nLinux: Ambil dari \nrepo\n distro Anda dengan perintah:\n\n\n\n\nTurunan Debian: \n# apt-get install thunderbird\n\n\nTurunan Red Hat Enterprise Linux: \n# yum install thunderbird\n | mulai versi 7 \nyum\n diganti dengan \ndnf\n\n\nTurunan Fedora \n# dnf install thunderbird\n\n\n\n\nJika Anda pemberani, silakan bangun dari kode sumber.\n\n\n2. Konfigurasi\n\n\nTo be written.\n\n\nKonfigurasi Thunderbird dengan CalDAV/CardDAV server Ba\u00c3\u00afkal\n\n\n1. Unduh dan pasang perangkat lunak\n\n\nSama seperti yang diuraikan sebelumnya.\n\n\nTambahannya, pasang \nplugin\n CardBook dengan cara:\n\n\n\n\nKlik Menu, lalu klik Plugin.\n\n\n\n\n\nBuka menu Extensions di kiri, lalu di kanan atas, di kotak pencarian, ketik 'CardBook' lalu tekan Enter, dan akan muncul daftar plugin yang namanya sesuai.\n\n\n\n\n\nKlik \nInstall\n di sebelah kanan CardBook. (Lihat gambar sebelumnya)\n\n\nKlik \nRestart Now\n yang muncul setelah pemasangan selesai.\n\n\n\n\n\n\n\n2. Konfigurasi\n\n\nJalankan perangkat lunak.\n\n\n\n\nApabila ada pertanyaan soal \nSystem Integration\n, abaikan saja dengan klik tombol \nSkip Integration\n.\n\n\nJika ada pertanyaan soal konfigurasi akun email, abaikan saja dengan klik tombol \nI think I'll configure my account later.\n\n\nJika ada pertanyaan terkait impor data kontak Thunderbird ke dalam CardBook, klik \nCancel\n.\n\n\n\n\nLalu prosedur konfigurasi.\n\n\n\n\n\n\nKlik tombol \nCardBook\n yang ada di sebelah tombol menu utama.\n\n\n\n\n\n\n\nKlik tombol menu utama CardBook di kiri. Yang di kanan menu utama Thunderbird. Klik menu utama Cardbook, Address Book, New Address Book.\n\n\n\n\n\n\n\nPilih 'Remote' di lokasi Address Book. Klik \nNext\n.\n\n\n\n\n\n\n\nDi jendela berikutnya akan ada beberapa isian. Pilih dahulu 'CardDAV' sebagai tipe yang diinginkan.\n\n\n\n\n\n\nLalu, dapatkan URL address book yang akan diimpor. Karena ini Ba\u00c3\u00afkal, maka skema URLnya biasanya berbentuk seperti:\n\n\n$HOST/dav.php/addressbooks/$BAIKAL_USER/$ADDRESSBOOK\n\n\n\n\n\n\nIsikan URL ke kolom URL. Setelah itu isikan username dan password Anda, dan klik Validate. Kalau tidak bermasalah, bisa lanjut dengan klik Next.\n\n\n\n\n\n\n\nSelanjutnya tentukan nama dan warna. Silakan isi sesuka hati, atau biarkan saja.\n\n\n\n\n\n\n\nKlik Finish.\n\n\n\n\n\n\nSelesai!!!\n\n\n\n\n\n\n\nSekarang semua perubahan yang dilakukan di Address Book ini akan tersinkronisasi ke server, dan tersedia di semua aplikasi yang juga memakai server ini.",
             "title": "Thunderbird"
         },
         {
@@ -301,9 +306,64 @@
             "title": "Konfigurasi Thunderbird dengan email server IMAP dan SMTP standar"
         },
         {
+            "location": "/guide/thunderbird/#1-unduh-dan-pasang-perangkat-lunak",
+            "text": "Windows dan OS X: Kunjungi situsnya di  https://www.thunderbird.net  lalu unduh versi terkini. Pasang executablenya.  Linux: Ambil dari  repo  distro Anda dengan perintah:   Turunan Debian:  # apt-get install thunderbird  Turunan Red Hat Enterprise Linux:  # yum install thunderbird  | mulai versi 7  yum  diganti dengan  dnf  Turunan Fedora  # dnf install thunderbird   Jika Anda pemberani, silakan bangun dari kode sumber.",
+            "title": "1. Unduh dan pasang perangkat lunak"
+        },
+        {
+            "location": "/guide/thunderbird/#2-konfigurasi",
+            "text": "To be written.",
+            "title": "2. Konfigurasi"
+        },
+        {
+            "location": "/guide/thunderbird/#konfigurasi-thunderbird-dengan-caldavcarddav-server-baa-kal",
+            "text": "",
+            "title": "Konfigurasi Thunderbird dengan CalDAV/CardDAV server Ba\u00c3\u00afkal"
+        },
+        {
+            "location": "/guide/thunderbird/#1-unduh-dan-pasang-perangkat-lunak_1",
+            "text": "Sama seperti yang diuraikan sebelumnya.  Tambahannya, pasang  plugin  CardBook dengan cara:   Klik Menu, lalu klik Plugin.   Buka menu Extensions di kiri, lalu di kanan atas, di kotak pencarian, ketik 'CardBook' lalu tekan Enter, dan akan muncul daftar plugin yang namanya sesuai.   Klik  Install  di sebelah kanan CardBook. (Lihat gambar sebelumnya)  Klik  Restart Now  yang muncul setelah pemasangan selesai.",
+            "title": "1. Unduh dan pasang perangkat lunak"
+        },
+        {
+            "location": "/guide/thunderbird/#2-konfigurasi_1",
+            "text": "Jalankan perangkat lunak.   Apabila ada pertanyaan soal  System Integration , abaikan saja dengan klik tombol  Skip Integration .  Jika ada pertanyaan soal konfigurasi akun email, abaikan saja dengan klik tombol  I think I'll configure my account later.  Jika ada pertanyaan terkait impor data kontak Thunderbird ke dalam CardBook, klik  Cancel .   Lalu prosedur konfigurasi.    Klik tombol  CardBook  yang ada di sebelah tombol menu utama.    Klik tombol menu utama CardBook di kiri. Yang di kanan menu utama Thunderbird. Klik menu utama Cardbook, Address Book, New Address Book.    Pilih 'Remote' di lokasi Address Book. Klik  Next .    Di jendela berikutnya akan ada beberapa isian. Pilih dahulu 'CardDAV' sebagai tipe yang diinginkan.    Lalu, dapatkan URL address book yang akan diimpor. Karena ini Ba\u00c3\u00afkal, maka skema URLnya biasanya berbentuk seperti:  $HOST/dav.php/addressbooks/$BAIKAL_USER/$ADDRESSBOOK    Isikan URL ke kolom URL. Setelah itu isikan username dan password Anda, dan klik Validate. Kalau tidak bermasalah, bisa lanjut dengan klik Next.    Selanjutnya tentukan nama dan warna. Silakan isi sesuka hati, atau biarkan saja.    Klik Finish.    Selesai!!!    Sekarang semua perubahan yang dilakukan di Address Book ini akan tersinkronisasi ke server, dan tersedia di semua aplikasi yang juga memakai server ini.",
+            "title": "2. Konfigurasi"
+        },
+        {
             "location": "/infrastructure/Email/",
             "text": "At this point, very basic Postfix and Dovecot. Username controlled purely from a text file configuration.\n\n\nPlan:\n\n\nKapasitas $15 dari DO lumayan menarik. Setidaknya 200rb bisa buat pakai 100 account yang juga belum tentu semuanya aktif.\n\n\nSo, tantangannya dengan layanan eksisting:\n\n\n\n\nAkses webmail: Roundcube: \nlink\n tapi murni cuma buat imel-imelan.\n\n\nPenerangan soal cara konfigurasi IMAP/SMTP ke klien email: Thunderbird, Outlook (should we? probably no), emClient (personally pake), Gmail on Android, Apple Mail, iOS Mail, Android Mail (beda ama Gmail on Android).\n\n\n\n\nOkay, usually email goes hand in hand with calendaring dan contact.\nSo what? Baikal already exists but no way to ask user to install CardDAV-Sync and CalDAV-Sync to their phone, mind you, they're paid apps. iOS users are in luck, DAV thingy is built-in. Apalagi minta mereka semua seragam pakai thunderbird.\n\n\nBaikal dan upstreamnya sabre/* akan EOL. Probably better find another way to store Card and Cal things.\n\n\nOTOH, mungkin anak-anak ini blm mengutilisasi fitur kalender, jadi masih bisa cari alternatif yang bisa bertahan long term.\n\n\nlink\n\nPake ini untuk split email, pertama ke capella, kedua ke server baru untuk pengujian. Jalanin paralel 3 bulan. Ingat kalau direktif Mailcow terlalu agresif, invoice gojek aja ga tembus karena ga dikirim dari domain yang existing.",
             "title": "Email"
+        },
+        {
+            "location": "/infrastructure/Konfigurasi_Dasar/",
+            "text": "Referensi Konfigurasi\n\n\nCentOS 7\n\n\ntelnet\nnmap\n\n\ndisable (or remove) postfix\ndisable rpcbind\nsystemctl stop rpcbind\n\n\nfirewalld\n\n\nFirewall-CMD\nsystemctl is-enabled firewalld = pastikan enabled\nsystemctl start firewalld",
+            "title": "Konfigurasi Dasar"
+        },
+        {
+            "location": "/infrastructure/Konfigurasi_Dasar/#referensi-konfigurasi",
+            "text": "CentOS 7  telnet\nnmap  disable (or remove) postfix\ndisable rpcbind\nsystemctl stop rpcbind  firewalld  Firewall-CMD\nsystemctl is-enabled firewalld = pastikan enabled\nsystemctl start firewalld",
+            "title": "Referensi Konfigurasi"
+        },
+        {
+            "location": "/infrastructure/Konfigurasi_Peladen_Surel/",
+            "text": "Persyaratan dasar\n\n\nFirewall Rule\n\n\nA recompiled RPM to enable PostgreSQL support\nA running PostgreSQL\nA running Postfix\nA running Dovecot\n\n\nBackup/Restore",
+            "title": "Konfigurasi Peladen Surel"
+        },
+        {
+            "location": "/infrastructure/Konfigurasi_Peladen_Surel/#persyaratan-dasar",
+            "text": "Firewall Rule  A recompiled RPM to enable PostgreSQL support\nA running PostgreSQL\nA running Postfix\nA running Dovecot  Backup/Restore",
+            "title": "Persyaratan dasar"
+        },
+        {
+            "location": "/infrastructure/Konfigurasi_Peladen_Web/",
+            "text": "Persyaratan dasar\n\n\nFirewall Rule\n\n\nEPEL\nNginx\nPHP-FPM v7\n\n\nseparate php-fpm process per user\nseparate nginx web directory per user\n\n\nFirewall-CMD\nfirewall-cmd --get-default-zone = note jawabannya\nfirewall-cmd --zone=public --permanent --add-service=http\nfirewall-cmd --zone=public --permanent --add-service=https\nfirewall-cmd --reload\n\n\nNginx\nyum install epel-release\nyum install nginx\n\n\nconfig\n\n\nPHP-FPM\ninstall\nhttps://blog.remirepo.net/pages/Config-en\ninstall package remirepo\nenable repo php-fpm yang dimau\n\n\nnew users (adduser)\ndidi\nferdi\nbayu\nparagita\n\n\nprepare dirs\nmkdir /var/webapp\nchmod g+s webapp\nchown root:nginx webapp\nmkdir /var/webapp/didi,ferdi,bayu,paragita\n\n\nselinux\nsemanage fcontext -a -t httpd_log_t \"/var/webapp/[^/]+/logs(/.\n)?\"\nsemanage fcontext -a -t httpd_var_run_t \"/var/webapp/[^/]+/php-fpm-session(/.\n)?\"\nsetsebool httpd_can_sendmail 1 = biar bisa send email\nsetsebool httpd_can_network_connect 1 = biar roundcube bisa akses imap\nsetsebool httpd_can_network_connect_db 1 = biar bisa akses db network\n\n\n/etc/hosts\nip capella.pojoksantai.com #email\nip db.pojoksantai.com #database\n\n\n/etc/postfix/main.cf\nrelayhost = [capella.pojoksantai.com]\n\n\nsystemctl enable postfix\nsystemctl start postfix\n\n\nhttps://blog.ferdi.id/2017/12/23/instalasi-nginx/ -> setup nginx.conf\n\n\nhttps://blog.ferdi.id/2017/12/23/instalasi-php-fpm/ -> setup pool php-fpm\n\n\npindahin file\nscp -r motorscene/ bayu_web:/var/webapp/bayu/files/\n\n\nsystemctl enable nginx\nsystemctl enable php-fpm\n\n\nforce postfix to resolve natively\nhttps://www.linuxquestions.org/questions/linux-software-2/force-postfix-to-refer-etc-hosts-857662/\nsmtp_host_lookup = native in main.cf\n\n\nsemanage mungkin ga bisa pake rule yang bener-bener fleksibel. Mungkin folder yang berupa wordpress bisa diprepend dengan \"wp_\" gitu sehingga bisa ditarget lebih presis. Saat ini dia filenya bisa diupdate, tapi ga bisa dicreate sama proses php-fpm under nama user bersangkutan.\n\n\nmove sertifikat first -> selinuxnya juga, selinux tu buat postfix\n\n\nroundcube better off reinstallling\n\n\nbaikal try reinstalling first, then moving \n\n\ndatabase didi yang banyak plugin ajaibnya, harus diperiksa sql dumpnya",
+            "title": "Konfigurasi Peladen Web"
+        },
+        {
+            "location": "/infrastructure/Konfigurasi_Peladen_Web/#persyaratan-dasar",
+            "text": "Firewall Rule  EPEL\nNginx\nPHP-FPM v7  separate php-fpm process per user\nseparate nginx web directory per user  Firewall-CMD\nfirewall-cmd --get-default-zone = note jawabannya\nfirewall-cmd --zone=public --permanent --add-service=http\nfirewall-cmd --zone=public --permanent --add-service=https\nfirewall-cmd --reload  Nginx\nyum install epel-release\nyum install nginx  config  PHP-FPM\ninstall\nhttps://blog.remirepo.net/pages/Config-en\ninstall package remirepo\nenable repo php-fpm yang dimau  new users (adduser)\ndidi\nferdi\nbayu\nparagita  prepare dirs\nmkdir /var/webapp\nchmod g+s webapp\nchown root:nginx webapp\nmkdir /var/webapp/didi,ferdi,bayu,paragita  selinux\nsemanage fcontext -a -t httpd_log_t \"/var/webapp/[^/]+/logs(/. )?\"\nsemanage fcontext -a -t httpd_var_run_t \"/var/webapp/[^/]+/php-fpm-session(/. )?\"\nsetsebool httpd_can_sendmail 1 = biar bisa send email\nsetsebool httpd_can_network_connect 1 = biar roundcube bisa akses imap\nsetsebool httpd_can_network_connect_db 1 = biar bisa akses db network  /etc/hosts\nip capella.pojoksantai.com #email\nip db.pojoksantai.com #database  /etc/postfix/main.cf\nrelayhost = [capella.pojoksantai.com]  systemctl enable postfix\nsystemctl start postfix  https://blog.ferdi.id/2017/12/23/instalasi-nginx/ -> setup nginx.conf  https://blog.ferdi.id/2017/12/23/instalasi-php-fpm/ -> setup pool php-fpm  pindahin file\nscp -r motorscene/ bayu_web:/var/webapp/bayu/files/  systemctl enable nginx\nsystemctl enable php-fpm  force postfix to resolve natively\nhttps://www.linuxquestions.org/questions/linux-software-2/force-postfix-to-refer-etc-hosts-857662/\nsmtp_host_lookup = native in main.cf  semanage mungkin ga bisa pake rule yang bener-bener fleksibel. Mungkin folder yang berupa wordpress bisa diprepend dengan \"wp_\" gitu sehingga bisa ditarget lebih presis. Saat ini dia filenya bisa diupdate, tapi ga bisa dicreate sama proses php-fpm under nama user bersangkutan.  move sertifikat first -> selinuxnya juga, selinux tu buat postfix  roundcube better off reinstallling  baikal try reinstalling first, then moving   database didi yang banyak plugin ajaibnya, harus diperiksa sql dumpnya",
+            "title": "Persyaratan dasar"
         },
         {
             "location": "/infrastructure/Team_Based_Messaging_App/",
