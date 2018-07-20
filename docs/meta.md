@@ -20,3 +20,7 @@ script dnf/yum untuk install python
 Jalankan `$ mkdocs serve` di folder pangkal proyek.
 ### Unggah ke GitHub Pages
 Jalankan `$ mkdocs gh-deploy` di folder pangkal proyek.
+
+### separate github repo for images and how to present locally using php built-in web server
+
+http://php.net/manual/en/features.commandline.webserver.php
