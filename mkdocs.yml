@@ -19,6 +19,7 @@ markdown_extensions:
   - admonition
   - codehilite
   - pymdownx.details
+  - footnotes
 
 pages:
    - Awal : 'index.md'
