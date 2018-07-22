@@ -1,19 +1,31 @@
+# Site Configuration
 site_name: Knowledge Base
-theme: material
-  feature:
-    tabs: true
-repo_url: https://github.com/ferdisn
-edit_uri: docs/edit/mkdocs-edit/docs
 site_description: Storing knowledge base for all operations within my control.
 site_author: Ferdi Saptanera
 
+
+repo_url: https://github.com/ferdisn
+edit_uri: docs/edit/mkdocs-edit/docs
+
+# Development Setting
 remote_name: origin
 dev_addr: 127.0.0.1:8001
+
+# Appearance
+theme: 
+  name: material
+
+markdown_extensions:
+  - admonition
+  - codehilite
+  - pymdownx.details
 
 pages:
    - Awal : 'index.md'
    - Meta : 'meta.md'
    - Infrastruktur :
+      - Umum : 'infrastructure/general.md'
+      - Konfigurasi Dasar : 'infrastructure/base_configuration.md'
       - Email : 'infrastructure/email.md'
    - Panduan :
       - Thunderbird : 'guide/thunderbird.md'
