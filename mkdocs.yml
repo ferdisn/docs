@@ -28,10 +28,12 @@ pages:
       - Umum : 'infrastructure/general.md'
       - Konfigurasi Dasar : 'infrastructure/base_configuration.md'
       - Email : 'infrastructure/email.md'
+      - Konfigurasi Surel Pribadi : 'infrastructure/configuration/personal_email.md'
    - Panduan :
       - Thunderbird : 'guide/thunderbird.md'
    - Sumber Daya : 
       - Awal : 'resources/resources.md'
       - Sumber Daya Bebas Biaya : 'resources/free-resources.md'
       - Program Rujukan : 'resources/reference-apps.md'
+
       
