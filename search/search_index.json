@@ -1,549 +1,214 @@
 {
     "docs": [
         {
-            "location": "/",
-            "text": "Documentation Overview\n\n\nDokumentasi ini terbagi menjadi 2 bagian:\n\n\n\n\nStruktur Database\n\n\nAlgoritma Aplikasi",
+            "location": "/", 
+            "text": "Documentation Overview\n\n\nDokumentasi ini terbagi menjadi 2 bagian:\n\n\n\n\nStruktur Database\n\n\nAlgoritma Aplikasi", 
+            "title": "Awal"
+        }, 
+        {
+            "location": "/#documentation-overview", 
+            "text": "Dokumentasi ini terbagi menjadi 2 bagian:   Struktur Database  Algoritma Aplikasi", 
             "title": "Documentation Overview"
-        },
+        }, 
         {
-            "location": "/#documentation-overview",
-            "text": "Dokumentasi ini terbagi menjadi 2 bagian:   Struktur Database  Algoritma Aplikasi",
-            "title": "Documentation Overview"
-        },
-        {
-            "location": "/meta/",
-            "text": "Meta\n\n\nMendirikan kembali lingkungan kerja MkDocs\n\n\nBerikut langkah mendirikan ulang lingkungan kerja MkDocs dalam rangka mengelola dokumentasi.\n\n\nKebutuhannya adalah Python, pip, mkdocs, dan mkdocs-material. Yang terakhir adalah theme yang dipakai saat ini.\n\n\n\n\nInstall \npython\n\n\nInstall \npip\n\n\nInstall \nmkdocs\n\n\nInstall \nmkdocs-material\n\n\n\n\nTBD\nscript dnf/yum untuk install python\n\n\n\n\nPengoperasian MkDocs\n\n\nPratinjau Langsung\n\n\nJalankan \n$ mkdocs serve\n di folder pangkal proyek.\n\n\nUnggah ke GitHub Pages\n\n\nJalankan \n$ mkdocs gh-deploy\n di folder pangkal proyek.\n\n\nseparate github repo for images and how to present locally using php built-in web server\n\n\nhttp://php.net/manual/en/features.commandline.webserver.php",
+            "location": "/meta/", 
+            "text": "Meta\n\n\nMendirikan kembali lingkungan kerja MkDocs\n\n\nBerikut langkah mendirikan ulang lingkungan kerja MkDocs dalam rangka mengelola dokumentasi.\n\n\nKebutuhannya adalah Python, pip, mkdocs, dan mkdocs-material. Yang terakhir adalah theme yang dipakai saat ini.\n\n\n\n\nInstall \npython\n\n\nInstall \npip\n\n\nInstall \nmkdocs\n\n\nInstall \nmkdocs-material\n\n\n\n\nTBD\nscript dnf/yum untuk install python\n\n\n\n\n\nPengoperasian MkDocs\n\n\nPratinjau Langsung\n\n\nJalankan \n$ mkdocs serve\n di folder pangkal proyek.\n\n\nUnggah ke GitHub Pages\n\n\nJalankan \n$ mkdocs gh-deploy\n di folder pangkal proyek.\n\n\nseparate github repo for images and how to present locally using php built-in web server\n\n\nhttp://php.net/manual/en/features.commandline.webserver.php\n\n\nConfigure GitAhead local identity\n\n\nSelalu lakukan ini dulu", 
             "title": "Meta"
-        },
+        }, 
         {
-            "location": "/meta/#meta",
-            "text": "",
+            "location": "/meta/#meta", 
+            "text": "", 
             "title": "Meta"
-        },
+        }, 
         {
-            "location": "/meta/#mendirikan-kembali-lingkungan-kerja-mkdocs",
-            "text": "Berikut langkah mendirikan ulang lingkungan kerja MkDocs dalam rangka mengelola dokumentasi.  Kebutuhannya adalah Python, pip, mkdocs, dan mkdocs-material. Yang terakhir adalah theme yang dipakai saat ini.   Install  python  Install  pip  Install  mkdocs  Install  mkdocs-material   TBD\nscript dnf/yum untuk install python",
+            "location": "/meta/#mendirikan-kembali-lingkungan-kerja-mkdocs", 
+            "text": "Berikut langkah mendirikan ulang lingkungan kerja MkDocs dalam rangka mengelola dokumentasi.  Kebutuhannya adalah Python, pip, mkdocs, dan mkdocs-material. Yang terakhir adalah theme yang dipakai saat ini.   Install  python  Install  pip  Install  mkdocs  Install  mkdocs-material   TBD\nscript dnf/yum untuk install python", 
             "title": "Mendirikan kembali lingkungan kerja MkDocs"
-        },
+        }, 
         {
-            "location": "/meta/#pengoperasian-mkdocs",
-            "text": "",
+            "location": "/meta/#pengoperasian-mkdocs", 
+            "text": "", 
             "title": "Pengoperasian MkDocs"
-        },
+        }, 
         {
-            "location": "/meta/#pratinjau-langsung",
-            "text": "Jalankan  $ mkdocs serve  di folder pangkal proyek.",
+            "location": "/meta/#pratinjau-langsung", 
+            "text": "Jalankan  $ mkdocs serve  di folder pangkal proyek.", 
             "title": "Pratinjau Langsung"
-        },
+        }, 
         {
-            "location": "/meta/#unggah-ke-github-pages",
-            "text": "Jalankan  $ mkdocs gh-deploy  di folder pangkal proyek.",
+            "location": "/meta/#unggah-ke-github-pages", 
+            "text": "Jalankan  $ mkdocs gh-deploy  di folder pangkal proyek.", 
             "title": "Unggah ke GitHub Pages"
-        },
+        }, 
         {
-            "location": "/meta/#separate-github-repo-for-images-and-how-to-present-locally-using-php-built-in-web-server",
-            "text": "http://php.net/manual/en/features.commandline.webserver.php",
+            "location": "/meta/#separate-github-repo-for-images-and-how-to-present-locally-using-php-built-in-web-server", 
+            "text": "http://php.net/manual/en/features.commandline.webserver.php", 
             "title": "separate github repo for images and how to present locally using php built-in web server"
-        },
+        }, 
         {
-            "location": "/database/convention/",
-            "text": "Convention\n\n\natau Kaidah penamaan\n\n\nKaidah penamaan yang dipakai dalam \ndatabase\n\n\nNama \ndatabase\n\n\nHarus memiliki karakteristik berikut:\n\n\n\n\ndalam bahasa Inggris, dengan penerjemahan Indonesia yang masuk akal,\n\n\nmerujuk ke pemilik data,\n\n\nmerujuk ke fungsi aplikasi yang memakai \ndatabase\n,\n\n\nkalau terdiri dari dua kata atau lebih, pakai \nunderscore\n (_) sebagai pemisah kata.\n\n\n\n\nContoh:\n\n\n\n\n\n\n\n\nNama \ndatabase\n\n\nDipakai untuk...\n\n\n\n\n\n\n\n\n\n\nmail_management\n\n\nmengelola data peladen surel (Postfix dan Dovecot)\n\n\n\n\n\n\nparagita\n\n\nmengelola data Paragita\n\n\n\n\n\n\n\n\nNama \nschema\n\n\nApabila DBMS mendukung sistem \nschema\n, nama \nschema\n harus memiliki karakteristik berikut:\n\n\n\n\ndalam bahasa Inggris,\n\n\nmerujuk ke sifat data yang disimpan,\n\n\nreferensi sebagai berikut: \nproduction\n, \nsimulation\n, \ndevelopment\n.\n\n\n\n\nContoh:\n\n\n\n\n\n\n\n\nNama \nschema\n\n\nDipakai untuk...\n\n\n\n\n\n\n\n\n\n\nmail_management.production\n\n\nmenyimpan data utama\n\n\n\n\n\n\nmail_management.development\n\n\nmenyimpan data untuk pengembangan\n\n\n\n\n\n\nparagita.production\n\n\nmenyimpan data utama\n\n\n\n\n\n\n\n\nCatatan: abaikan \nschema\n standar dari DBMS, misalnya \npublic\n.\n\n\nNama tabel\n\n\nNama tabel harus memiliki karakteristik berikut:\n\n\n\n\ndalam bahasa Inggris,\n\n\nkata benda berbentuk jamak.\n\n\n\n\nContoh:\n\n\n\n\n\n\n\n\nNama tabel\n\n\nDipakai untuk...\n\n\n\n\n\n\n\n\n\n\ndomains\n\n\nmenyimpan data domain\n\n\n\n\n\n\nmailboxes\n\n\nmenyimpan data kotak surat\n\n\n\n\n\n\nusers\n\n\nmenyimpan data pengguna\n\n\n\n\n\n\naddresses\n\n\nmenyimpan data alamat\n\n\n\n\n\n\n\n\nNama kolom/\nfield\n TBD\n\n\nNama kolom harus memiliki karakteristik berikut:\n\n\n\n\ndalam bahasa Inggris,\n\n\nkata benda,\n\n\nkata sifat,\n\n\n\n\nContoh:\n\n\n\n\n\n\n\n\nNama tabel\n\n\nDipakai untuk...\n\n\n\n\n\n\n\n\n\n\ndomains\n\n\nmenyimpan data domain\n\n\n\n\n\n\nmailboxes\n\n\nmenyimpan data kotak surat\n\n\n\n\n\n\nusers\n\n\nmenyimpan data pengguna\n\n\n\n\n\n\naddresses\n\n\nmenyimpan data alamat",
-            "title": "Convention"
-        },
+            "location": "/meta/#configure-gitahead-local-identity", 
+            "text": "Selalu lakukan ini dulu", 
+            "title": "Configure GitAhead local identity"
+        }, 
         {
-            "location": "/database/convention/#convention",
-            "text": "atau Kaidah penamaan",
-            "title": "Convention"
-        },
+            "location": "/infrastructure/general/", 
+            "text": "Layanan yang dipelihara secara umum meliputi surat elektronik serta situs web.\n\n\nStruktur\n\n\nStruktur yang dipakai untuk menjalankan layanan tersebut seperti berikut:\n\n\n\n\nMail Server\n\n\nDatabase Server\n\n\nWeb Server\n\n\n\n\nKetiganya merupakan instance yang berdiri sendiri. Lihat di \nsini\n untuk pengaturan standar setiap instance.\n\n\nProgram\n\n\nPrinsip dasar pemilihan perangkat lunak adalah seumum dan senormal mungkin. Dalam menentukan perangkat lunak, saya menghindari pemilihan alat bantu pengaturan (\ne.g.\n CPanel) atau semacamnya untuk mengelola surel atau situs web. Hal ini mempertimbangkan skala pengelolaan.\n\n\nSelanjutnya, apabila pada suatu program (seperti \npostfix\n) mendukung konfigurasi berbasis database, maka pengelolaannya akan disandarkan pada perangkat lunak yang ditulis sendiri. Bahasa yang akan digunakan adalah PHP.\n\n\nPaket program yang dijalankan di setiap instance:\n\n\n\n\n\n\n\n\nMail\n\n\nDatabase\n\n\nWeb\n\n\n\n\n\n\n\n\n\n\npostfix\ndovecot\npostgresql\n\n\npostgresql\nmariadb\n\n\nnginx\nphp-fpm\n\n\n\n\n\n\n\n\nPort\n\n\n\n\n\n\n\n\nStandar\n\n\nPort\n\n\nLokasi\n\n\nKeterangan\n\n\n\n\n\n\n\n\n\n\nSMTP\n\n\n25\n\n\nMail\n\n\nmendukung TLS\n\n\n\n\n\n\nSMTP\nSubmission\n\n\n587\n\n\nMail\n\n\nwajib TLS\n\n\n\n\n\n\nIMAP\n\n\n993\n\n\nMail\n\n\nSSL\n\n\n\n\n\n\nPostgreSQL\n\n\n5432\n\n\nMail\n\n\nHanya konfigurasi surel\n\n\n\n\n\n\nPostgreSQL\n\n\n5432\n\n\nDatabase\n\n\nDatabase PostgreSQL\n\n\n\n\n\n\nMariaDB\n\n\n3306\n\n\nDatabase\n\n\nDatabase MariaDB\n\n\n\n\n\n\nHTTP\nHTTPS\n\n\n80\n443\n\n\nWeb\n\n\nDitentukan konfigurasi\n\n\n\n\n\n\n\n\nPHP-FPM dijalankan menggunakan soket Unix untuk alasan efisiensi dari Nginx yang memanggilnya.\n\n\nKomponen Luar\n\n\nG Suite\n\n\nG Suite\n adalah perangkat produktivitas awan dari Google yang ditujukan untuk pebisnis segmen UMKM. Biaya USD 5 per pengguna per bulan. Pengguna dari Indonesia masih mungkin menerima diskon tambahan dari Google.\n\n\nPada saat ini, hanya satu organisasi dibawah pengelolaan saya yang memakai G Suite. \nMX Record\n domain organisasi tersebut saat ini masih mencantumkan Mail Server sebagai tujuan pengirima surel. Dari \ninstance\n Mail Server tersebut, akan ada forwarding khusus untuk satu alamat email yang dikelola di G Suite.\n\n\nPengelolaan alias dan alamat surel\nSaat ini sedang direncanakan akan dibangun mail server yang seluruh tabel referensinya disimpan di dalam database PostgreSQL. Apabila sudah selesai dan bisa di\nexpose\n ke publik organisasi, pengaturan forwarding tersebut bisa diubah oleh pengguna secara mandiri.\nLet's Encrypt\n\n\nSertifikat SSL dikeluarkan oleh Let's Encrypt, dan diperbarui setiap tiga bulan.\n\n\nCloudFlare\n\n\nDNS dikelola di CloudFlare. Tidak ada rencana untuk \nhost\n DNS lokal karena seluruh aset berada di internet.\n\n\nDomain registrar\n\n\nPembahasan mengenai registrar. Mari jangan sebut merek. Serta jangan pilih TLD yang tidak long-lasting. Look at \nco.de\n example.\n\n\nWebmail\n\n\nRoundcube\n adalah perangkat lunak yang dipilih untuk melihat ke dalam peladen surel. Pengguna bebas menggunakan program email apa saja untuk membaca dan mengirim email, selama program tersebut mengikuti standar IMAP dan SMTP. Untuk kebutuhan membaca email di tempat umum, program ini bisa diakses melalui URL tertentu. Program ini berbasis PHP, dan dijalankan di bawah instance PHP-FPM di bawah nama saya.", 
+            "title": "Umum"
+        }, 
         {
-            "location": "/database/convention/#kaidah-penamaan-yang-dipakai-dalam-database",
-            "text": "",
-            "title": "Kaidah penamaan yang dipakai dalam database"
-        },
+            "location": "/infrastructure/general/#struktur", 
+            "text": "Struktur yang dipakai untuk menjalankan layanan tersebut seperti berikut:   Mail Server  Database Server  Web Server   Ketiganya merupakan instance yang berdiri sendiri. Lihat di  sini  untuk pengaturan standar setiap instance.", 
+            "title": "Struktur"
+        }, 
         {
-            "location": "/database/convention/#nama-database",
-            "text": "Harus memiliki karakteristik berikut:   dalam bahasa Inggris, dengan penerjemahan Indonesia yang masuk akal,  merujuk ke pemilik data,  merujuk ke fungsi aplikasi yang memakai  database ,  kalau terdiri dari dua kata atau lebih, pakai  underscore  (_) sebagai pemisah kata.   Contoh:     Nama  database  Dipakai untuk...      mail_management  mengelola data peladen surel (Postfix dan Dovecot)    paragita  mengelola data Paragita",
-            "title": "Nama database"
-        },
+            "location": "/infrastructure/general/#program", 
+            "text": "Prinsip dasar pemilihan perangkat lunak adalah seumum dan senormal mungkin. Dalam menentukan perangkat lunak, saya menghindari pemilihan alat bantu pengaturan ( e.g.  CPanel) atau semacamnya untuk mengelola surel atau situs web. Hal ini mempertimbangkan skala pengelolaan.  Selanjutnya, apabila pada suatu program (seperti  postfix ) mendukung konfigurasi berbasis database, maka pengelolaannya akan disandarkan pada perangkat lunak yang ditulis sendiri. Bahasa yang akan digunakan adalah PHP.  Paket program yang dijalankan di setiap instance:     Mail  Database  Web      postfix dovecot postgresql  postgresql mariadb  nginx php-fpm", 
+            "title": "Program"
+        }, 
         {
-            "location": "/database/convention/#nama-schema",
-            "text": "Apabila DBMS mendukung sistem  schema , nama  schema  harus memiliki karakteristik berikut:   dalam bahasa Inggris,  merujuk ke sifat data yang disimpan,  referensi sebagai berikut:  production ,  simulation ,  development .   Contoh:     Nama  schema  Dipakai untuk...      mail_management.production  menyimpan data utama    mail_management.development  menyimpan data untuk pengembangan    paragita.production  menyimpan data utama     Catatan: abaikan  schema  standar dari DBMS, misalnya  public .",
-            "title": "Nama schema"
-        },
+            "location": "/infrastructure/general/#port", 
+            "text": "Standar  Port  Lokasi  Keterangan      SMTP  25  Mail  mendukung TLS    SMTP Submission  587  Mail  wajib TLS    IMAP  993  Mail  SSL    PostgreSQL  5432  Mail  Hanya konfigurasi surel    PostgreSQL  5432  Database  Database PostgreSQL    MariaDB  3306  Database  Database MariaDB    HTTP HTTPS  80 443  Web  Ditentukan konfigurasi     PHP-FPM dijalankan menggunakan soket Unix untuk alasan efisiensi dari Nginx yang memanggilnya.", 
+            "title": "Port"
+        }, 
         {
-            "location": "/database/convention/#nama-tabel",
-            "text": "Nama tabel harus memiliki karakteristik berikut:   dalam bahasa Inggris,  kata benda berbentuk jamak.   Contoh:     Nama tabel  Dipakai untuk...      domains  menyimpan data domain    mailboxes  menyimpan data kotak surat    users  menyimpan data pengguna    addresses  menyimpan data alamat",
-            "title": "Nama tabel"
-        },
+            "location": "/infrastructure/general/#komponen-luar", 
+            "text": "", 
+            "title": "Komponen Luar"
+        }, 
         {
-            "location": "/database/convention/#nama-kolomfield-tbd",
-            "text": "Nama kolom harus memiliki karakteristik berikut:   dalam bahasa Inggris,  kata benda,  kata sifat,   Contoh:     Nama tabel  Dipakai untuk...      domains  menyimpan data domain    mailboxes  menyimpan data kotak surat    users  menyimpan data pengguna    addresses  menyimpan data alamat",
-            "title": "Nama kolom/field TBD"
-        },
+            "location": "/infrastructure/general/#g-suite", 
+            "text": "G Suite  adalah perangkat produktivitas awan dari Google yang ditujukan untuk pebisnis segmen UMKM. Biaya USD 5 per pengguna per bulan. Pengguna dari Indonesia masih mungkin menerima diskon tambahan dari Google.  Pada saat ini, hanya satu organisasi dibawah pengelolaan saya yang memakai G Suite.  MX Record  domain organisasi tersebut saat ini masih mencantumkan Mail Server sebagai tujuan pengirima surel. Dari  instance  Mail Server tersebut, akan ada forwarding khusus untuk satu alamat email yang dikelola di G Suite.  Pengelolaan alias dan alamat surel Saat ini sedang direncanakan akan dibangun mail server yang seluruh tabel referensinya disimpan di dalam database PostgreSQL. Apabila sudah selesai dan bisa di expose  ke publik organisasi, pengaturan forwarding tersebut bisa diubah oleh pengguna secara mandiri.", 
+            "title": "G Suite"
+        }, 
         {
-            "location": "/database/overview/",
-            "text": "Overview\n\n\nON CASCADE DELETE\n\n\nSecara umum tidak ada proses penghapusan untuk tiap baris, apabila ada kebutuhan, boleh dipertimbangkan untuk ada asal ada kemampuan untuk mempertahankan backup berkala.\n\n\nON CASCADE UPDATE\n\n\nSecara umum tidak perlu ada update atas nilai PK, karena PK memakai surrogate key.\n\n\nCase sensitivity through LIKE\n\n\nwhere like PostgreSQL case sensitive. -> apakah semua naming dilowercase kan saja? lalu transform waktu ditarik ke Web?",
-            "title": "Overview"
-        },
+            "location": "/infrastructure/general/#lets-encrypt", 
+            "text": "Sertifikat SSL dikeluarkan oleh Let's Encrypt, dan diperbarui setiap tiga bulan.", 
+            "title": "Let's Encrypt"
+        }, 
         {
-            "location": "/database/overview/#overview",
-            "text": "",
-            "title": "Overview"
-        },
+            "location": "/infrastructure/general/#cloudflare", 
+            "text": "DNS dikelola di CloudFlare. Tidak ada rencana untuk  host  DNS lokal karena seluruh aset berada di internet.", 
+            "title": "CloudFlare"
+        }, 
         {
-            "location": "/database/overview/#on-cascade-delete",
-            "text": "Secara umum tidak ada proses penghapusan untuk tiap baris, apabila ada kebutuhan, boleh dipertimbangkan untuk ada asal ada kemampuan untuk mempertahankan backup berkala.",
-            "title": "ON CASCADE DELETE"
-        },
+            "location": "/infrastructure/general/#domain-registrar", 
+            "text": "Pembahasan mengenai registrar. Mari jangan sebut merek. Serta jangan pilih TLD yang tidak long-lasting. Look at  co.de  example.", 
+            "title": "Domain registrar"
+        }, 
         {
-            "location": "/database/overview/#on-cascade-update",
-            "text": "Secara umum tidak perlu ada update atas nilai PK, karena PK memakai surrogate key.",
-            "title": "ON CASCADE UPDATE"
-        },
+            "location": "/infrastructure/general/#webmail", 
+            "text": "Roundcube  adalah perangkat lunak yang dipilih untuk melihat ke dalam peladen surel. Pengguna bebas menggunakan program email apa saja untuk membaca dan mengirim email, selama program tersebut mengikuti standar IMAP dan SMTP. Untuk kebutuhan membaca email di tempat umum, program ini bisa diakses melalui URL tertentu. Program ini berbasis PHP, dan dijalankan di bawah instance PHP-FPM di bawah nama saya.", 
+            "title": "Webmail"
+        }, 
         {
-            "location": "/database/overview/#case-sensitivity-through-like",
-            "text": "where like PostgreSQL case sensitive. -> apakah semua naming dilowercase kan saja? lalu transform waktu ditarik ke Web?",
-            "title": "Case sensitivity through LIKE"
-        },
-        {
-            "location": "/database/mail/[Table]_Alias/",
-            "text": "[Table] Alias\n\n\nGeneral\n\n\n\n\n\n\n\n\nAttribute\n\n\nValue\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nTable Name\n\n\naliases\n\n\nStore aliases\n\n\n\n\n\n\n\n\nProperties (Columns)\n\n\n\n\n\n\n\n\nProperty\n\n\nType\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nid\n\n\nint\n\n\nObject identifier\n\n\n\n\n\n\ndomain_id\n\n\nint\n\n\nReference domain identifier\n\n\n\n\n\n\nuser\n\n\nvarchar\n\n\nLocal portion of the alias, e.g. \nuser@domain.TLD\n\n\n\n\n\n\n\n\nRelationship\n\n\n\n\n\n\n\n\nObject\n\n\nProperty Connector\n\n\nType\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nDomain\n\n\ndomain_id\n\n\nMany to One\n\n\nRefer to \ndomain.TLD\n part of any accepted domains in Postfix\n\n\n\n\n\n\n\n\nSQL Enforcing Feature\n\n\n\n\n\n\n\n\nFeature\n\n\nProperty\n\n\nSQL\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nPresence of Surrogate Key\n\n\nid\n\n\nPrimary Key, Not Null\n\n\n-\n\n\n\n\n\n\nPresence of Object\n\n\nuser\n\n\nNot Null\n\n\n-\n\n\n\n\n\n\nUniqueness of Object\n\n\nuser\n,\ndomain_id\n\n\nUnique\n\n\n-\n\n\n\n\n\n\nPresence of Parent Object\n\n\ndomain_id\n\n\nForeign Key, Not Null\n\n\n-",
-            "title": "[Table] Alias"
-        },
-        {
-            "location": "/database/mail/[Table]_Alias/#table-alias",
-            "text": "",
-            "title": "[Table] Alias"
-        },
-        {
-            "location": "/database/mail/[Table]_Alias/#general",
-            "text": "Attribute  Value  Description      Table Name  aliases  Store aliases",
-            "title": "General"
-        },
-        {
-            "location": "/database/mail/[Table]_Alias/#properties-columns",
-            "text": "Property  Type  Description      id  int  Object identifier    domain_id  int  Reference domain identifier    user  varchar  Local portion of the alias, e.g.  user@domain.TLD",
-            "title": "Properties (Columns)"
-        },
-        {
-            "location": "/database/mail/[Table]_Alias/#relationship",
-            "text": "Object  Property Connector  Type  Description      Domain  domain_id  Many to One  Refer to  domain.TLD  part of any accepted domains in Postfix",
-            "title": "Relationship"
-        },
-        {
-            "location": "/database/mail/[Table]_Alias/#sql-enforcing-feature",
-            "text": "Feature  Property  SQL  Description      Presence of Surrogate Key  id  Primary Key, Not Null  -    Presence of Object  user  Not Null  -    Uniqueness of Object  user , domain_id  Unique  -    Presence of Parent Object  domain_id  Foreign Key, Not Null  -",
-            "title": "SQL Enforcing Feature"
-        },
-        {
-            "location": "/database/mail/[Table]_Domain/",
-            "text": "[Table] Domain\n\n\nGeneral\n\n\n\n\n\n\n\n\nAttribute\n\n\nValue\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nTable Name\n\n\ndomains\n\n\nStore domains\n\n\n\n\n\n\n\n\nProperties (Columns)\n\n\n\n\n\n\n\n\nProperty\n\n\nType\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nid\n\n\nint\n\n\nObject identifier\n\n\n\n\n\n\ndomain\n\n\nvarchar\n\n\nDomain name after the \n@\n sign, e.g. \nuser@domain.TLD\n\n\n\n\n\n\ncatch_all_mailbox_id\n\n\nvarchar\n\n\nReference mailbox identifier\n\n\n\n\n\n\nalias_for\n\n\nint\n\n\nReference domain identifier\n\n\n\n\n\n\n\n\nRelationship\n\n\n\n\n\n\n\n\nModel\n\n\nProperty Connector\n\n\nType\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nMailbox\n\n\ncatch_all_mailbox_id\n\n\nMany to Zero\n\n\nRefer to existing mailbox which can accept mail in Postfix that acts as a catch all Mailbox, if not null it means this domain has catch all address\n\n\n\n\n\n\nDomain (self)\n\n\nalias_for\n\n\nMany to Zero\n\n\nRefer to existing domain for which this domain is an alias\n\n\n\n\n\n\n\n\nSQL Enforcing Feature\n\n\n\n\n\n\n\n\nFeature\n\n\nProperty\n\n\nSQL\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nPresence of Surrogate Key\n\n\nid\n\n\nPrimary Key, Not Null\n\n\n-\n\n\n\n\n\n\nPresence of Object\n\n\ndomain\n\n\nNot Null\n\n\n-\n\n\n\n\n\n\nUniqueness of Object\n\n\ndomain\n\n\nUnique\n\n\n-\n\n\n\n\n\n\nPresence of Parent Object\n\n\ncatch_all_mailbox_id\n\n\nForeign Key\n\n\n-\n\n\n\n\n\n\nObligation to have Parent Object\n\n\ncatch_all_mailbox_id\n\n\nAllow Null\n\n\n-\n\n\n\n\n\n\nPresence of Parent Object\n\n\nalias_for\n\n\nForeign Key, Allow Null\n\n\n-\n\n\n\n\n\n\nObligation to have Parent Object\n\n\nalias_for\n\n\nAllow Null\n\n\n-",
-            "title": "[Table] Domain"
-        },
-        {
-            "location": "/database/mail/[Table]_Domain/#table-domain",
-            "text": "",
-            "title": "[Table] Domain"
-        },
-        {
-            "location": "/database/mail/[Table]_Domain/#general",
-            "text": "Attribute  Value  Description      Table Name  domains  Store domains",
-            "title": "General"
-        },
-        {
-            "location": "/database/mail/[Table]_Domain/#properties-columns",
-            "text": "Property  Type  Description      id  int  Object identifier    domain  varchar  Domain name after the  @  sign, e.g.  user@domain.TLD    catch_all_mailbox_id  varchar  Reference mailbox identifier    alias_for  int  Reference domain identifier",
-            "title": "Properties (Columns)"
-        },
-        {
-            "location": "/database/mail/[Table]_Domain/#relationship",
-            "text": "Model  Property Connector  Type  Description      Mailbox  catch_all_mailbox_id  Many to Zero  Refer to existing mailbox which can accept mail in Postfix that acts as a catch all Mailbox, if not null it means this domain has catch all address    Domain (self)  alias_for  Many to Zero  Refer to existing domain for which this domain is an alias",
-            "title": "Relationship"
-        },
-        {
-            "location": "/database/mail/[Table]_Domain/#sql-enforcing-feature",
-            "text": "Feature  Property  SQL  Description      Presence of Surrogate Key  id  Primary Key, Not Null  -    Presence of Object  domain  Not Null  -    Uniqueness of Object  domain  Unique  -    Presence of Parent Object  catch_all_mailbox_id  Foreign Key  -    Obligation to have Parent Object  catch_all_mailbox_id  Allow Null  -    Presence of Parent Object  alias_for  Foreign Key, Allow Null  -    Obligation to have Parent Object  alias_for  Allow Null  -",
-            "title": "SQL Enforcing Feature"
-        },
-        {
-            "location": "/database/mail/[Table]_External_Destination/",
-            "text": "[Table] External Destination\n\n\nGeneral\n\n\n\n\n\n\n\n\nAttribute\n\n\nValue\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nTable Name\n\n\nexternal_destionations\n\n\nStore email addresses not hosted on Postfix\n\n\n\n\n\n\n\n\nProperties (Columns)\n\n\n\n\n\n\n\n\nProperty\n\n\nType\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nid\n\n\nint\n\n\nObject identifier\n\n\n\n\n\n\nalias_id\n\n\nint\n\n\nReference alias identifier\n\n\n\n\n\n\nexternal_email_address\n\n\nvarchar\n\n\nFull address of destination alias in form of  \nuser@domain.TLD\n\n\n\n\n\n\n\n\nRelationship\n\n\n\n\n\n\n\n\nModel\n\n\nProperty Connector\n\n\nType\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nAlias\n\n\nalias_id\n\n\nMany to One\n\n\nRefer to full alias configured in Postfix\n\n\n\n\n\n\n\n\nSQL Enforcing Feature\n\n\n\n\n\n\n\n\nFeature\n\n\nProperty\n\n\nSQL\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nPresence of Surrogate Key\n\n\nid\n\n\nPrimary Key, Not Null\n\n\n-\n\n\n\n\n\n\nPresence of Object\n\n\nalias_id\n,\nexternal_email_address\n\n\nNot Null\n\n\n-\n\n\n\n\n\n\nUniqueness of Object\n\n\nalias_id\n,\nexternal_email_address\n\n\nUnique\n\n\n-\n\n\n\n\n\n\nPresence of Parent Object\n\n\nalias_id\n\n\nForeign Key\n\n\n-\n\n\n\n\n\n\nObligation to have Parent Object\n\n\nalias_id\n\n\nNot Null\n\n\n-",
-            "title": "[Table] External Destination"
-        },
-        {
-            "location": "/database/mail/[Table]_External_Destination/#table-external-destination",
-            "text": "",
-            "title": "[Table] External Destination"
-        },
-        {
-            "location": "/database/mail/[Table]_External_Destination/#general",
-            "text": "Attribute  Value  Description      Table Name  external_destionations  Store email addresses not hosted on Postfix",
-            "title": "General"
-        },
-        {
-            "location": "/database/mail/[Table]_External_Destination/#properties-columns",
-            "text": "Property  Type  Description      id  int  Object identifier    alias_id  int  Reference alias identifier    external_email_address  varchar  Full address of destination alias in form of   user@domain.TLD",
-            "title": "Properties (Columns)"
-        },
-        {
-            "location": "/database/mail/[Table]_External_Destination/#relationship",
-            "text": "Model  Property Connector  Type  Description      Alias  alias_id  Many to One  Refer to full alias configured in Postfix",
-            "title": "Relationship"
-        },
-        {
-            "location": "/database/mail/[Table]_External_Destination/#sql-enforcing-feature",
-            "text": "Feature  Property  SQL  Description      Presence of Surrogate Key  id  Primary Key, Not Null  -    Presence of Object  alias_id , external_email_address  Not Null  -    Uniqueness of Object  alias_id , external_email_address  Unique  -    Presence of Parent Object  alias_id  Foreign Key  -    Obligation to have Parent Object  alias_id  Not Null  -",
-            "title": "SQL Enforcing Feature"
-        },
-        {
-            "location": "/database/mail/[Table]_Internal_Destination/",
-            "text": "[Table] Internal Destination\n\n\nGeneral\n\n\n\n\n\n\n\n\nAttribute\n\n\nValue\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nTable Name\n\n\ninternal_destionations\n\n\nStore email addresses hosted on Postfix\n\n\n\n\n\n\n\n\nProperties (Columns)\n\n\n\n\n\n\n\n\nProperty\n\n\nType\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nid\n\n\nint\n\n\nObject identifier\n\n\n\n\n\n\nalias_id\n\n\nint\n\n\nReference alias identifier\n\n\n\n\n\n\ninternal_mailbox_id\n\n\nint\n\n\nReference mailbox identifier\n\n\n\n\n\n\n\n\nRelationship\n\n\n\n\n\n\n\n\nModel\n\n\nProperty Connector\n\n\nType\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nAlias\n\n\nalias_id\n\n\nMany to One\n\n\nRefer to full alias configured in Postfix\n\n\n\n\n\n\nMailbox\n\n\ninternal_mailbox_id\n\n\nMany to One\n\n\nRefer to mailbox in Postfix\n\n\n\n\n\n\n\n\nSQL Enforcing Feature\n\n\n\n\n\n\n\n\nFeature\n\n\nProperty\n\n\nSQL\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nPresence of Surrogate Key\n\n\nid\n\n\nPrimary Key, Not Null\n\n\n-\n\n\n\n\n\n\nPresence of Object\n\n\nalias_id\n,\ninternal_mailbox_id\n\n\nNot Null\n\n\n-\n\n\n\n\n\n\nUniqueness of Object\n\n\nalias_id\n,\ninternal_mailbox_id\n\n\nUnique\n\n\n-\n\n\n\n\n\n\nPresence of Parent Object\n\n\nalias_id\n,\ninternal_mailbox_id\n\n\nForeign Key\n\n\n-\n\n\n\n\n\n\nObligation to have Parent Object\n\n\nalias_id\n,\ninternal_mailbox_id\n\n\nNot Null\n\n\n-",
-            "title": "[Table] Internal Destination"
-        },
-        {
-            "location": "/database/mail/[Table]_Internal_Destination/#table-internal-destination",
-            "text": "",
-            "title": "[Table] Internal Destination"
-        },
-        {
-            "location": "/database/mail/[Table]_Internal_Destination/#general",
-            "text": "Attribute  Value  Description      Table Name  internal_destionations  Store email addresses hosted on Postfix",
-            "title": "General"
-        },
-        {
-            "location": "/database/mail/[Table]_Internal_Destination/#properties-columns",
-            "text": "Property  Type  Description      id  int  Object identifier    alias_id  int  Reference alias identifier    internal_mailbox_id  int  Reference mailbox identifier",
-            "title": "Properties (Columns)"
-        },
-        {
-            "location": "/database/mail/[Table]_Internal_Destination/#relationship",
-            "text": "Model  Property Connector  Type  Description      Alias  alias_id  Many to One  Refer to full alias configured in Postfix    Mailbox  internal_mailbox_id  Many to One  Refer to mailbox in Postfix",
-            "title": "Relationship"
-        },
-        {
-            "location": "/database/mail/[Table]_Internal_Destination/#sql-enforcing-feature",
-            "text": "Feature  Property  SQL  Description      Presence of Surrogate Key  id  Primary Key, Not Null  -    Presence of Object  alias_id , internal_mailbox_id  Not Null  -    Uniqueness of Object  alias_id , internal_mailbox_id  Unique  -    Presence of Parent Object  alias_id , internal_mailbox_id  Foreign Key  -    Obligation to have Parent Object  alias_id , internal_mailbox_id  Not Null  -",
-            "title": "SQL Enforcing Feature"
-        },
-        {
-            "location": "/database/mail/[Table]_Mailbox/",
-            "text": "[Table] Mailbox\n\n\nGeneral\n\n\n\n\n\n\n\n\nAttribute\n\n\nValue\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nTable Name\n\n\nmailboxes\n\n\nStore mailboxes\n\n\n\n\n\n\n\n\nProperties (Columns)\n\n\n\n\n\n\n\n\nProperty\n\n\nType\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nid\n\n\nint\n\n\nObject identifier\n\n\n\n\n\n\ndomain_id\n\n\nint\n\n\nReference domain identifier\n\n\n\n\n\n\nuser\n\n\nvarchar\n\n\nLocal portion of the alias, e.g. \nuser@domain.TLD\n\n\n\n\n\n\npassword\n\n\nvarchar\n\n\nSHA512 of user password\n\n\n\n\n\n\n\n\nRelationship\n\n\n\n\n\n\n\n\nModel\n\n\nProperty Connector\n\n\nType\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nDomain\n\n\ndomain_id\n\n\nMany to One\n\n\nRefer to \ndomain.TLD\n part of any accepted domains in Postfix\n\n\n\n\n\n\n\n\nSQL Enforcing Feature\n\n\n\n\n\n\n\n\nFeature\n\n\nProperty\n\n\nSQL\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nPresence of Surrogate Key\n\n\nid\n\n\nPrimary Key, Not Null\n\n\n-\n\n\n\n\n\n\nPresence of Object\n\n\ndomain_id\n,\nuser\n\n\nNot Null\n\n\n-\n\n\n\n\n\n\nUniqueness of Object\n\n\ndomain_id\n,\nuser\n\n\nUnique\n\n\n-\n\n\n\n\n\n\nPresence of Parent Object\n\n\ndomain_id\n\n\nForeign Key\n\n\n-\n\n\n\n\n\n\nObligation to have Parent Object\n\n\ndomain_id\n\n\nNot Null\n\n\n-",
-            "title": "[Table] Mailbox"
-        },
-        {
-            "location": "/database/mail/[Table]_Mailbox/#table-mailbox",
-            "text": "",
-            "title": "[Table] Mailbox"
-        },
-        {
-            "location": "/database/mail/[Table]_Mailbox/#general",
-            "text": "Attribute  Value  Description      Table Name  mailboxes  Store mailboxes",
-            "title": "General"
-        },
-        {
-            "location": "/database/mail/[Table]_Mailbox/#properties-columns",
-            "text": "Property  Type  Description      id  int  Object identifier    domain_id  int  Reference domain identifier    user  varchar  Local portion of the alias, e.g.  user@domain.TLD    password  varchar  SHA512 of user password",
-            "title": "Properties (Columns)"
-        },
-        {
-            "location": "/database/mail/[Table]_Mailbox/#relationship",
-            "text": "Model  Property Connector  Type  Description      Domain  domain_id  Many to One  Refer to  domain.TLD  part of any accepted domains in Postfix",
-            "title": "Relationship"
-        },
-        {
-            "location": "/database/mail/[Table]_Mailbox/#sql-enforcing-feature",
-            "text": "Feature  Property  SQL  Description      Presence of Surrogate Key  id  Primary Key, Not Null  -    Presence of Object  domain_id , user  Not Null  -    Uniqueness of Object  domain_id , user  Unique  -    Presence of Parent Object  domain_id  Foreign Key  -    Obligation to have Parent Object  domain_id  Not Null  -",
-            "title": "SQL Enforcing Feature"
-        },
-        {
-            "location": "/database/paragitapp/[Table]_User/",
-            "text": "[Table] User\n\n\nGeneral\n\n\n\n\n\n\n\n\nAttribute\n\n\nValue\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nTable Name\n\n\nusers\n\n\nStore users\n\n\n\n\n\n\n\n\nProperties (Columns)\n\n\n\n\n\n\n\n\nProperty\n\n\nType\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nid\n\n\nint\n\n\nObject identifier\n\n\n\n\n\n\nfirst_name\n\n\nvarchar\n\n\nFirst portion of user\n\n\n\n\n\n\nmiddle_name\n\n\nvarchar\n\n\nMiddle portion of user\n\n\n\n\n\n\nlast_name\n\n\nvarchar\n\n\nLast portion of user\n\n\n\n\n\n\nbatch_year\n\n\nint\n\n\nYear of first membership\n\n\n\n\n\n\nbirth_date\n\n\ndate\n\n\nDate of birth\n\n\n\n\n\n\nvoice_type\n\n\nvarchar\n\n\nType of voice\n\n\n\n\n\n\nemail\n\n\nvarchar\n\n\nMember email address as username\n\n\n\n\n\n\npassword\n\n\nvarchar\n\n\nBFH of user password\n\n\n\n\n\n\npassword_dovecot\n\n\nvarchar\n\n\nSHA512 of user password\n\n\n\n\n\n\nremember_token\n\n\nvarchar(100)\n\n\nLaravel column for 'Remember Me' Feature\n\n\n\n\n\n\ncreated_at\n\n\ntimestamp\n\n\nLaravel column for Object manipulation\n\n\n\n\n\n\nupdated_at\n\n\ntimestamp\n\n\nLaravel column for Object manipulation\n\n\n\n\n\n\n\n\nRelationship\n\n\n\n\n\n\n\n\nModel\n\n\nProperty Connector\n\n\nType\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nCode\n\n\nvoice_type\n\n\nMany to One\n\n\nRefer to \ncode_name\n column by \ncode_group = 'VOICE_TYPE'\n as allowable voice type definition\n\n\n\n\n\n\n\n\nSQL Enforcing Feature\n\n\n\n\n\n\n\n\nFeature\n\n\nProperty\n\n\nSQL\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nPresence of Surrogate Key\n\n\nid\n\n\nPrimary Key, Not Null\n\n\n-\n\n\n\n\n\n\nPresence of Object\n\n\nemail\n\n\nNot Null\n\n\n-\n\n\n\n\n\n\nUniqueness of Object\n\n\nemail\n\n\nUnique\n\n\n-\n\n\n\n\n\n\nPresence of Parent Object\n\n\nvoice_type\n\n\nForeign Key\n\n\n-\n\n\n\n\n\n\nObligation to have Parent Object\n\n\nvoice_type\n\n\nNot Null\n\n\n-",
-            "title": "[Table] User"
-        },
-        {
-            "location": "/database/paragitapp/[Table]_User/#table-user",
-            "text": "",
-            "title": "[Table] User"
-        },
-        {
-            "location": "/database/paragitapp/[Table]_User/#general",
-            "text": "Attribute  Value  Description      Table Name  users  Store users",
-            "title": "General"
-        },
-        {
-            "location": "/database/paragitapp/[Table]_User/#properties-columns",
-            "text": "Property  Type  Description      id  int  Object identifier    first_name  varchar  First portion of user    middle_name  varchar  Middle portion of user    last_name  varchar  Last portion of user    batch_year  int  Year of first membership    birth_date  date  Date of birth    voice_type  varchar  Type of voice    email  varchar  Member email address as username    password  varchar  BFH of user password    password_dovecot  varchar  SHA512 of user password    remember_token  varchar(100)  Laravel column for 'Remember Me' Feature    created_at  timestamp  Laravel column for Object manipulation    updated_at  timestamp  Laravel column for Object manipulation",
-            "title": "Properties (Columns)"
-        },
-        {
-            "location": "/database/paragitapp/[Table]_User/#relationship",
-            "text": "Model  Property Connector  Type  Description      Code  voice_type  Many to One  Refer to  code_name  column by  code_group = 'VOICE_TYPE'  as allowable voice type definition",
-            "title": "Relationship"
-        },
-        {
-            "location": "/database/paragitapp/[Table]_User/#sql-enforcing-feature",
-            "text": "Feature  Property  SQL  Description      Presence of Surrogate Key  id  Primary Key, Not Null  -    Presence of Object  email  Not Null  -    Uniqueness of Object  email  Unique  -    Presence of Parent Object  voice_type  Foreign Key  -    Obligation to have Parent Object  voice_type  Not Null  -",
-            "title": "SQL Enforcing Feature"
-        },
-        {
-            "location": "/guide/SSH/",
-            "text": "Membuat SSH Key\n\n\nArtikel referensi: \nklik di sini\n\n\nDikerjakan di Fedora\n\n\n\n\nBuat Key \n$ ssh-keygen -t rsa\n\n\nNikmati.",
-            "title": "SSH"
-        },
-        {
-            "location": "/guide/SSH/#membuat-ssh-key",
-            "text": "Artikel referensi:  klik di sini  Dikerjakan di Fedora   Buat Key  $ ssh-keygen -t rsa  Nikmati.",
-            "title": "Membuat SSH Key"
-        },
-        {
-            "location": "/guide/thunderbird/",
-            "text": "Konfigurasi Thunderbird dengan email server IMAP dan SMTP standar\n\n\n1. Unduh dan pasang perangkat lunak\n\n\nWindows dan OS X: Kunjungi situsnya di \nhttps://www.thunderbird.net\n lalu unduh versi terkini. Pasang executablenya.\n\n\nLinux: Ambil dari \nrepo\n distro Anda dengan perintah:\n\n\n\n\nTurunan Debian: \n# apt-get install thunderbird\n\n\nTurunan Red Hat Enterprise Linux: \n# yum install thunderbird\n | mulai versi 7 \nyum\n diganti dengan \ndnf\n\n\nTurunan Fedora \n# dnf install thunderbird\n\n\n\n\nJika Anda pemberani, silakan bangun dari kode sumber.\n\n\n2. Konfigurasi\n\n\nTo be written.\n\n\nKonfigurasi Thunderbird dengan CalDAV/CardDAV server Ba\u00c3\u00afkal\n\n\n1. Unduh dan pasang perangkat lunak\n\n\nSama seperti yang diuraikan sebelumnya.\n\n\nTambahannya, pasang \nplugin\n CardBook dengan cara:\n\n\n\n\nKlik Menu, lalu klik Plugin.\n\n\n\n\n\nBuka menu Extensions di kiri, lalu di kanan atas, di kotak pencarian, ketik 'CardBook' lalu tekan Enter, dan akan muncul daftar plugin yang namanya sesuai.\n\n\n\n\n\nKlik \nInstall\n di sebelah kanan CardBook. (Lihat gambar sebelumnya)\n\n\nKlik \nRestart Now\n yang muncul setelah pemasangan selesai.\n\n\n\n\n\n\n\n2. Konfigurasi\n\n\nJalankan perangkat lunak.\n\n\n\n\nApabila ada pertanyaan soal \nSystem Integration\n, abaikan saja dengan klik tombol \nSkip Integration\n.\n\n\nJika ada pertanyaan soal konfigurasi akun email, abaikan saja dengan klik tombol \nI think I'll configure my account later.\n\n\nJika ada pertanyaan terkait impor data kontak Thunderbird ke dalam CardBook, klik \nCancel\n.\n\n\n\n\nLalu prosedur konfigurasi.\n\n\n\n\n\n\nKlik tombol \nCardBook\n yang ada di sebelah tombol menu utama.\n\n\n\n\n\n\n\nKlik tombol menu utama CardBook di kiri. Yang di kanan menu utama Thunderbird. Klik menu utama Cardbook, Address Book, New Address Book.\n\n\n\n\n\n\n\nPilih 'Remote' di lokasi Address Book. Klik \nNext\n.\n\n\n\n\n\n\n\nDi jendela berikutnya akan ada beberapa isian. Pilih dahulu 'CardDAV' sebagai tipe yang diinginkan.\n\n\n\n\n\n\nLalu, dapatkan URL address book yang akan diimpor. Karena ini Ba\u00c3\u00afkal, maka skema URLnya biasanya berbentuk seperti:\n\n\n$HOST/dav.php/addressbooks/$BAIKAL_USER/$ADDRESSBOOK\n\n\n\n\n\n\nIsikan URL ke kolom URL. Setelah itu isikan username dan password Anda, dan klik Validate. Kalau tidak bermasalah, bisa lanjut dengan klik Next.\n\n\n\n\n\n\n\nSelanjutnya tentukan nama dan warna. Silakan isi sesuka hati, atau biarkan saja.\n\n\n\n\n\n\n\nKlik Finish.\n\n\n\n\n\n\nSelesai!!!\n\n\n\n\n\n\n\nSekarang semua perubahan yang dilakukan di Address Book ini akan tersinkronisasi ke server, dan tersedia di semua aplikasi yang juga memakai server ini.",
-            "title": "Thunderbird"
-        },
-        {
-            "location": "/guide/thunderbird/#konfigurasi-thunderbird-dengan-email-server-imap-dan-smtp-standar",
-            "text": "",
-            "title": "Konfigurasi Thunderbird dengan email server IMAP dan SMTP standar"
-        },
-        {
-            "location": "/guide/thunderbird/#1-unduh-dan-pasang-perangkat-lunak",
-            "text": "Windows dan OS X: Kunjungi situsnya di  https://www.thunderbird.net  lalu unduh versi terkini. Pasang executablenya.  Linux: Ambil dari  repo  distro Anda dengan perintah:   Turunan Debian:  # apt-get install thunderbird  Turunan Red Hat Enterprise Linux:  # yum install thunderbird  | mulai versi 7  yum  diganti dengan  dnf  Turunan Fedora  # dnf install thunderbird   Jika Anda pemberani, silakan bangun dari kode sumber.",
-            "title": "1. Unduh dan pasang perangkat lunak"
-        },
-        {
-            "location": "/guide/thunderbird/#2-konfigurasi",
-            "text": "To be written.",
-            "title": "2. Konfigurasi"
-        },
-        {
-            "location": "/guide/thunderbird/#konfigurasi-thunderbird-dengan-caldavcarddav-server-baa-kal",
-            "text": "",
-            "title": "Konfigurasi Thunderbird dengan CalDAV/CardDAV server Ba\u00c3\u00afkal"
-        },
-        {
-            "location": "/guide/thunderbird/#1-unduh-dan-pasang-perangkat-lunak_1",
-            "text": "Sama seperti yang diuraikan sebelumnya.  Tambahannya, pasang  plugin  CardBook dengan cara:   Klik Menu, lalu klik Plugin.   Buka menu Extensions di kiri, lalu di kanan atas, di kotak pencarian, ketik 'CardBook' lalu tekan Enter, dan akan muncul daftar plugin yang namanya sesuai.   Klik  Install  di sebelah kanan CardBook. (Lihat gambar sebelumnya)  Klik  Restart Now  yang muncul setelah pemasangan selesai.",
-            "title": "1. Unduh dan pasang perangkat lunak"
-        },
-        {
-            "location": "/guide/thunderbird/#2-konfigurasi_1",
-            "text": "Jalankan perangkat lunak.   Apabila ada pertanyaan soal  System Integration , abaikan saja dengan klik tombol  Skip Integration .  Jika ada pertanyaan soal konfigurasi akun email, abaikan saja dengan klik tombol  I think I'll configure my account later.  Jika ada pertanyaan terkait impor data kontak Thunderbird ke dalam CardBook, klik  Cancel .   Lalu prosedur konfigurasi.    Klik tombol  CardBook  yang ada di sebelah tombol menu utama.    Klik tombol menu utama CardBook di kiri. Yang di kanan menu utama Thunderbird. Klik menu utama Cardbook, Address Book, New Address Book.    Pilih 'Remote' di lokasi Address Book. Klik  Next .    Di jendela berikutnya akan ada beberapa isian. Pilih dahulu 'CardDAV' sebagai tipe yang diinginkan.    Lalu, dapatkan URL address book yang akan diimpor. Karena ini Ba\u00c3\u00afkal, maka skema URLnya biasanya berbentuk seperti:  $HOST/dav.php/addressbooks/$BAIKAL_USER/$ADDRESSBOOK    Isikan URL ke kolom URL. Setelah itu isikan username dan password Anda, dan klik Validate. Kalau tidak bermasalah, bisa lanjut dengan klik Next.    Selanjutnya tentukan nama dan warna. Silakan isi sesuka hati, atau biarkan saja.    Klik Finish.    Selesai!!!    Sekarang semua perubahan yang dilakukan di Address Book ini akan tersinkronisasi ke server, dan tersedia di semua aplikasi yang juga memakai server ini.",
-            "title": "2. Konfigurasi"
-        },
-        {
-            "location": "/infrastructure/Email/",
-            "text": "At this point, very basic Postfix and Dovecot. Username controlled purely from a text file configuration.\n\n\nPlan:\n\n\nKapasitas $15 dari DO lumayan menarik. Setidaknya 200rb bisa buat pakai 100 account yang juga belum tentu semuanya aktif.\n\n\nSo, tantangannya dengan layanan eksisting:\n\n\n\n\nAkses webmail: Roundcube: \nlink\n tapi murni cuma buat imel-imelan.\n\n\nPenerangan soal cara konfigurasi IMAP/SMTP ke klien email: Thunderbird, Outlook (should we? probably no), emClient (personally pake), Gmail on Android, Apple Mail, iOS Mail, Android Mail (beda ama Gmail on Android).\n\n\n\n\nOkay, usually email goes hand in hand with calendaring dan contact.\nSo what? Baikal already exists but no way to ask user to install CardDAV-Sync and CalDAV-Sync to their phone, mind you, they're paid apps. iOS users are in luck, DAV thingy is built-in. Apalagi minta mereka semua seragam pakai thunderbird.\n\n\nBaikal dan upstreamnya sabre/* akan EOL. Probably better find another way to store Card and Cal things.\n\n\nOTOH, mungkin anak-anak ini blm mengutilisasi fitur kalender, jadi masih bisa cari alternatif yang bisa bertahan long term.\n\n\nlink\n\nPake ini untuk split email, pertama ke capella, kedua ke server baru untuk pengujian. Jalanin paralel 3 bulan. Ingat kalau direktif Mailcow terlalu agresif, invoice gojek aja ga tembus karena ga dikirim dari domain yang existing.",
-            "title": "Email"
-        },
-        {
-            "location": "/infrastructure/Konfigurasi_Dasar/",
-            "text": "Referensi Konfigurasi\n\n\nCentOS 7\n\n\ntelnet\nnmap\n\n\ndisable (or remove) postfix\ndisable rpcbind\nsystemctl stop rpcbind\n\n\nfirewalld\n\n\nFirewall-CMD\nsystemctl is-enabled firewalld = pastikan enabled\nsystemctl start firewalld",
+            "location": "/infrastructure/base_configuration/", 
+            "text": "Referensi Konfigurasi\n\n\n\n\n\n\n\n\nVariabel\n\n\nNilai\n\n\n\n\n\n\n\n\n\n\nSistem Operasi\n\n\nCentOS 7\n\n\n\n\n\n\nPaket tambahan\n\n\ntelnet\nnmap\nfirewalld\n\n\n\n\n\n\n\n\nHal yang dilakukan setelah membuat \ninstance\n:\n\n\n\n\nMatikan (atau hapus) \npostfix\n untuk menutup port \n25\n \n1\n\n\nMatikan \nrpcbind\n untuk menutup port \n111\n \n2\n\n\nNyalakan \nfirewalld\n \n3\n\n\n\n\nPerintah:\n\n\n# systemctl stop postfix\n# systemctl disable postfix\n# systemctl stop rpcbind\n# systemctl disable rpcbind\n# systemctl start firewalld\n# systemctl enable firewalld\n\n\n\n\n\n\n\n\n\n\n\n\n\nNormalnya tidak dibutuhkan, kecuali untuk kasus Web.\n\n\n\n\n\n\nLihat di \nsini\n, di \nsini\n\n\n\n\n\n\nVersi terbaru CentOS 7 tidak memasang firewalld secara standar.", 
             "title": "Konfigurasi Dasar"
-        },
+        }, 
         {
-            "location": "/infrastructure/Konfigurasi_Dasar/#referensi-konfigurasi",
-            "text": "CentOS 7  telnet\nnmap  disable (or remove) postfix\ndisable rpcbind\nsystemctl stop rpcbind  firewalld  Firewall-CMD\nsystemctl is-enabled firewalld = pastikan enabled\nsystemctl start firewalld",
+            "location": "/infrastructure/base_configuration/#referensi-konfigurasi", 
+            "text": "Variabel  Nilai      Sistem Operasi  CentOS 7    Paket tambahan  telnet nmap firewalld     Hal yang dilakukan setelah membuat  instance :   Matikan (atau hapus)  postfix  untuk menutup port  25   1  Matikan  rpcbind  untuk menutup port  111   2  Nyalakan  firewalld   3   Perintah:  # systemctl stop postfix\n# systemctl disable postfix\n# systemctl stop rpcbind\n# systemctl disable rpcbind\n# systemctl start firewalld\n# systemctl enable firewalld      Normalnya tidak dibutuhkan, kecuali untuk kasus Web.    Lihat di  sini , di  sini    Versi terbaru CentOS 7 tidak memasang firewalld secara standar.", 
             "title": "Referensi Konfigurasi"
-        },
+        }, 
         {
-            "location": "/infrastructure/Konfigurasi_Peladen_Surel/",
-            "text": "Persyaratan dasar\n\n\nFirewall Rule\n\n\nA recompiled RPM to enable PostgreSQL support\nA running PostgreSQL\nA running Postfix\nA running Dovecot\n\n\nBackup/Restore",
-            "title": "Konfigurasi Peladen Surel"
-        },
+            "location": "/infrastructure/email/", 
+            "text": "At this point, very basic Postfix and Dovecot. Username controlled purely from a text file configuration.\n\n\nPlan:\n\n\nKapasitas $15 dari DO lumayan menarik. Setidaknya 200rb bisa buat pakai 100 account yang juga belum tentu semuanya aktif.\n\n\nSo, tantangannya dengan layanan eksisting:\n\n\n\n\nAkses webmail: Roundcube: \nlink\n tapi murni cuma buat imel-imelan.\n\n\nPenerangan soal cara konfigurasi IMAP/SMTP ke klien email: Thunderbird, Outlook (should we? probably no), emClient (personally pake), Gmail on Android, Apple Mail, iOS Mail, Android Mail (beda ama Gmail on Android).\n\n\n\n\nOkay, usually email goes hand in hand with calendaring dan contact.\nSo what? Baikal already exists but no way to ask user to install CardDAV-Sync and CalDAV-Sync to their phone, mind you, they're paid apps. iOS users are in luck, DAV thingy is built-in. Apalagi minta mereka semua seragam pakai thunderbird.\n\n\nBaikal dan upstreamnya sabre/* akan EOL. Probably better find another way to store Card and Cal things.\n\n\nOTOH, mungkin anak-anak ini blm mengutilisasi fitur kalender, jadi masih bisa cari alternatif yang bisa bertahan long term.\n\n\nlink\n\nPake ini untuk split email, pertama ke capella, kedua ke server baru untuk pengujian. Jalanin paralel 3 bulan. Ingat kalau direktif Mailcow terlalu agresif, invoice gojek aja ga tembus karena ga dikirim dari domain yang existing.", 
+            "title": "Email"
+        }, 
         {
-            "location": "/infrastructure/Konfigurasi_Peladen_Surel/#persyaratan-dasar",
-            "text": "Firewall Rule  A recompiled RPM to enable PostgreSQL support\nA running PostgreSQL\nA running Postfix\nA running Dovecot  Backup/Restore",
-            "title": "Persyaratan dasar"
-        },
+            "location": "/infrastructure/configuration/personal_email/", 
+            "text": "Kotak Surat Utama\n\n\nKotak Surat Media Sosial\n\n\nKotak Surat Terkait Keuangan / Pajak / Maskapai\n\n\nKotak Surat G Suite", 
+            "title": "Konfigurasi Surel Pribadi"
+        }, 
         {
-            "location": "/infrastructure/Konfigurasi_Peladen_Web/",
-            "text": "Persyaratan dasar\n\n\nFirewall Rule\n\n\nEPEL\nNginx\nPHP-FPM v7\n\n\nseparate php-fpm process per user\nseparate nginx web directory per user\n\n\nFirewall-CMD\nfirewall-cmd --get-default-zone = note jawabannya\nfirewall-cmd --zone=public --permanent --add-service=http\nfirewall-cmd --zone=public --permanent --add-service=https\nfirewall-cmd --reload\n\n\nNginx\nyum install epel-release\nyum install nginx\n\n\nconfig\n\n\nPHP-FPM\ninstall\nhttps://blog.remirepo.net/pages/Config-en\ninstall package remirepo\nenable repo php-fpm yang dimau\n\n\nnew users (adduser)\ndidi\nferdi\nbayu\nparagita\n\n\nprepare dirs\nmkdir /var/webapp\nchmod g+s webapp\nchown root:nginx webapp\nmkdir /var/webapp/didi,ferdi,bayu,paragita\n\n\nselinux\nsemanage fcontext -a -t httpd_log_t \"/var/webapp/[^/]+/logs(/.\n)?\"\nsemanage fcontext -a -t httpd_var_run_t \"/var/webapp/[^/]+/php-fpm-session(/.\n)?\"\nsetsebool httpd_can_sendmail 1 = biar bisa send email\nsetsebool httpd_can_network_connect 1 = biar roundcube bisa akses imap\nsetsebool httpd_can_network_connect_db 1 = biar bisa akses db network\n\n\n/etc/hosts\nip capella.pojoksantai.com #email\nip db.pojoksantai.com #database\n\n\n/etc/postfix/main.cf\nrelayhost = [capella.pojoksantai.com]\n\n\nsystemctl enable postfix\nsystemctl start postfix\n\n\nhttps://blog.ferdi.id/2017/12/23/instalasi-nginx/ -> setup nginx.conf\n\n\nhttps://blog.ferdi.id/2017/12/23/instalasi-php-fpm/ -> setup pool php-fpm\n\n\npindahin file\nscp -r motorscene/ bayu_web:/var/webapp/bayu/files/\n\n\nsystemctl enable nginx\nsystemctl enable php-fpm\n\n\nforce postfix to resolve natively\nhttps://www.linuxquestions.org/questions/linux-software-2/force-postfix-to-refer-etc-hosts-857662/\nsmtp_host_lookup = native in main.cf\n\n\nsemanage mungkin ga bisa pake rule yang bener-bener fleksibel. Mungkin folder yang berupa wordpress bisa diprepend dengan \"wp_\" gitu sehingga bisa ditarget lebih presis. Saat ini dia filenya bisa diupdate, tapi ga bisa dicreate sama proses php-fpm under nama user bersangkutan.\n\n\nmove sertifikat first -> selinuxnya juga, selinux tu buat postfix\n\n\nroundcube better off reinstallling\n\n\nbaikal try reinstalling first, then moving \n\n\ndatabase didi yang banyak plugin ajaibnya, harus diperiksa sql dumpnya",
-            "title": "Konfigurasi Peladen Web"
-        },
+            "location": "/guide/thunderbird/", 
+            "text": "Konfigurasi Thunderbird dengan email server IMAP dan SMTP standar\n\n\n1. Unduh dan pasang perangkat lunak\n\n\nWindows dan OS X: Kunjungi situsnya di \nhttps://www.thunderbird.net\n lalu unduh versi terkini. Pasang executablenya.\n\n\nLinux: Ambil dari \nrepo\n distro Anda dengan perintah:\n\n\n\n\nTurunan Debian: \n# apt-get install thunderbird\n\n\nTurunan Red Hat Enterprise Linux: \n# yum install thunderbird\n | mulai versi 7 \nyum\n diganti dengan \ndnf\n\n\nTurunan Fedora \n# dnf install thunderbird\n\n\n\n\nJika Anda pemberani, silakan bangun dari kode sumber.\n\n\n2. Konfigurasi\n\n\nTo be written.\n\n\nKonfigurasi Thunderbird dengan CalDAV/CardDAV server Ba\u00efkal\n\n\n1. Unduh dan pasang perangkat lunak\n\n\nSama seperti yang diuraikan sebelumnya.\n\n\nTambahannya, pasang \nplugin\n CardBook dengan cara:\n\n\n\n\nKlik Menu, lalu klik Plugin.\n\n\n\n\n\nBuka menu Extensions di kiri, lalu di kanan atas, di kotak pencarian, ketik 'CardBook' lalu tekan Enter, dan akan muncul daftar plugin yang namanya sesuai.\n\n\n\n\n\nKlik \nInstall\n di sebelah kanan CardBook. (Lihat gambar sebelumnya)\n\n\nKlik \nRestart Now\n yang muncul setelah pemasangan selesai.\n\n\n\n\n\n\n\n2. Konfigurasi\n\n\nJalankan perangkat lunak.\n\n\n\n\nApabila ada pertanyaan soal \nSystem Integration\n, abaikan saja dengan klik tombol \nSkip Integration\n.\n\n\nJika ada pertanyaan soal konfigurasi akun email, abaikan saja dengan klik tombol \nI think I'll configure my account later.\n\n\nJika ada pertanyaan terkait impor data kontak Thunderbird ke dalam CardBook, klik \nCancel\n.\n\n\n\n\nLalu prosedur konfigurasi.\n\n\n\n\n\n\nKlik tombol \nCardBook\n yang ada di sebelah tombol menu utama.\n\n\n\n\n\n\n\nKlik tombol menu utama CardBook di kiri. Yang di kanan menu utama Thunderbird. Klik menu utama Cardbook, Address Book, New Address Book.\n\n\n\n\n\n\n\nPilih 'Remote' di lokasi Address Book. Klik \nNext\n.\n\n\n\n\n\n\n\nDi jendela berikutnya akan ada beberapa isian. Pilih dahulu 'CardDAV' sebagai tipe yang diinginkan.\n\n\n\n\n\n\nLalu, dapatkan URL address book yang akan diimpor. Karena ini Ba\u00efkal, maka skema URLnya biasanya berbentuk seperti:\n\n\n$HOST/dav.php/addressbooks/$BAIKAL_USER/$ADDRESSBOOK\n\n\n\n\n\n\nIsikan URL ke kolom URL. Setelah itu isikan username dan password Anda, dan klik Validate. Kalau tidak bermasalah, bisa lanjut dengan klik Next.\n\n\n\n\n\n\n\nSelanjutnya tentukan nama dan warna. Silakan isi sesuka hati, atau biarkan saja.\n\n\n\n\n\n\n\nKlik Finish.\n\n\n\n\n\n\nSelesai!!!\n\n\n\n\n\n\n\nSekarang semua perubahan yang dilakukan di Address Book ini akan tersinkronisasi ke server, dan tersedia di semua aplikasi yang juga memakai server ini.", 
+            "title": "Thunderbird"
+        }, 
         {
-            "location": "/infrastructure/Konfigurasi_Peladen_Web/#persyaratan-dasar",
-            "text": "Firewall Rule  EPEL\nNginx\nPHP-FPM v7  separate php-fpm process per user\nseparate nginx web directory per user  Firewall-CMD\nfirewall-cmd --get-default-zone = note jawabannya\nfirewall-cmd --zone=public --permanent --add-service=http\nfirewall-cmd --zone=public --permanent --add-service=https\nfirewall-cmd --reload  Nginx\nyum install epel-release\nyum install nginx  config  PHP-FPM\ninstall\nhttps://blog.remirepo.net/pages/Config-en\ninstall package remirepo\nenable repo php-fpm yang dimau  new users (adduser)\ndidi\nferdi\nbayu\nparagita  prepare dirs\nmkdir /var/webapp\nchmod g+s webapp\nchown root:nginx webapp\nmkdir /var/webapp/didi,ferdi,bayu,paragita  selinux\nsemanage fcontext -a -t httpd_log_t \"/var/webapp/[^/]+/logs(/. )?\"\nsemanage fcontext -a -t httpd_var_run_t \"/var/webapp/[^/]+/php-fpm-session(/. )?\"\nsetsebool httpd_can_sendmail 1 = biar bisa send email\nsetsebool httpd_can_network_connect 1 = biar roundcube bisa akses imap\nsetsebool httpd_can_network_connect_db 1 = biar bisa akses db network  /etc/hosts\nip capella.pojoksantai.com #email\nip db.pojoksantai.com #database  /etc/postfix/main.cf\nrelayhost = [capella.pojoksantai.com]  systemctl enable postfix\nsystemctl start postfix  https://blog.ferdi.id/2017/12/23/instalasi-nginx/ -> setup nginx.conf  https://blog.ferdi.id/2017/12/23/instalasi-php-fpm/ -> setup pool php-fpm  pindahin file\nscp -r motorscene/ bayu_web:/var/webapp/bayu/files/  systemctl enable nginx\nsystemctl enable php-fpm  force postfix to resolve natively\nhttps://www.linuxquestions.org/questions/linux-software-2/force-postfix-to-refer-etc-hosts-857662/\nsmtp_host_lookup = native in main.cf  semanage mungkin ga bisa pake rule yang bener-bener fleksibel. Mungkin folder yang berupa wordpress bisa diprepend dengan \"wp_\" gitu sehingga bisa ditarget lebih presis. Saat ini dia filenya bisa diupdate, tapi ga bisa dicreate sama proses php-fpm under nama user bersangkutan.  move sertifikat first -> selinuxnya juga, selinux tu buat postfix  roundcube better off reinstallling  baikal try reinstalling first, then moving   database didi yang banyak plugin ajaibnya, harus diperiksa sql dumpnya",
-            "title": "Persyaratan dasar"
-        },
+            "location": "/guide/thunderbird/#konfigurasi-thunderbird-dengan-email-server-imap-dan-smtp-standar", 
+            "text": "", 
+            "title": "Konfigurasi Thunderbird dengan email server IMAP dan SMTP standar"
+        }, 
         {
-            "location": "/infrastructure/Team_Based_Messaging_App/",
-            "text": "Slack, ada fitur user group yang hanya untuk paid user\n\n\nFlock\n\n\nMattermost\n\n\nRocket.Chat\n\n\ngitter.im",
-            "title": "Team Based Messaging App"
-        },
+            "location": "/guide/thunderbird/#1-unduh-dan-pasang-perangkat-lunak", 
+            "text": "Windows dan OS X: Kunjungi situsnya di  https://www.thunderbird.net  lalu unduh versi terkini. Pasang executablenya.  Linux: Ambil dari  repo  distro Anda dengan perintah:   Turunan Debian:  # apt-get install thunderbird  Turunan Red Hat Enterprise Linux:  # yum install thunderbird  | mulai versi 7  yum  diganti dengan  dnf  Turunan Fedora  # dnf install thunderbird   Jika Anda pemberani, silakan bangun dari kode sumber.", 
+            "title": "1. Unduh dan pasang perangkat lunak"
+        }, 
         {
-            "location": "/others/Cost_To_Maintain/",
-            "text": "Cost To Maintain\n\n\nFor Paragita\n\n\n\n\n\n\n\n\nItem\n\n\nCost\n\n\nRef\n\n\n\n\n\n\n\n\n\n\nDomains :\nparagita.com\nparagita.net\nparagita.org\n\n\nall around IDR 500rb\n\n\nyearly\n, ref \nhere\n soon move to \nhere\n\n\n\n\n\n\nG Suite :\nmpr@paragita.com\n\n\nUSD 2,5\n\n\nmonthly\n\n\n\n\n\n\n\n\nFor Personal\n\n\n\n\n\n\n\n\nItem\n\n\nCost\n\n\nRef\n\n\n\n\n\n\n\n\n\n\nDomains :\nferdi.id\nferdi.co.de \ndeprecated\npojoksantai.com\nbayupradika.com\n\n\nPrice :\n250rb\n130rb\n130rb\n130rb\n\n\nyearly\n, ref \nhere\n soon move to \nhere\n\n\n\n\n\n\nG Suite :\nferdi@gsuite.pojoksantai.com\n\n\nUSD 2,5\n\n\nmonthly\n ga kepake, sekadar admin account\n\n\n\n\n\n\n\n\nShared Resource\n\n\n\n\n\n\n\n\nItem\n\n\nCost\n\n\nRef\n\n\n\n\n\n\n\n\n\n\nDroplet :\nbellatrix.pojoksantai.com (Website)\ncapella.pojoksantai.com (Email)\n\n\nPrice :\nUSD 10\nUSD 5\n\n\nmonthly\n, ref \nhere",
-            "title": "Cost To Maintain"
-        },
+            "location": "/guide/thunderbird/#2-konfigurasi", 
+            "text": "To be written.", 
+            "title": "2. Konfigurasi"
+        }, 
         {
-            "location": "/others/Cost_To_Maintain/#cost-to-maintain",
-            "text": "",
-            "title": "Cost To Maintain"
-        },
+            "location": "/guide/thunderbird/#konfigurasi-thunderbird-dengan-caldavcarddav-server-baikal", 
+            "text": "", 
+            "title": "Konfigurasi Thunderbird dengan CalDAV/CardDAV server Ba\u00efkal"
+        }, 
         {
-            "location": "/others/Cost_To_Maintain/#for-paragita",
-            "text": "Item  Cost  Ref      Domains : paragita.com paragita.net paragita.org  all around IDR 500rb  yearly , ref  here  soon move to  here    G Suite : mpr@paragita.com  USD 2,5  monthly",
-            "title": "For Paragita"
-        },
+            "location": "/guide/thunderbird/#1-unduh-dan-pasang-perangkat-lunak_1", 
+            "text": "Sama seperti yang diuraikan sebelumnya.  Tambahannya, pasang  plugin  CardBook dengan cara:   Klik Menu, lalu klik Plugin.   Buka menu Extensions di kiri, lalu di kanan atas, di kotak pencarian, ketik 'CardBook' lalu tekan Enter, dan akan muncul daftar plugin yang namanya sesuai.   Klik  Install  di sebelah kanan CardBook. (Lihat gambar sebelumnya)  Klik  Restart Now  yang muncul setelah pemasangan selesai.", 
+            "title": "1. Unduh dan pasang perangkat lunak"
+        }, 
         {
-            "location": "/others/Cost_To_Maintain/#for-personal",
-            "text": "Item  Cost  Ref      Domains : ferdi.id ferdi.co.de  deprecated pojoksantai.com bayupradika.com  Price : 250rb 130rb 130rb 130rb  yearly , ref  here  soon move to  here    G Suite : ferdi@gsuite.pojoksantai.com  USD 2,5  monthly  ga kepake, sekadar admin account",
-            "title": "For Personal"
-        },
+            "location": "/guide/thunderbird/#2-konfigurasi_1", 
+            "text": "Jalankan perangkat lunak.   Apabila ada pertanyaan soal  System Integration , abaikan saja dengan klik tombol  Skip Integration .  Jika ada pertanyaan soal konfigurasi akun email, abaikan saja dengan klik tombol  I think I'll configure my account later.  Jika ada pertanyaan terkait impor data kontak Thunderbird ke dalam CardBook, klik  Cancel .   Lalu prosedur konfigurasi.    Klik tombol  CardBook  yang ada di sebelah tombol menu utama.    Klik tombol menu utama CardBook di kiri. Yang di kanan menu utama Thunderbird. Klik menu utama Cardbook, Address Book, New Address Book.    Pilih 'Remote' di lokasi Address Book. Klik  Next .    Di jendela berikutnya akan ada beberapa isian. Pilih dahulu 'CardDAV' sebagai tipe yang diinginkan.    Lalu, dapatkan URL address book yang akan diimpor. Karena ini Ba\u00efkal, maka skema URLnya biasanya berbentuk seperti:  $HOST/dav.php/addressbooks/$BAIKAL_USER/$ADDRESSBOOK    Isikan URL ke kolom URL. Setelah itu isikan username dan password Anda, dan klik Validate. Kalau tidak bermasalah, bisa lanjut dengan klik Next.    Selanjutnya tentukan nama dan warna. Silakan isi sesuka hati, atau biarkan saja.    Klik Finish.    Selesai!!!    Sekarang semua perubahan yang dilakukan di Address Book ini akan tersinkronisasi ke server, dan tersedia di semua aplikasi yang juga memakai server ini.", 
+            "title": "2. Konfigurasi"
+        }, 
         {
-            "location": "/others/Cost_To_Maintain/#shared-resource",
-            "text": "Item  Cost  Ref      Droplet : bellatrix.pojoksantai.com (Website) capella.pojoksantai.com (Email)  Price : USD 10 USD 5  monthly , ref  here",
-            "title": "Shared Resource"
-        },
+            "location": "/resources/resources/", 
+            "text": "Link\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nLink\n\n\nVSCode Markdown\n\n\n\n\n\n\nLink\n\n\nFree Bootstrap Templates\n\n\n\n\n\n\nLink\n\n\nUber Engineering\n\n\n\n\n\n\nLink\n\n\nhttps://www.migrasilinux.or.id\nSitusnya IMHO berisi komunitas yang mau membantu proses instalasi sistem operasi berbasis kernel Linux dan userland GNU secara cuma-cuma. Ada beberapa artikel soal kiat-kiat. Sekilas kontennya sangat merakyat.\n\n\n\n\n\n\nLink\n\n\nhttps://ethitter.com/\nDari sini saya dapat artikel cara memblok sambungan dari server tertentu. Pada akhirnya saya pakai FirewallD, namun, di artikel ini semangat Bapak Erik sepertinya sebelas dua belas dengan saya, soal \nselfhosting\n dan IT secara umum.\n\n\n\n\n\n\nLink\n\n\nhttp://freesoftware.zona-m.net/about/\nIsinya soal free software. Belum baca detail. Ada sister sitenya di sini: http://stop.zona-m.net/about/.\n\n\n\n\n\n\nLink\n\n\nhttps://blog.flameeyes.eu/\n\n\n\n\n\n\nLink\n\n\nhttps://scotch.io", 
+            "title": "Awal"
+        }, 
         {
-            "location": "/others/Email_Infrastructure/",
-            "text": "Email Infrastructure\n\n\nOriginal note from Google Keep:\n\n\n\n\nDovecot replication\n\nhttp://blog.le-vert.net/?p=160\n \n\n\nTutorial basic mail\n\nhttps://www.rosehosting.com/blog/mailserver-with-virtual-users-and-domains-using-postfix-and-dovecot-on-a-centos-6-vps/\n\n\nRelayhost postfix utk smtp2go\n\nhttps://www.smtp2go.com/setupguide/postfix/\n\n\nIMAPS\n\nhttps://www.rosehosting.com/blog/set-up-ssl-encrypted-connection-in-postfix-dovecot-and-apache/\n\n\nIMAPS\nSTARTTLS di port 587\nno auth di port 25\nopportunistic di port 25\n\n\ngedein ukuran mail\n\n\n\n\nconnect SSH Tunnel untuk PgAdmin \nssh -L 5433:localhost:5432 root_bellatrix\n\n\nhttps://wiki.gentoo.org/wiki/Complete_Virtual_Mail_Server/Postfix_to_Database\n\n\nhttp://shirkerphp.blogspot.co.id/2013/10/howto-rebuild-postfix-with.html\n\n\nreject_unknown_client akan menolak semua mail dari IP yang tidak punya PTR record. Simsalabim berkurang drastis.\n\n\nvariable untuk setting query postfix \nhttp://www.postfix.org/pgsql_table.5.html\n\n\nREASSIGN OWNED \nhttps://www.postgresql.org/docs/8.2/static/sql-reassign-owned.html\n buat mindahin right ke user yang bener\n\n\nDovecot Password Integration (dengan ini email yang disetup di Laravel beserta passwordnya akan berlaku utk otentikasi email dan alamatnya\n\n\nSilakan disuling, banyak banget infonya.\n\n\nhttps://wiki2.dovecot.org/HowTo/DovecotPostgresql\n basicnya\n\nhttps://wiki.dovecot.org/AuthDatabase/SQL\n\n\nhttps://wiki.dovecot.org/Authentication/PasswordSchemes\n password encryption\n\n\nhttps://www.christianroessler.net/tech/2014/auth-log-fix-pam-unix-dovecot-auth-error.html\n pam_db interfering\n\n\ndebugging dovecot \nhttps://wiki.dovecot.org/Debugging/Authentication\n\n\nvariables in sql query \nhttps://wiki.dovecot.org/Variables\n\n\nBlowfish not in glibc of RHEL, jadi, Laravel via PHP generate versi SHA512 khusus untuk dovecot. Laravel tetap di Blowfish.\n\n\nthis is the most direct answer \nhttps://mad9scientist.com/dovecot-password-creation-php/\n\n\nbcrypt support in Red Hat \nhttps://access.redhat.com/articles/1519843",
-            "title": "Email Infrastructure"
-        },
+            "location": "/resources/free-resources/", 
+            "text": "Sumber Daya Bebas Biaya\n\n\nAchtung. Kalau tautannya sudah basi, coba googling nama programnya.\n\n\nBebas Biaya Tanpa Syarat\n\n\nBiasanya terbatas untuk jumlah tertentu, entah jumlah \nuser\n, jumlah fitur, dan sebagainya.\n\n\n\n\nGitHub\n\n\nGitLab\n\n\nVisual Studio Team Services\n\n\nVisual Studio Code\n\n\nCloudFlare (DNS)\n\n\nLet\u2019s Encrypt (Sertifikat SSL DV)\n\n\nFontAwesome\n\n\nGoogle Fonts\n\n\nCountry Flags SVG\n\n\nPexels.com / pixabay.com\n\n\nToggl.com\n\n\n\n\nBebas Biaya dengan Sedikit Syarat\n\n\nBiasanya mensyaratkan Anda masih mahasiswa atau Anda tidak menggunakan lisensi ini untuk production alias untuk kerja.\n\n\n\n\nRed Hat Developer Program\n.  Dapat satu lisensi subscription RHEL selama satu tahun, bisa terus diperbarui.\n\n\n\n\nBebas Biaya dengan Alamat \nEmail\n Universitas\n\n\nProgram di sini bebas biaya selama Anda masih mahasiswa. Syaratnya adalah punya akses ke alamat email universitas, yang berarti menandakan Anda masih mahasiswa. Kadang untuk beberapa program diizinkan untuk mendaftar tanpa email. Anda hanya perlu sediakan dokumen pendukung seperti Kartu Tanda Mahasiswa atau semacamnya. Jetbrains seperti ini.\n\n\nJetbrains Individual Student License\n. Dapat lisensi semua produk JetBrains dan bisa diperbarui setiap tahun. \nAwesome, huh?", 
+            "title": "Sumber Daya Bebas Biaya"
+        }, 
         {
-            "location": "/others/Email_Infrastructure/#email-infrastructure",
-            "text": "Original note from Google Keep:   Dovecot replication http://blog.le-vert.net/?p=160    Tutorial basic mail https://www.rosehosting.com/blog/mailserver-with-virtual-users-and-domains-using-postfix-and-dovecot-on-a-centos-6-vps/  Relayhost postfix utk smtp2go https://www.smtp2go.com/setupguide/postfix/  IMAPS https://www.rosehosting.com/blog/set-up-ssl-encrypted-connection-in-postfix-dovecot-and-apache/  IMAPS\nSTARTTLS di port 587\nno auth di port 25\nopportunistic di port 25  gedein ukuran mail   connect SSH Tunnel untuk PgAdmin  ssh -L 5433:localhost:5432 root_bellatrix  https://wiki.gentoo.org/wiki/Complete_Virtual_Mail_Server/Postfix_to_Database  http://shirkerphp.blogspot.co.id/2013/10/howto-rebuild-postfix-with.html  reject_unknown_client akan menolak semua mail dari IP yang tidak punya PTR record. Simsalabim berkurang drastis.  variable untuk setting query postfix  http://www.postfix.org/pgsql_table.5.html  REASSIGN OWNED  https://www.postgresql.org/docs/8.2/static/sql-reassign-owned.html  buat mindahin right ke user yang bener",
-            "title": "Email Infrastructure"
-        },
+            "location": "/resources/free-resources/#sumber-daya-bebas-biaya", 
+            "text": "Achtung. Kalau tautannya sudah basi, coba googling nama programnya.", 
+            "title": "Sumber Daya Bebas Biaya"
+        }, 
         {
-            "location": "/others/Email_Infrastructure/#dovecot-password-integration-dengan-ini-email-yang-disetup-di-laravel-beserta-passwordnya-akan-berlaku-utk-otentikasi-email-dan-alamatnya",
-            "text": "Silakan disuling, banyak banget infonya.  https://wiki2.dovecot.org/HowTo/DovecotPostgresql  basicnya https://wiki.dovecot.org/AuthDatabase/SQL  https://wiki.dovecot.org/Authentication/PasswordSchemes  password encryption  https://www.christianroessler.net/tech/2014/auth-log-fix-pam-unix-dovecot-auth-error.html  pam_db interfering  debugging dovecot  https://wiki.dovecot.org/Debugging/Authentication  variables in sql query  https://wiki.dovecot.org/Variables  Blowfish not in glibc of RHEL, jadi, Laravel via PHP generate versi SHA512 khusus untuk dovecot. Laravel tetap di Blowfish.  this is the most direct answer  https://mad9scientist.com/dovecot-password-creation-php/  bcrypt support in Red Hat  https://access.redhat.com/articles/1519843",
-            "title": "Dovecot Password Integration (dengan ini email yang disetup di Laravel beserta passwordnya akan berlaku utk otentikasi email dan alamatnya"
-        },
+            "location": "/resources/free-resources/#bebas-biaya-tanpa-syarat", 
+            "text": "Biasanya terbatas untuk jumlah tertentu, entah jumlah  user , jumlah fitur, dan sebagainya.   GitHub  GitLab  Visual Studio Team Services  Visual Studio Code  CloudFlare (DNS)  Let\u2019s Encrypt (Sertifikat SSL DV)  FontAwesome  Google Fonts  Country Flags SVG  Pexels.com / pixabay.com  Toggl.com", 
+            "title": "Bebas Biaya Tanpa Syarat"
+        }, 
         {
-            "location": "/others/Links_To_Read/",
-            "text": "Link\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nLink\n\n\nVSCode Markdown\n\n\n\n\n\n\nLink\n\n\nFree Bootstrap Templates\n\n\n\n\n\n\nLink\n\n\nUber Engineering",
-            "title": "Links To Read"
-        },
+            "location": "/resources/free-resources/#bebas-biaya-dengan-sedikit-syarat", 
+            "text": "Biasanya mensyaratkan Anda masih mahasiswa atau Anda tidak menggunakan lisensi ini untuk production alias untuk kerja.   Red Hat Developer Program .  Dapat satu lisensi subscription RHEL selama satu tahun, bisa terus diperbarui.", 
+            "title": "Bebas Biaya dengan Sedikit Syarat"
+        }, 
         {
-            "location": "/paragita/home/",
-            "text": "https://www.smashingmagazine.com/2009/04/from-table-hell-to-div-hell/\n\n\nhttps://github.com/gurayyarar/AdminBSBMaterialDesign\n\n\nDaftar objek:\n\n\n\n\nMember basic, milik HCD\n\n\nKonser, milik aiapa?\n\n\nKompetisi\n\n\nJob, milik Marketing, HCD, officer lapangan ini sendiri ato milij hcd? PR perlu consume data kah utk publikasi?\n\n\nAset, milik OPS, tapi job kompetisi konser xonsumennya\n\n\n\n\nApakah partitur sebaiknya jadi modul sendiri? Atau muadev punya proses bisnis sendori?\n\n\nBtw kalo capella jadi mailserver utama, apakah sebaiknya dicari cara ngebuat semacam global directory di CardDAV biar webmail bisa kirim ke mail internal? Ada ga paket mail server cheap to free yang support email calendar contact dgn spek droplet $15 DO? Syaratnya musah backuo restore tingkat aplikasi.\n\n\nSatu, apakah project managenet paragita yang disupport lewat aplikasi internal lebih efisien dari eksisting? Perlukah pertimbangan layanan project management luar? List pro cons.",
-            "title": "Home"
-        },
+            "location": "/resources/free-resources/#bebas-biaya-dengan-alamat-email-universitas", 
+            "text": "Program di sini bebas biaya selama Anda masih mahasiswa. Syaratnya adalah punya akses ke alamat email universitas, yang berarti menandakan Anda masih mahasiswa. Kadang untuk beberapa program diizinkan untuk mendaftar tanpa email. Anda hanya perlu sediakan dokumen pendukung seperti Kartu Tanda Mahasiswa atau semacamnya. Jetbrains seperti ini.  Jetbrains Individual Student License . Dapat lisensi semua produk JetBrains dan bisa diperbarui setiap tahun.  Awesome, huh?", 
+            "title": "Bebas Biaya dengan Alamat Email Universitas"
+        }, 
         {
-            "location": "/paragita/backoffice/API_Design/",
-            "text": "API Design\n\n\nParagita\n\n\nEndpoint should form:\n\n$WEBSITE/api/$API_VER/$ENDPOINT\n\n\nCurrently:\n\n\n\n\n\n\n\n\nVariable\n\n\nValue\n\n\n\n\n\n\n\n\n\n\n$WEBSITE\n\n\nhttp://devel.paragita.com\n\n\n\n\n\n\n$API_VER\n\n\nv1.0\n\n\n\n\n\n\n\n\nModules available:\n\n\n\n\n\n\n\n\nModule\n\n\n$ENDPOINT\n\n\nDesc\n\n\n\n\n\n\n\n\n\n\nMember Management\n\n\nmember\n\n\nMember management\n\n\n\n\n\n\nEvent Management\n\n\nevent\n\n\nRehearsal, concert, job",
-            "title": "API Design"
-        },
+            "location": "/resources/reference-apps/", 
+            "text": "Program Rujukan\n\n\nBicara soal program favorit, bisa memicu perang bintang. Jadi, lebih baik saya utarakan saja program yang biasa saya pakai. Semoga bisa jadi referensi berguna buat pembaca. Di sini belum tentu semuanya bebas biaya atau tergolong perangkat lunak bebas. Saya memakainya karena perkakas ini bekerja bagus untuk saya serta ada akses legal terhadapnya.\n\n\nProgram di Windows\n\n\n\n\nSnagit\n\n\n\n\nProgram di Linux ( Fedora / CentOS )\n\n\n\n\nScribus (Alternatif Adobe InDesign)\n\n\nGimp (Alternatif Adobe Photoshop, GTK+, dude, its Gimp ToolKit)\n\n\nMeld (alternatif Beyond Compare, also GTK+)\n\n\nGitG (GUI untuk git, GTK+) \n\n\n\n\nCross-platform (via Java atau Electron)\n\n\n\n\nVisual Studio Code\n\n\nGitAhead, GitKraken", 
+            "title": "Program Rujukan"
+        }, 
         {
-            "location": "/paragita/backoffice/API_Design/#api-design",
-            "text": "",
-            "title": "API Design"
-        },
+            "location": "/resources/reference-apps/#program-rujukan", 
+            "text": "Bicara soal program favorit, bisa memicu perang bintang. Jadi, lebih baik saya utarakan saja program yang biasa saya pakai. Semoga bisa jadi referensi berguna buat pembaca. Di sini belum tentu semuanya bebas biaya atau tergolong perangkat lunak bebas. Saya memakainya karena perkakas ini bekerja bagus untuk saya serta ada akses legal terhadapnya.", 
+            "title": "Program Rujukan"
+        }, 
         {
-            "location": "/paragita/backoffice/API_Design/#paragita",
-            "text": "Endpoint should form: $WEBSITE/api/$API_VER/$ENDPOINT  Currently:     Variable  Value      $WEBSITE  http://devel.paragita.com    $API_VER  v1.0     Modules available:     Module  $ENDPOINT  Desc      Member Management  member  Member management    Event Management  event  Rehearsal, concert, job",
-            "title": "Paragita"
-        },
+            "location": "/resources/reference-apps/#program-di-windows", 
+            "text": "Snagit", 
+            "title": "Program di Windows"
+        }, 
         {
-            "location": "/paragita/backoffice/Environments/",
-            "text": "Environments\n\n\nProduction\n\n\n\n\n\n\n\n\nProperty\n\n\nValue\n\n\n\n\n\n\n\n\n\n\nSite\n\n\n[[https://kami.paragita.com]]\n\n\n\n\n\n\nPhysical\n\n\nbellatrix.pojoksantai.com\n\n\n\n\n\n\nDatabase\n\n\nparagita\n\n\n\n\n\n\nSchema\n\n\nproduction\n\n\n\n\n\n\nUser\n\n\nparagita_prod\n\n\n\n\n\n\nBranch\n\n\nmaster\n\n\n\n\n\n\n\n\nSitenya belum jelas mau yang mana.\n\n\nSimulation\n\n\n\n\n\n\n\n\nProperty\n\n\nValue\n\n\n\n\n\n\n\n\n\n\nSite\n\n\n[[https://sim.paragita.com]]\n\n\n\n\n\n\nPhysical\n\n\nbellatrix.pojoksantai.com\n\n\n\n\n\n\nDatabase\n\n\nparagita\n\n\n\n\n\n\nSchema\n\n\nsimulation\n\n\n\n\n\n\nUser\n\n\nparagita_sim\n\n\n\n\n\n\nBranch\n\n\nsimulation\n\n\n\n\n\n\n\n\nTesting\n\n\n\n\n\n\n\n\nProperty\n\n\nValue\n\n\n\n\n\n\n\n\n\n\nSite\n\n\n[[https://test.paragita.com]]\n\n\n\n\n\n\nPhysical\n\n\nbellatrix.pojoksantai.com\n\n\n\n\n\n\nDatabase\n\n\nparagita\n\n\n\n\n\n\nSchema\n\n\ntesting\n\n\n\n\n\n\nUser\n\n\nparagita_test\n\n\n\n\n\n\nBranch\n\n\ntesting\n\n\n\n\n\n\n\n\nDevelopment\n\n\n\n\n\n\n\n\nProperty\n\n\nValue\n\n\n\n\n\n\n\n\n\n\nSite\n\n\n[[https://devel.paragita.com]]\n\n\n\n\n\n\nPhysical\n\n\naldebaran.ferdi.id\n\n\n\n\n\n\nDatabase\n\n\nparagita\n\n\n\n\n\n\nSchema\n\n\ndevelopment\n\n\n\n\n\n\nUser\n\n\nparagita_devel\n\n\n\n\n\n\nBranch\n\n\ndevelopment\n\n\n\n\n\n\n\n\nSMS Gateway\n\n\n\n\n\n\n\n\nVendor\n\n\nPrice per SMS (IDR)\n\n\nNote\n\n\n\n\n\n\n\n\n\n\nhttps://www.clickatell.com/\n\n\n270\n\n\nberdasarkan simulasi, 100 sms rentang harga 2 dolar. blm tahu fitur\n\n\n\n\n\n\nhttps://wavecell.com/\n\n\n350\n\n\n#N/A\n\n\n\n\n\n\nhttps://raja-sms.com/sms-masking/\n\n\nlihat di kiri\n\n\n#N/A\n\n\n\n\n\n\nhttps://www.gosmsgateway.com/prices.php\n\n\nmahal\n\n\nMesti paketan\n\n\n\n\n\n\nhttps://www.aksimaya.co.id/smsgateway/\n\n\nmurah ni\n\n\nbisa per 3 bulan\n\n\n\n\n\n\nhttps://www.nexmo.com/pricing\n\n\nmahal\n\n\n#N/A\n\n\n\n\n\n\n\n\nLet's Encrypt Workflow\n\n\n\n\nList all hostname from Environments\n\n\nUpdate to spreadsheet\n\n\nCheck discrepancy, if not exist, create first in CloudFlare (both hostname and _acme-challenge)\n\n\nGenerate certificate, update DNS using this helper \nhttps://github.com/ferdisn/CloudFlareAPIv4",
-            "title": "Environments"
-        },
+            "location": "/resources/reference-apps/#program-di-linux-fedora-centos", 
+            "text": "Scribus (Alternatif Adobe InDesign)  Gimp (Alternatif Adobe Photoshop, GTK+, dude, its Gimp ToolKit)  Meld (alternatif Beyond Compare, also GTK+)  GitG (GUI untuk git, GTK+)", 
+            "title": "Program di Linux ( Fedora / CentOS )"
+        }, 
         {
-            "location": "/paragita/backoffice/Environments/#environments",
-            "text": "",
-            "title": "Environments"
-        },
-        {
-            "location": "/paragita/backoffice/Environments/#production",
-            "text": "Property  Value      Site  [[https://kami.paragita.com]]    Physical  bellatrix.pojoksantai.com    Database  paragita    Schema  production    User  paragita_prod    Branch  master     Sitenya belum jelas mau yang mana.",
-            "title": "Production"
-        },
-        {
-            "location": "/paragita/backoffice/Environments/#simulation",
-            "text": "Property  Value      Site  [[https://sim.paragita.com]]    Physical  bellatrix.pojoksantai.com    Database  paragita    Schema  simulation    User  paragita_sim    Branch  simulation",
-            "title": "Simulation"
-        },
-        {
-            "location": "/paragita/backoffice/Environments/#testing",
-            "text": "Property  Value      Site  [[https://test.paragita.com]]    Physical  bellatrix.pojoksantai.com    Database  paragita    Schema  testing    User  paragita_test    Branch  testing",
-            "title": "Testing"
-        },
-        {
-            "location": "/paragita/backoffice/Environments/#development",
-            "text": "Property  Value      Site  [[https://devel.paragita.com]]    Physical  aldebaran.ferdi.id    Database  paragita    Schema  development    User  paragita_devel    Branch  development",
-            "title": "Development"
-        },
-        {
-            "location": "/paragita/backoffice/Environments/#sms-gateway",
-            "text": "Vendor  Price per SMS (IDR)  Note      https://www.clickatell.com/  270  berdasarkan simulasi, 100 sms rentang harga 2 dolar. blm tahu fitur    https://wavecell.com/  350  #N/A    https://raja-sms.com/sms-masking/  lihat di kiri  #N/A    https://www.gosmsgateway.com/prices.php  mahal  Mesti paketan    https://www.aksimaya.co.id/smsgateway/  murah ni  bisa per 3 bulan    https://www.nexmo.com/pricing  mahal  #N/A",
-            "title": "SMS Gateway"
-        },
-        {
-            "location": "/paragita/backoffice/Environments/#lets-encrypt-workflow",
-            "text": "List all hostname from Environments  Update to spreadsheet  Check discrepancy, if not exist, create first in CloudFlare (both hostname and _acme-challenge)  Generate certificate, update DNS using this helper  https://github.com/ferdisn/CloudFlareAPIv4",
-            "title": "Let's Encrypt Workflow"
-        },
-        {
-            "location": "/paragita/backoffice/Git_Branch_Definition/",
-            "text": "Git Branch Workflow\n\n\nParagita\n\n\n\n\n\n\n\n\nBranch\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nmaster\n\n\nProduction application\n\n\n\n\n\n\nsimulation\n\n\nPreproduction application\n\n\n\n\n\n\ntesting\n\n\nTesting branch\n\n\n\n\n\n\ntheme-devel\n\n\nOnly for HTML,CSS,JS development\n\n\n\n\n\n\ndevelopment\n\n\nMain development branch",
-            "title": "Git Branch Workflow"
-        },
-        {
-            "location": "/paragita/backoffice/Git_Branch_Definition/#git-branch-workflow",
-            "text": "",
-            "title": "Git Branch Workflow"
-        },
-        {
-            "location": "/paragita/backoffice/Git_Branch_Definition/#paragita",
-            "text": "Branch  Description      master  Production application    simulation  Preproduction application    testing  Testing branch    theme-devel  Only for HTML,CSS,JS development    development  Main development branch",
-            "title": "Paragita"
-        },
-        {
-            "location": "/paragita/backoffice/Requirements/",
-            "text": "Email must be verified. \nhttp://bensmith.io/email-verification-with-laravel\n\n\nPhone number may not be verified.\n\n\nAll CRUD activities must provide API equivalent.",
-            "title": "Requirements"
-        },
-        {
-            "location": "/paragita/backoffice/module/Event_Management/",
-            "text": "",
-            "title": "Event Management"
-        },
-        {
-            "location": "/paragita/backoffice/module/Member_Management/",
-            "text": "Member Management\n\n\nAPI Design\n\n\n\n\n\n\n\n\nHTTP Verb\n\n\nEndpoint\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nGET\n\n\n/member\n\n\nget all member\n\n\n\n\n\n\nGET\n\n\n/member/{id}\n\n\nget one member\n\n\n\n\n\n\nPOST\n\n\n/member\n\n\ncreate new member\n\n\n\n\n\n\nPUT\n\n\n/member\n\n\nupdate member\n\n\n\n\n\n\nDELETE\n\n\n/member/{id}\n\n\ndelete member\n\n\n\n\n\n\n\n\nWeb App\n\n\n\n\n\n\n\n\nHTTP Verb\n\n\nEndpoint\n\n\nDescription\n\n\n\n\n\n\n\n\n\n\nGET\n\n\n/member\n\n\nget all member\n\n\n\n\n\n\nGET\n\n\n/member/{id}\n\n\nget one member\n\n\n\n\n\n\nPOST\n\n\n/member\n\n\ncreate new member\n\n\n\n\n\n\nPUT\n\n\n/member\n\n\nupdate member\n\n\n\n\n\n\nDELETE\n\n\n/member/{id}\n\n\ndelete member\n\n\n\n\n\n\nGET\n\n\n/member/{id}/edit\n\n\nopen form for edit\n\n\n\n\n\n\n\n\nPUT ga ada dalam form.method.\nElemen data member yang sekarang diturunkan jadi one-to-many seperti Contact, Education, Address mau dimanage terpisah dari API ini atau digabung? direplace atau diappend?\n\n\n\n\nnyari sdm job\n\n\nbagian dari siklus member management, tapi bukan mayor, cuma penyedia data. Kalo dari deskripsi existing, mereka kesulitan cari data orang di luar angkatan aktif, artinya khusus keperluan job ini harus ada flag yang menandakan orang-orang yang available untuk ditanya2in soal job regardless of its angkatan. Kebijakan dari BPH sendiri gmn? apakah privilege ikut job masih lekat ke orang yang registrasi ulang atau engga?\n\n\nulang tahun (ini pd dasarnya baca birthDay member, trus kirim reminder yang prepared, via email dan SMS, ditrigger cronjob laravel. apakah reminder untuk HCD saja, atau mau untuk member langsung juga?_\n\n\npengingat ulang tahun (mungkin H-3)\n\n\npengingat hari H\n\n\nsebagai tambahan bisa pake \nSMS Gateway\n untuk notifikasi SMS, incur cost jadi minimize.\n\n\npendataan anggota\n\n\napakah dibatasi dari anggota yang udah jelas diterima, atau mau cover case rekrutmen? NB: rekrutmen bisa dipisah ke sistem sendiri yang lebih kecil, DB terpisah, atau kalau mau masih tradisional bisa tetap dengan google form, mengingat kalo handle user 500 ukuran droplet digitalocean yang dipake harganya di luar kesanggupan gw.\n\n\nkehadiran\n\n\nseperti nomor satu, masih hanya bagian kecil dari member management. Kemungkinan ini mayornya di event management, tapi apakah event harus dipersempit menjadi konser dan job? Atau dianggap sama saja namun beda skala?\n\n\nmanajemen info untuk keperluan graduation, misal menandai tanggal tertentu dan mengasumsikan perkiraan kelulusan dari masing-masing anggota mengikuti status pendidikan di UI mereka.\n\n\nimplikasinya, object Education harus diperluas, tapi ga wajib, jadi ntar orang HCD bisa dapet reminder untuk cari info lebih dahulu\n\n\n\n\nproblem yang sering terjadi: ref #1 nyari ke mana apabila angkatan yang aktif habis",
-            "title": "Member Management"
-        },
-        {
-            "location": "/paragita/backoffice/module/Member_Management/#member-management",
-            "text": "",
-            "title": "Member Management"
-        },
-        {
-            "location": "/paragita/backoffice/module/Member_Management/#api-design",
-            "text": "HTTP Verb  Endpoint  Description      GET  /member  get all member    GET  /member/{id}  get one member    POST  /member  create new member    PUT  /member  update member    DELETE  /member/{id}  delete member",
-            "title": "API Design"
-        },
-        {
-            "location": "/paragita/backoffice/module/Member_Management/#web-app",
-            "text": "HTTP Verb  Endpoint  Description      GET  /member  get all member    GET  /member/{id}  get one member    POST  /member  create new member    PUT  /member  update member    DELETE  /member/{id}  delete member    GET  /member/{id}/edit  open form for edit     PUT ga ada dalam form.method.\nElemen data member yang sekarang diturunkan jadi one-to-many seperti Contact, Education, Address mau dimanage terpisah dari API ini atau digabung? direplace atau diappend?   nyari sdm job  bagian dari siklus member management, tapi bukan mayor, cuma penyedia data. Kalo dari deskripsi existing, mereka kesulitan cari data orang di luar angkatan aktif, artinya khusus keperluan job ini harus ada flag yang menandakan orang-orang yang available untuk ditanya2in soal job regardless of its angkatan. Kebijakan dari BPH sendiri gmn? apakah privilege ikut job masih lekat ke orang yang registrasi ulang atau engga?  ulang tahun (ini pd dasarnya baca birthDay member, trus kirim reminder yang prepared, via email dan SMS, ditrigger cronjob laravel. apakah reminder untuk HCD saja, atau mau untuk member langsung juga?_  pengingat ulang tahun (mungkin H-3)  pengingat hari H  sebagai tambahan bisa pake  SMS Gateway  untuk notifikasi SMS, incur cost jadi minimize.  pendataan anggota  apakah dibatasi dari anggota yang udah jelas diterima, atau mau cover case rekrutmen? NB: rekrutmen bisa dipisah ke sistem sendiri yang lebih kecil, DB terpisah, atau kalau mau masih tradisional bisa tetap dengan google form, mengingat kalo handle user 500 ukuran droplet digitalocean yang dipake harganya di luar kesanggupan gw.  kehadiran  seperti nomor satu, masih hanya bagian kecil dari member management. Kemungkinan ini mayornya di event management, tapi apakah event harus dipersempit menjadi konser dan job? Atau dianggap sama saja namun beda skala?  manajemen info untuk keperluan graduation, misal menandai tanggal tertentu dan mengasumsikan perkiraan kelulusan dari masing-masing anggota mengikuti status pendidikan di UI mereka.  implikasinya, object Education harus diperluas, tapi ga wajib, jadi ntar orang HCD bisa dapet reminder untuk cari info lebih dahulu   problem yang sering terjadi: ref #1 nyari ke mana apabila angkatan yang aktif habis",
-            "title": "Web App"
-        },
-        {
-            "location": "/paragita/backoffice/module/Rights_Management/",
-            "text": "List Role\n\n\n\n\n\n\n\n\nRole\n\n\nDesc\n\n\n\n\n\n\n\n\n\n\nroot\n\n\nperform everything\n\n\n\n\n\n\nhcd\n\n\nmember management",
-            "title": "Rights Management"
-        },
-        {
-            "location": "/paragita/website/reference_website/",
-            "text": "List of Websites under UI managed by each entity:\n\n\n\n\nhttp://mahawaditra.ui.ac.id",
-            "title": "Reference website"
-        },
-        {
-            "location": "/paragita/website/website/",
-            "text": "Alternatif Pengelolaan Situs www.paragita.com dengan Static Site Generator Jekyll\n\n\nAccess \nhttp://www2.paragita.com\n. Situs ini mengikuti serta disajikan langsung dari branch gh-pages di repo \nini\n\n\nTheme chosen by Nada: Twenty. \nhttps://html5up.net/twenty\n development \ndi sini.\n\n\nNaming issue (is it? or just me?)\n\n\nThis section is to be deleted.\n\n\nMahwaditra di situsnya menulis:\n\n\nNama \u201cMahawaditra\u201d berasal dari bahasa Sansekerta.\n\u201cMaha\u201d berarti agung dan \u201cWaditra\u201d berarti suara,\nsehingga \u201cMahawaditra\u201d memiliki arti suara yang agung.\nNama ini diusulkan oleh rektor Universitas Indonesia \npada masa OSUI Mahawaditra didirikan yaitu alm. Prof. Dr. Nugroho Nososusanto.\n\n\n\nIn our documents:\n\n\nNama Paragita diberikan oleh rektor Universitas Indonesia saat itu, \nProf. Dr. Nugroho Notosusanto, yang berarti suara yang megah atau agung.\n\n\n\nAnehnya dari website \nhttp://spokensanskrit.org/\n gw ga ketemu entri yang benar.\n\n\n\n\nWaditra\n, ga di sanskrit, ketemunya di sini \nhttps://jv.wiktionary.org/wiki/waditra\n dan juga di \nhttps://su.wikipedia.org/wiki/Waditra\n berarti \nalat musik\n\n\nMaha\n bener, sanskrit berarti \nmegah\n. \nhttp://spokensanskrit.org/index.php?mode=3&script=hk&tran_input=maha&direct=se\n\n\nGita\n bener, sanskrit berarti \nlagu\n. Tetapi di dokumen kita menulisnya sebagai \nsuara\n \nhttp://spokensanskrit.org/index.php?mode=3&script=hk&tran_input=gita&direct=se\n \n\n\nPara, ga ketemu.\n\n\n\n\nUntuk \nwaditra\n, mungkin wajar karena masih adopsi kata yang normal tanpa inflection.\n\n\nUntuk \npara\n, entri terdekat yang menggambarkan agung atau megah ada di \nparama\n \nhttp://spokensanskrit.org/index.php?mode=3&script=hk&tran_input=parama&direct=se\n\n\nEntri lain \nhttps://en.wiktionary.org/wiki/para#Javanese\n berarti \nkumpulan orang-orang",
-            "title": "Alternatif Pengelolaan Situs www.paragita.com dengan Static Site Generator Jekyll"
-        },
-        {
-            "location": "/paragita/website/website/#alternatif-pengelolaan-situs-wwwparagitacom-dengan-static-site-generator-jekyll",
-            "text": "Access  http://www2.paragita.com . Situs ini mengikuti serta disajikan langsung dari branch gh-pages di repo  ini  Theme chosen by Nada: Twenty.  https://html5up.net/twenty  development  di sini.",
-            "title": "Alternatif Pengelolaan Situs www.paragita.com dengan Static Site Generator Jekyll"
-        },
-        {
-            "location": "/paragita/website/website/#naming-issue-is-it-or-just-me",
-            "text": "This section is to be deleted.  Mahwaditra di situsnya menulis:  Nama \u201cMahawaditra\u201d berasal dari bahasa Sansekerta.\n\u201cMaha\u201d berarti agung dan \u201cWaditra\u201d berarti suara,\nsehingga \u201cMahawaditra\u201d memiliki arti suara yang agung.\nNama ini diusulkan oleh rektor Universitas Indonesia \npada masa OSUI Mahawaditra didirikan yaitu alm. Prof. Dr. Nugroho Nososusanto.  In our documents:  Nama Paragita diberikan oleh rektor Universitas Indonesia saat itu, \nProf. Dr. Nugroho Notosusanto, yang berarti suara yang megah atau agung.  Anehnya dari website  http://spokensanskrit.org/  gw ga ketemu entri yang benar.   Waditra , ga di sanskrit, ketemunya di sini  https://jv.wiktionary.org/wiki/waditra  dan juga di  https://su.wikipedia.org/wiki/Waditra  berarti  alat musik  Maha  bener, sanskrit berarti  megah .  http://spokensanskrit.org/index.php?mode=3&script=hk&tran_input=maha&direct=se  Gita  bener, sanskrit berarti  lagu . Tetapi di dokumen kita menulisnya sebagai  suara   http://spokensanskrit.org/index.php?mode=3&script=hk&tran_input=gita&direct=se    Para, ga ketemu.   Untuk  waditra , mungkin wajar karena masih adopsi kata yang normal tanpa inflection.  Untuk  para , entri terdekat yang menggambarkan agung atau megah ada di  parama   http://spokensanskrit.org/index.php?mode=3&script=hk&tran_input=parama&direct=se  Entri lain  https://en.wiktionary.org/wiki/para#Javanese  berarti  kumpulan orang-orang",
-            "title": "Naming issue (is it? or just me?)"
+            "location": "/resources/reference-apps/#cross-platform-via-java-atau-electron", 
+            "text": "Visual Studio Code  GitAhead, GitKraken", 
+            "title": "Cross-platform (via Java atau Electron)"
         }
     ]
 }

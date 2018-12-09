@@ -1,142 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-
-    
     <url>
      <loc>/</loc>
-     <lastmod>2018-07-19</lastmod>
+     <lastmod>2018-12-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
-    
-
-    
     <url>
      <loc>/meta/</loc>
-     <lastmod>2018-07-19</lastmod>
+     <lastmod>2018-12-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
-    
-
-    
-        
     <url>
-     <loc>/database/convention/</loc>
-     <lastmod>2018-07-19</lastmod>
+     <loc>/infrastructure/general/</loc>
+     <lastmod>2018-12-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc>/database/overview/</loc>
-     <lastmod>2018-07-19</lastmod>
+     <loc>/infrastructure/base_configuration/</loc>
+     <lastmod>2018-12-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc></loc>
-     <lastmod></lastmod>
+     <loc>/infrastructure/email/</loc>
+     <lastmod>2018-12-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc></loc>
-     <lastmod></lastmod>
+     <loc>/infrastructure/configuration/personal_email/</loc>
+     <lastmod>2018-12-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
-    
-
-    
-        
-    <url>
-     <loc>/guide/SSH/</loc>
-     <lastmod>2018-07-19</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
     <url>
      <loc>/guide/thunderbird/</loc>
-     <lastmod>2018-07-19</lastmod>
+     <lastmod>2018-12-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
-    
-
-    
-        
     <url>
-     <loc>/infrastructure/Email/</loc>
-     <lastmod>2018-07-19</lastmod>
+     <loc>/resources/resources/</loc>
+     <lastmod>2018-12-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc>/infrastructure/Konfigurasi_Dasar/</loc>
-     <lastmod>2018-07-19</lastmod>
+     <loc>/resources/free-resources/</loc>
+     <lastmod>2018-12-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
     <url>
-     <loc>/infrastructure/Konfigurasi_Peladen_Surel/</loc>
-     <lastmod>2018-07-19</lastmod>
+     <loc>/resources/reference-apps/</loc>
+     <lastmod>2018-12-09</lastmod>
      <changefreq>daily</changefreq>
     </url>
-        
-    <url>
-     <loc>/infrastructure/Konfigurasi_Peladen_Web/</loc>
-     <lastmod>2018-07-19</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/infrastructure/Team_Based_Messaging_App/</loc>
-     <lastmod>2018-07-19</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    
-
-    
-        
-    <url>
-     <loc>/others/Cost_To_Maintain/</loc>
-     <lastmod>2018-07-19</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/others/Email_Infrastructure/</loc>
-     <lastmod>2018-07-19</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc>/others/Links_To_Read/</loc>
-     <lastmod>2018-07-19</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    
-
-    
-        
-    <url>
-     <loc>/paragita/home/</loc>
-     <lastmod>2018-07-19</lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc></loc>
-     <lastmod></lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    <url>
-     <loc></loc>
-     <lastmod></lastmod>
-     <changefreq>daily</changefreq>
-    </url>
-        
-    
-
 </urlset>
