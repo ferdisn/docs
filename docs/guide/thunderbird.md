@@ -14,7 +14,7 @@ Jika Anda pemberani, silakan bangun dari kode sumber.
 ### 2. Konfigurasi
 To be written.
 
-## Konfigurasi Thunderbird dengan CalDAV/CardDAV server BaÃ¯kal
+## Konfigurasi Thunderbird dengan CalDAV/CardDAV server Baïkal
 
 ### 1. Unduh dan pasang perangkat lunak
 Sama seperti yang diuraikan sebelumnya.
@@ -52,7 +52,7 @@ Lalu prosedur konfigurasi.
 
 1. Di jendela berikutnya akan ada beberapa isian. Pilih dahulu 'CardDAV' sebagai tipe yang diinginkan.
 
-1. Lalu, dapatkan URL address book yang akan diimpor. Karena ini BaÃ¯kal, maka skema URLnya biasanya berbentuk seperti:
+1. Lalu, dapatkan URL address book yang akan diimpor. Karena ini Baïkal, maka skema URLnya biasanya berbentuk seperti:
         
     ```
     $HOST/dav.php/addressbooks/$BAIKAL_USER/$ADDRESSBOOK
@@ -72,16 +72,17 @@ Sekarang semua perubahan yang dilakukan di Address Book ini akan tersinkronisasi
 
 
 [//]: # (CardBook installation)
-[menu-plugin]: https://asset.ferdi.id/thunderbird-cardbook/menu-plugin.jpg "Path to open Plugin Window"
-[extensions-window]: https://asset.ferdi.id/thunderbird-cardbook/extensions-window.jpg "Extensions Window"
-[restart-now]: https://asset.ferdi.id/thunderbird-cardbook/plugin-restart-now.jpg "Extensions Window"
+[menu-plugin]: http://localhost:4001/thunderbird-cardbook/menu-plugin.jpg "Path to open Plugin Window"
+[extensions-window]: http://localhost:4001/thunderbird-cardbook/extensions-window.jpg "Extensions Window"
+[restart-now]: http://localhost:4001/thunderbird-cardbook/plugin-restart-now.jpg "Extensions Window"
 
 [//]: # (Address Book configuration)
-[cardbook-icon]: https://asset.ferdi.id/thunderbird-cardbook/cardbook-icon.jpg "Icon to access CardBook"
-[cardbook-menu]: https://asset.ferdi.id/thunderbird-cardbook/create-new-address-book.jpg "Path to create new Address Book"
-[cardbook-dialog-location]: https://asset.ferdi.id/thunderbird-cardbook/choose-location.jpg "Choose location of the new Address Book"
-[cardbook-dialog-type-connection]: https://asset.ferdi.id/thunderbird-cardbook/carddav-connection.jpg "Choose type of the new Address Book and connection info"
-[cardbook-dialog-setting]: https://asset.ferdi.id/thunderbird-cardbook/final-setting.jpg "Choose name and color of the new Address Book"
-[cardbook-display]: https://asset.ferdi.id/thunderbird-cardbook/final-setting.jpg "Choose name and color of the new Address Book"
-[cardbook-book]: https://asset.ferdi.id/thunderbird-cardbook/the-address-book.jpg "Appearance of the Address Book"
+[cardbook-icon]: http://localhost:4001/thunderbird-cardbook/cardbook-icon.jpg "Icon to access CardBook"
+[cardbook-menu]: http://localhost:4001/thunderbird-cardbook/create-new-address-book.jpg "Path to create new Address Book"
+[cardbook-dialog-location]: http://localhost:4001/thunderbird-cardbook/choose-location.jpg "Choose location of the new Address Book"
+[cardbook-dialog-type-connection]: http://localhost:4001/thunderbird-cardbook/carddav-connection.jpg "Choose type of the new Address Book and connection info"
+[cardbook-dialog-setting]: http://localhost:4001/thunderbird-cardbook/final-setting.jpg "Choose name and color of the new Address Book"
+[cardbook-display]: http://localhost:4001/thunderbird-cardbook/final-setting.jpg "Choose name and color of the new Address Book"
+[cardbook-book]: http://localhost:4001/thunderbird-cardbook/the-address-book.jpg "Appearance of the Address Book"
+
 
